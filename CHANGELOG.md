@@ -2,6 +2,12 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.10.0
+
+**O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M06A ~/curso-arquivos/`) e abra o M06A.
+
+- M06A — Conversa de verdade: o campo "Sua vez" na conversa (entrada de texto com acento), o NPC que lembra o que foi dito na mesma conversa (Interactions API com `previous_interaction_id`), os tokens gastos no F3, o limite de turnos e a despedida de cada NPC.
+
 ## v0.9.1
 
 Correção. **O que fazer:** se você já passou do M00B e ainda não clonou o curso, siga o Passo 8 do M00B agora (o clone em `kernel-quest-curso/`, na sua pasta pessoal) e use daí em diante a linha "Arquivos do curso" do Ponto de partida de cada módulo. Se ainda está no M00A ou no M00B, siga os módulos como estão. Se está entre o M02A e o M03A com a `escrever` antiga (sem o `centro_x`), troque-a pela do Passo 1a do M02A; do M03B em diante ela já vem pronta.
