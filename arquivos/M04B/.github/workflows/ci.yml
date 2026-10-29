@@ -1,0 +1,26 @@
+# Integração contínua: a cada push, em qualquer branch, o GitHub instala o projeto do
+# zero numa máquina Linux limpa, roda os testes e abre o jogo sem janela. Se qualquer
+# passo falhar, o commit e o PR mostram um X, e o selo do README (o da main) fica vermelho.
+name: CI
+
+on:
+  push:  # o PR mostra o resultado do último commit da branch
+
+jobs:
+  testes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10  # um jogo travado não prende a fila para sempre
+    steps:
+      - name: Baixar o código
+        uses: actions/checkout@v4
+      - name: Instalar o Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip  # guarda os pacotes baixados entre uma execução e outra
+          cache-dependency-path: requirements*.txt
+      - name: Instalar as dependências
+        run: pip install -r requirements-dev.txt
+      # TODO: dois passos, no mesmo formato dos de cima (um "- name:" e um "run:" cada):
+      #       "Testes", que roda o pytest como você roda na sua máquina, e "Jogo sem janela",
+      #       que roda o ferramentas/verificar.py por 120 quadros, com --tempo-max 60.
