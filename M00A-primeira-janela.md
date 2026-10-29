@@ -15,11 +15,11 @@ Todo projeto Python profissional (APIs, ciência de dados, automação, jogos) c
 ## 🚦 Ponto de partida
 
 - Computador com Windows 10/11 ou Linux, e acesso de administrador para instalar programas.
-- Uma pasta `curso-arquivos/` na sua pasta pessoal (`C:\Users\<você>\curso-arquivos` no Windows, `~/curso-arquivos` no Linux), **fora** do projeto: é onde você guarda, módulo a módulo, os arquivos prontos de cada módulo (a pasta `arquivos/MNN/` do repositório do curso). Ficando fora do projeto, eles nunca vão parar no Git por engano.
+- Os arquivos prontos de cada módulo (arte, scripts, configurações) vêm do repositório do curso no GitHub e ficam numa pasta `curso-arquivos/` na sua pasta pessoal (`C:\Users\<você>\curso-arquivos` no Windows, `~/curso-arquivos` no Linux), **fora** do projeto: o Passo 0 mostra como baixá-los. Ficando fora do projeto, eles nunca vão parar no Git por engano.
 - Arquivos prontos deste módulo: `curso-arquivos/M00A/` (`requirements.txt`, `ferramentas/gerar_assets.py` e `.vscode/settings.json`).
 - Comando para conferir: este é o primeiro módulo, então ainda não há projeto; o ponto de partida é o computador com acesso de administrador.
 - Nada de conta online hoje: chave de IA e GitHub ficam para o M00B.
-- Duas sessões: **Sessão A**, Passos 1 a 5a (a bancada montada e a primeira janela); **Sessão B**, Passos 5b a 6, o Quebre de propósito e o desafio (o salão, o herói e o seu nome).
+- Duas sessões: **Sessão A**, Passos 0 a 5a (a bancada montada e a primeira janela); **Sessão B**, Passos 5b a 6, o Quebre de propósito e o desafio (o salão, o herói e o seu nome).
 
 ## ❓ Pergunta do dia
 
@@ -29,9 +29,38 @@ Ao longo dos passos aparecem caixas **🔍 Pare e pesquise**: pesquise as duas p
 
 ## 🛠️ Passo a passo
 
-### Passo 1: instalar Python 3.12 e o VS Code
+### Passo 0: os arquivos do curso
 
-Você vai usar o terminal o tempo todo. Para abrir: no Windows, aperte a tecla Windows, digite `PowerShell` e Enter; no Linux, `Ctrl+Alt+T`. Ele abre na sua pasta de usuário, e é lá que o projeto será criado.
+Tudo o que você não precisa escrever (arte, scripts, configurações) está na pasta `arquivos/` do repositório do curso no GitHub, com uma subpasta por módulo. Hoje você baixa tudo de uma vez, sem Git e sem conta (o Git entra no M00B).
+
+Abra https://github.com/sebagonella/kernel-quest-curso no navegador, clique no botão verde **Code** e depois em **Download ZIP** (use esse botão, e não o ZIP de uma *Release*: o nome do arquivo seria outro). O arquivo `kernel-quest-curso-main.zip` vai para a sua pasta Downloads.
+
+Você vai usar o terminal o tempo todo, a começar por agora. Para abrir: no Windows, aperte a tecla Windows, digite `PowerShell` e Enter; no Linux, `Ctrl+Alt+T`. Ele abre na sua pasta de usuário, e é lá que o projeto será criado. Extraia o ZIP e leve a pasta `arquivos` para a sua pasta pessoal, com o nome `curso-arquivos`:
+
+```powershell
+# PowerShell (Windows)
+Expand-Archive -Force $HOME\Downloads\kernel-quest-curso-main.zip -DestinationPath $HOME\Downloads
+Move-Item $HOME\Downloads\kernel-quest-curso-main\arquivos $HOME\curso-arquivos
+Get-ChildItem $HOME\curso-arquivos
+```
+
+```bash
+# bash (Linux)
+python3 -m zipfile -e ~/Downloads/kernel-quest-curso-main.zip ~/Downloads/
+mv ~/Downloads/kernel-quest-curso-main/arquivos ~/curso-arquivos
+ls ~/curso-arquivos
+```
+
+Confira: o último comando lista as pastas dos módulos (`M00A`, `M00B`, `M01`, ...). Um módulo sem arquivos prontos não tem pasta. O resto do ZIP (o texto dos módulos e os prints) você lê pelo site; o ZIP e a pasta `kernel-quest-curso-main` podem ir para a lixeira. Ao fim deste módulo, a sua pasta pessoal terá:
+
+```
+curso-arquivos/   os arquivos prontos de cada módulo (você só copia de lá)
+rpg-engine/       o seu jogo (criado no Passo 2)
+```
+
+No M00B, o `rpg-engine` vira o seu repositório no GitHub, e o curso ganha uma cópia que se atualiza com um comando (o README do curso explica tudo em "Seus repositórios e pastas").
+
+### Passo 1: instalar Python 3.12 e o VS Code
 
 **Windows:** baixe o instalador "Windows installer (64-bit)" do Python 3.12 em https://www.python.org/downloads/release/python-31210/. Na primeira tela do instalador, marque a opção "Add python.exe to PATH" (importante) antes de clicar em "Install Now". Se você já tem o Python 3.13 instalado, pode usá-lo: nos comandos abaixo, troque `3.12` por `3.13`.
 
@@ -43,7 +72,7 @@ sudo apt install python3.12-venv
 
 Instale o VS Code (https://code.visualstudio.com) e, dentro dele, a extensão "Python" (da Microsoft).
 
-Confira no terminal:
+Feche o terminal e abra de novo: um terminal aberto antes das instalações não enxerga os programas novos (o `code` do VS Code, por exemplo). Confira no terminal novo:
 
 ```powershell
 # PowerShell (Windows)
@@ -325,8 +354,11 @@ O pygame-ce foi instalado só dentro da `.venv`; o Python do sistema não sabe q
 
 | Sintoma | Causa provável | Como resolver |
 | --- | --- | --- |
+| `Expand-Archive` ou `python3 -m zipfile` diz que o ZIP não existe | O navegador salvou o arquivo em outra pasta ou com outro nome (por exemplo `kernel-quest-curso-main (1).zip`) | Veja o nome exato na pasta Downloads e use-o no comando, entre aspas se tiver espaço: `"$HOME\Downloads\kernel-quest-curso-main (1).zip"` no PowerShell (aspas duplas) e `~/Downloads/"kernel-quest-curso-main (1).zip"` no bash (o `~` fora das aspas) |
+| Extraiu pelo Explorador ("Extrair tudo") e a `arquivos` não está onde o comando espera | O "Extrair tudo" cria uma pasta a mais: `kernel-quest-curso-main\kernel-quest-curso-main\arquivos` | Mova a `arquivos` que está dentro da segunda `kernel-quest-curso-main` para a sua pasta pessoal e renomeie para `curso-arquivos` |
+| `curso-arquivos` ficou com uma pasta `arquivos` dentro | A `curso-arquivos` já existia quando o comando de mover rodou (Passo 0 repetido) | Apague a `curso-arquivos` e a `kernel-quest-curso-main` dos Downloads e repita os comandos do Passo 0 (se o ZIP já foi para a lixeira, baixe de novo) |
 | PowerShell recusa rodar `.venv\Scripts\activate` ("execução de scripts foi desabilitada") | Política de execução padrão do Windows | Rode uma vez: `Set-ExecutionPolicy -Scope CurrentUser RemoteSigned` e confirme |
-| `python` ou `py` não encontrado no Windows | Python instalado sem "Add to PATH" | Reinstale marcando a opção, ou use `py -3.12` |
+| `python`, `py` ou `code` não encontrado no Windows | O terminal foi aberto antes da instalação, ou o Python foi instalado sem "Add to PATH" | Feche o terminal e abra de novo; se continuar, reinstale o Python marcando a opção, ou use `py -3.12` |
 | `pip install` falha | Venv criada com outra versão do Python | Confira `python --version` com a venv ativa: deve ser 3.12 (ou 3.13) |
 | `SyntaxError`, `IndentationError` ou `NameError` apontando uma linha | Erro de digitação ou de recuo | Vá à linha indicada no fim da mensagem e compare com o material: aspas, dois-pontos, parênteses e recuo de 4 espaços |
 | `[ERRO] Arquivo não encontrado: ...player.png` | O gerador não rodou | `python ferramentas/gerar_assets.py` |
@@ -350,7 +382,7 @@ Dê um nome ao seu jogo e faça a janela mostrá-lo: no topo da tela e na barra 
 
 Dica: procure na documentação do pygame-ce o que faz `pygame.display.set_caption`, e reaproveite a função `escrever`.
 
-**Entrega:** mostre a janela rodando ao Engenheiro Sênior (sem mentor, guarde um print em `curso-arquivos/entregas/`). O Git entra no próximo módulo; a partir dele, toda entrega vai para o seu repositório.
+**Entrega:** mostre a janela rodando ao Engenheiro Sênior e guarde um print numa pasta `entregas/` dentro do projeto (`rpg-engine/entregas/M00A.png`). Para tirar o print: no Windows, `Win+Shift+S` (a captura vai para Imagens\Capturas de tela); no Ubuntu, a tecla `PrtSc` (vai para `~/Imagens/Capturas de tela`). Crie a pasta `entregas` no VS Code (botão de nova pasta, na barra lateral) e mova a imagem para lá com o nome `M00A.png`. Sem mentor, os prints dessa pasta são o registro do seu progresso. O Git entra no próximo módulo: o print e todo o resto entram juntos no seu primeiro commit, e a partir dele toda entrega vai para o seu repositório.
 
 ## 💼 Resumo profissional
 

@@ -15,10 +15,11 @@ Em praticamente toda empresa de software, a `main` é protegida: cada mudança n
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M03B, com o desafio concluído: o jogo em camadas (`src/models.py` sem pygame, `src/views.py`, `src/controllers.py`) e as moedas da clareira só com dados.
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M03C $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M03C ~/curso-arquivos/`. Veio pelo repositório-modelo? O clone e a pasta são o passo 5 do README dele (veja o item "Chegou direto aqui" abaixo).
 - Arquivos prontos deste módulo: pasta `M03C/` dentro de `curso-arquivos/`, com `assets/itens/` (poção, armadura e o amuleto do desafio), `assets/sons/` (compra e poção), o `CREDITOS.md` atualizado e o `.env.example` com uma linha nova.
 - Comando para conferir: com a venv ativa, `python main.py` abre o menu, e o jogo inteiro funciona.
 - Você vai usar o GitHub CLI (`gh`), instalado e autenticado no M00B. Confira com `gh auth status`.
-- **Chegou direto aqui pelo repositório-modelo?** O projeto criado pelo "Use this template" já é o ponto de partida deste módulo. Confira antes a lista "Antes de começar" do README do modelo (Python 3.12, Git, GitHub CLI autenticado, Tiled e a chave do Gemini).
+- **Chegou direto aqui pelo repositório-modelo?** O projeto criado pelo "Use this template" já é o ponto de partida deste módulo. Siga antes o README do modelo: a lista "Antes de começar" (Python 3.12, Git, GitHub CLI autenticado, Tiled e a chave do Gemini), o clone do curso com a pasta `curso-arquivos/` (sem ela, a cópia de arquivos do Passo 2 falha) e, se você tem um mentor, o convite para ele ser colaborador do seu repositório (ele revisa o seu primeiro Pull Request neste módulo).
 
 > **A partir de hoje, a entrega é por Pull Request.** Você não faz mais push na `main`. O trabalho do módulo inteiro vai para a branch `modulo-03c`, e o Engenheiro Sênior revisa antes de entrar. **Sem mentor?** O review pode ser de um colega do curso ou uma autorrevisão: o caminho está em "Depois do desafio: o review e o merge".
 
@@ -711,7 +712,7 @@ git push
 
 ### Passo 6: o Pull Request
 
-A branch tem cinco commits que a `main` não tem. Um Pull Request é o pedido para juntar uma branch na outra, com uma página onde o time lê a diferença, comenta linha por linha e aprova.
+A branch tem seis commits que a `main` não tem. Um Pull Request é o pedido para juntar uma branch na outra, com uma página onde o time lê a diferença, comenta linha por linha e aprova.
 
 Escreva a descrição num arquivo `pr.md`, **fora** do projeto (por exemplo, na sua pasta de usuário), para não ir parar num commit. Uma boa descrição diz o que muda, como testar e o que veio de IA:
 
@@ -750,7 +751,7 @@ gh pr create --base main --head modulo-03c --title "Módulo 03C: loja do Brok" -
 gh pr create --base main --head modulo-03c --title "Módulo 03C: loja do Brok" --body-file ~/pr.md
 ```
 
-O comando responde com o endereço do PR. Abra no navegador (`gh pr view --web`) e veja a aba **Files changed**: é exatamente o que quem revisa vai ler. Na aba **Commits**, os cinco commits; na lateral, as issues ligadas.
+O comando responde com o endereço do PR. Abra no navegador (`gh pr view --web`) e veja a aba **Files changed**: é exatamente o que quem revisa vai ler. Na aba **Commits**, os seis commits; na lateral, as issues ligadas.
 
 Daqui em diante, todo `git push` na `modulo-03c` atualiza o PR sozinho. **Não faça o merge ainda:** o desafio entra neste mesmo PR, e o review vem depois dele.
 

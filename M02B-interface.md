@@ -15,6 +15,7 @@ Máquinas de estados estão em todo sistema que "está em algum momento" e só p
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M02A, com o desafio concluído (o herói não atravessa os NPCs e há um NPC seu na floresta).
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M02B $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M02B ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M02B/` dentro de `curso-arquivos/`, com a pasta `assets/` (fonte, caixa de diálogo, retratos, músicas e sons).
 - Comando para conferir: com a venv ativa, `python main.py` abre o título e, depois de uma tecla, o salão.
 - Quatro sessões, de 45 a 90 minutos: **Sessão A**, Passos 1a a 1c (fonte, música e menu); **Sessão B**, Passos 2a a 2c (a máquina de estados e a pausa); **Sessão C**, Passos 3a a 3c (a caixa de diálogo); **Sessão D**, Passo 4, o Quebre de propósito e o desafio ("Pensando...", a voz e a tela de Créditos).
@@ -777,7 +778,7 @@ Dica: comece pela tabela. Escreva primeiro de onde se chega aos Créditos e para
 
 Lembre as regras de uso de IA do M00B: pode pedir explicação de conceito e de erro, não pode pedir a solução pronta, e deve saber explicar ao Engenheiro Sênior cada trecho que veio de uma IA. **Sem mentor?** Escreva essa explicação na mensagem do commit.
 
-**Entrega:** push na `main` e dois prints enviados ao Engenheiro Sênior: a tela de Créditos e a primeira página da fala de teste, com ▼ e "1/2". **Sem mentor?** Guarde os prints numa pasta `entregas/` dentro de `curso-arquivos/`: viram o seu portfólio.
+**Entrega:** push na `main` e dois prints enviados ao Engenheiro Sênior: a tela de Créditos e a primeira página da fala de teste, com ▼ e "1/2". **Sem mentor?** Guarde os prints na pasta `entregas/` do projeto e inclua-os no commit: viram o seu portfólio, dentro do seu repositório.
 
 ## ⭐ Bônus (opcional)
 

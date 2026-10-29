@@ -116,11 +116,11 @@ Lembra da tabela do M05A? Leitura 4, escrita 2, execução 1, para o dono, o gru
 - a pasta `~/.ssh`: só você pode entrar, ler e criar arquivos nela (numa pasta, o `x` é o direito de entrar); o grupo e os outros, nada;
 - a chave privada `~/.ssh/id_ed25519`: só você lê e escreve; ninguém executa; o grupo e os outros, nada.
 
-Troque cada `???` pelo número que você decidiu e rode:
+Troque cada `NUMERO` pelo número que você decidiu e rode:
 
 ```bash
-chmod ??? ~/.ssh
-chmod ??? ~/.ssh/id_ed25519
+chmod NUMERO ~/.ssh
+chmod NUMERO ~/.ssh/id_ed25519
 ls -la ~/.ssh
 ```
 
@@ -186,10 +186,10 @@ O seu repositório local ainda fala com o GitHub por HTTPS. Veja o endereço:
 git remote -v
 ```
 
-A URL é `https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git`. A mesma URL, por SSH, tem outra forma: começa com `git@github.com:` (repare nos **dois-pontos**, não uma barra) e segue com `SEU-USUARIO/SEU-REPOSITORIO.git`. Monte a sua a partir da que o `git remote -v` mostrou, troque o `???` e rode:
+A URL é `https://github.com/SEU-USUARIO/SEU-REPOSITORIO.git`. A mesma URL, por SSH, tem outra forma: começa com `git@github.com:` (repare nos **dois-pontos**, não uma barra) e segue com `SEU-USUARIO/SEU-REPOSITORIO.git`. Monte a sua a partir da que o `git remote -v` mostrou, troque o `URL_SSH` por ela e rode:
 
 ```bash
-git remote set-url origin ???
+git remote set-url origin URL_SSH
 git remote -v
 git push
 ```

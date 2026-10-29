@@ -15,6 +15,7 @@ Todo jogo, simulador ou interface gráfica roda um laço que lê a entrada, atua
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M00B, com o desafio concluído (repositório no GitHub, teste de conexão com `[OK]`).
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M01 $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M01 ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M01/` dentro de `curso-arquivos/` (a pasta fora do projeto onde você guarda os arquivos prontos de cada módulo), com a pasta `assets/` (arte nova) e o `teste_conexao_gemini.py` atualizado.
 - Comando para conferir: com a venv ativa, `python main.py` abre a janela de boas-vindas com "IA configurada".
 - Duas sessões: **Sessão A**, Passos 1 a 4 (o herói anda, o Mago aparece e o `ia.py` fica pronto); **Sessão B**, Passos 5a e 5b, o Quebre de propósito e o desafio (o Mago fala).
@@ -476,6 +477,9 @@ O herói dá um passo a cada 1,5 segundo, e até o ESC demora a responder. É ex
 | `NameError: name 'fonte_jogo' is not defined` (ou `NOME_JOGO`) | No seu desafio do M00A, a fonte ou a constante ganhou outro nome | Renomeie para `fonte_jogo` e `NOME_JOGO`, os nomes do critério do M00A |
 | O jogo trava ~30 s e depois aparece `[ERRO] Sem conexão...` | A rede caiu; o timeout de 30 s encerrou a espera | Confira a internet; teste com a IA falsa |
 | A linha de `[ERRO]` sai cortada no rodapé | Mensagens de erro longas não cabem numa linha | O texto completo aparece no terminal |
+| `cannot change to ...kernel-quest-curso` ao rodar o `git -C ... pull` | O clone do curso não existe | Faça o Passo 8 do M00B (o `git clone` do curso) |
+| O `pull` do curso recusa com `Your local changes would be overwritten` | Um arquivo do clone do curso foi editado por engano | `git -C $HOME\kernel-quest-curso reset --hard origin/main` (PowerShell) ou `git -C ~/kernel-quest-curso reset --hard origin/main` (bash), e o `pull` de novo |
+| A pasta do módulo não aparece dentro de `curso-arquivos/`, mas os arquivos dela sim | A `curso-arquivos` não existia, e a cópia criou a pasta já com o conteúdo do módulo | Apague a `curso-arquivos`, crie de novo (`mkdir`) e repita a cópia da linha "Arquivos do curso" |
 
 ## 🧩 Desafio de Engenharia
 
@@ -491,7 +495,7 @@ Lembre as regras de uso de IA do M00B: pode pedir explicação de conceito e de 
 
 - [ ] Você explica ao Engenheiro Sênior, sem ler e em até 5 minutos, os três termos das caixas 🔍 (quadro e ritmo, hitbox e operação bloqueante). **Sem mentor?** Grave a explicação em áudio e ouça de volta.
 
-**Entrega:** push na `main` e um print da Sentinela respondendo, enviado ao Engenheiro Sênior. Tire o print com o Gemini de verdade: com a IA falsa, todos os NPCs dizem a mesma frase fixa. **Sem mentor?** Guarde os prints numa pasta `entregas/` dentro de `curso-arquivos/`: viram o seu portfólio.
+**Entrega:** push na `main` e um print da Sentinela respondendo, enviado ao Engenheiro Sênior. Tire o print com o Gemini de verdade: com a IA falsa, todos os NPCs dizem a mesma frase fixa. **Sem mentor?** Guarde os prints na pasta `entregas/` do projeto e inclua-os no commit: viram o seu portfólio, dentro do seu repositório.
 
 ## 💼 Resumo profissional
 

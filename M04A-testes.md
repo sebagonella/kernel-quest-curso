@@ -15,6 +15,7 @@ Todo software sério tem testes automatizados: bancos, lojas virtuais, apps de m
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M03C, com o desafio concluído e o Pull Request mergeado: a loja do Brok, a poção e o inventário funcionando.
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M04A $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M04A ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M04A/` dentro de `curso-arquivos/`, com `assets/` (o baú e o som de abrir, mais o `CREDITOS.md` atualizado), `src/depuracao.py`, `requirements-dev.txt`, a pasta `tests/` e `ferramentas/plantar_bug.py` (para o desafio).
 - Comando para conferir: com a venv ativa, `python main.py` abre o menu, e a loja funciona.
 - Entrega por Pull Request, como no M03C: o trabalho vai para a branch `modulo-04a`.
@@ -50,7 +51,9 @@ Copy-Item $HOME\curso-arquivos\M04A\src\depuracao.py src\
 ```bash
 # bash (Linux), na raiz do projeto
 cp ~/curso-arquivos/M04A/src/depuracao.py src/
-``` Três perguntas para responder olhando o código:
+```
+
+Três perguntas para responder olhando o código:
 
 1. Por que `desenhar_depuracao` recebe `camera_x` e `camera_y`?
 2. A caixa do herói é a última a ser desenhada. O que mudaria se ela viesse primeiro?
@@ -145,7 +148,7 @@ Rode `python main.py`: nada muda na tela ainda. O jogo abrir é o que importa: o
 
 ### Passo 3b (Crie / Leia): o baú no mapa e na tela
 
-Abra `assets/mapas/floresta.tmx` no Tiled. Crie uma camada de objetos nova (*Layer > New > Object Layer*) com o nome `baus`, exatamente assim. Com a ferramenta *Insert Point*, clique num lugar livre do mapa, longe das árvores, onde o herói passa (perto do início da estrada é um bom lugar). Salve (Ctrl+S). Onde fica o seu baú é decisão sua. Um ponto por baú, como as moedas do M03A. Para um baú com outra quantia, acrescente ao ponto uma propriedade `moedas` do tipo `int`; sem ela, vale o `MOEDAS_BAU`.
+Abra `assets/mapas/floresta.tmx` no Tiled. Crie uma camada de objetos nova (Camada → Nova → **Camada de objetos**; no Tiled em inglês, *Layer > New > Object Layer*) com o nome `baus`, exatamente assim. Com a ferramenta **Inserir Ponto** (I; em inglês, *Insert Point*), clique num lugar livre do mapa, longe das árvores, onde o herói passa (perto do início da estrada é um bom lugar). Salve (Ctrl+S). Onde fica o seu baú é decisão sua. Um ponto por baú, como as moedas do M03A. Para um baú com outra quantia, acrescente ao ponto uma propriedade `moedas` do tipo `int`; sem ela, vale o `MOEDAS_BAU`.
 
 No `src/controllers.py`, importe `ALTURA_BAU`, `LARGURA_BAU` e `MOEDAS_BAU` do `config` e `Bau` do `models` (em ordem alfabética). No `ler_cena`, dentro do `return Cena(...)`, logo depois da linha do `chegadas=`:
 

@@ -15,6 +15,7 @@ Todo sistema sério separa código e configuração: o mesmo programa roda em te
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M02C, com o desafio concluído: o salão como mapa, ligado à floresta, com o Mago e a Sentinela, e a transição com escurecimento.
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M03A $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M03A ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M03A/` dentro de `curso-arquivos/`, com `assets/itens/` (a moeda e a moeda rúnica do desafio) e `assets/sons/moeda.wav`. Se vier também uma pasta `nivelamento/`, não copie: é o plano B para o salão do M02C, e só entra se o seu salão não funcionar.
 - Comando para conferir: com a venv ativa, `python main.py` abre o menu e, em "Novo jogo", o salão.
 - Três sessões: **Sessão A**, Passos 1 e 2 (as moedas e o HUD); **Sessão B**, Passos 3 a 5b e o Quebre de propósito (o `config.py`, o cache e a IA atrás de uma interface); **Sessão C**, o desafio (a moeda rúnica e as constantes).

@@ -15,6 +15,7 @@ Em times de software, nenhuma mudança entra na `main` sem passar pelo **CI** (i
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M04A, com o desafio concluído e o PR mergeado: o baú, o F3 e `python -m pytest -q` verde.
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M04B $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M04B ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M04B/` dentro de `curso-arquivos/`, com `ferramentas/verificar.py`, `.github/workflows/ci.yml` (a pasta `.github` começa com ponto e pode ficar oculta: confira que ela chegou), `tests/test_slimes.py` e `assets/` (o slime, os corações, o som de dano e o `CREDITOS.md` atualizado).
 - Comando para conferir: com a venv ativa, `python -m pytest -q` passa.
 - Entrega por Pull Request, como no M03C: o trabalho vai para a branch `modulo-04b`, e o PR é aberto no fim. O CI roda a cada push, desde a Sessão A.
@@ -99,7 +100,7 @@ Agora o selo. No topo do `README.md`, logo depois do título, acrescente esta li
 ![CI](https://github.com/SEU-USUARIO/SEU-REPOSITORIO/actions/workflows/ci.yml/badge.svg)
 ```
 
-Commit e push. O selo mostra o estado do CI na `main`: até o merge, ele aparece como "no status"; depois, verde. Até lá, vale o ✓ de cada commit na aba Actions.
+Commit e push. O selo mostra o estado do CI na `main`. Até o merge, como a `main` ainda não teve CI, ele mostra o resultado da última execução de qualquer branch (a sua `modulo-04b`); depois, o da `main`. Para vê-lo antes do merge, escolha a branch `modulo-04b` no seletor de branches da página do repositório (o preview do VS Code não mostra selo de repositório privado). Até lá, vale o ✓ de cada commit na aba Actions.
 
 > **Combinado de time:** a partir de hoje, PR só entra com o CI verde. O GitHub sabe bloquear o merge sozinho (proteção de branch), mas em repositório privado isso exige um plano pago; aqui, a regra é combinada.
 
@@ -334,7 +335,7 @@ Copie `curso-arquivos/M04B/tests/test_slimes.py` para a pasta `tests/`. O primei
 python -m pytest -q
 ```
 
-`12 passed`. Por fim, o cabeçalho do `main.py`: troque o começo da docstring, da linha do `RPG Engine — Módulo 04A` até a linha que termina em `da raiz do projeto):`, por:
+Todos passam, com 2 testes a mais que antes, os do `test_slimes.py` (se no M04A você escreveu só o teste do bug, `9 passed`). Por fim, o cabeçalho do `main.py`: troque o começo da docstring, da linha do `RPG Engine — Módulo 04A` até a linha que termina em `da raiz do projeto):`, por:
 
 ```python
 """
@@ -345,7 +346,7 @@ Gemini e a loja do Brok) fica em camadas dentro de src/. As regras se provam
 com os testes de tests/, que o GitHub Actions roda a cada push (.github/):
 ```
 
-Commit e push: o CI roda os 12.
+Commit e push: o CI roda todos.
 
 ```bash
 git add .
@@ -373,10 +374,12 @@ Na aba Actions, a execução fica vermelha, no passo "Testes": `ModuleNotFoundEr
 | `Invalid workflow file` na aba Actions | Recuo errado no YAML (tabulação ou espaços a mais ou a menos) | Os passos novos com o mesmo recuo dos de cima: `- name:` alinhado com os outros `- name:` |
 | CI falha com `No module named ...` e local passa | Pacote instalado só na sua venv | Acrescente ao `requirements.txt` (ou tire o import, como no Quebre de propósito) |
 | `pygame.error: No available video device` no CI | O passo do jogo não usa o `verificar.py` | `python ferramentas/verificar.py ...`: ele liga o vídeo de mentira sozinho |
-| O selo mostra "no status" | Ainda não houve CI na `main` | Normal até o merge; até lá, vale o ✓ dos commits na aba Actions |
+| O selo mostra "failing" ou "no status" antes do merge | Ainda não houve CI na `main`: o selo mostra a última execução de qualquer branch ("failing" depois do Quebre de propósito), ou nada | Normal até o merge; até lá, vale o ✓ dos commits na aba Actions |
 | Herói perde a vida toda de uma vez | Falta a invencibilidade no `sofrer_dano` | Invencível, devolva `False` antes de tirar vida; depois do dano, `heroi.invencivel = TEMPO_INVENCIVEL` |
 | O herói nunca pisca | O `passar_tempo` não desconta a invencibilidade, ou a linha do herói não foi trocada | Passos 6a (a linha do `invencivel`) e 6b (o `if not heroi.invencivel or ...`) |
 | Os slimes não aparecem | Camada com outro nome, ou o mapa não foi salvo | O nome da camada é `slimes`; Ctrl+S no Tiled |
+| O selo não aparece no README do GitHub, ou aparece como imagem quebrada no VS Code | A página do repositório mostra a `main`, que só ganha o selo no merge; o preview do VS Code não acessa repositório privado | No site, escolha a branch `modulo-04b` no seletor de branches; depois do merge, o selo aparece na `main` |
+
 
 ## 🧩 Desafio de Engenharia
 
@@ -386,7 +389,7 @@ Hoje a vida chega a zero e nada acontece: o herói continua andando com três co
 
 - [ ] **Vida zerada:** quando a vida chega a 0, o herói volta ao salão, no ponto `inicio`, com a vida cheia. A regra mora no Model (no `sofrer_dano` ou numa função que ele chama), não no Controller nem na View.
 - [ ] **Testes das regras de vida**, sem abrir a janela: um teste prova a invencibilidade (o segundo golpe seguido não dói; passado o `TEMPO_INVENCIVEL`, dói), um prova o efeito da armadura (meio dano) e um prova a vida zerada (a cena, a vida e a posição depois do último golpe).
-- [ ] **CI verde no PR**, rodando sem a chave do Gemini, com todos os testes (os 12 do módulo e os seus).
+- [ ] **CI verde no PR**, rodando sem a chave do Gemini, com todos os testes (os 8 que vieram com o M04A e o M04B, mais os seus).
 - [ ] **Nomes que os próximos módulos usam:** `.github/workflows/ci.yml` (o M11A acrescenta o deploy a ele); `Jogo.sofrer_dano(dano)` devolvendo se doeu; `Heroi.vida` em corações; `VIDA_MAXIMA` e `TEMPO_INVENCIVEL` no `config.py`; a camada de objetos `slimes` no Tiled.
 - [ ] Você explica ao Engenheiro Sênior, sem ler e em até 5 minutos, os três termos das caixas 🔍 (integração contínua, ambiente reproduzível e regra de jogo testável). **Sem mentor?** Grave a explicação em áudio e ouça de volta.
 

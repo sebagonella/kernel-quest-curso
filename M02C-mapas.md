@@ -15,6 +15,7 @@ Quase todo jogo 2D comercial é montado num editor de mapas: o designer desenha 
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M02B, com o desafio concluído (tela de Créditos, velocidade da escrita numa constante e a fala de teste).
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M02C $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M02C ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M02C/` dentro de `curso-arquivos/`, com a pasta `assets/mapas/` (mapas, tilesets e imagens) e o `requirements.txt` novo.
 - Comando para conferir: com a venv ativa, `python main.py` abre o menu e, em "Novo jogo", o salão.
 - Quatro sessões: **Sessão A**, Passos 1a a 2 (o mapa e a câmera); **Sessão B**, Passos 3 a 4c (árvores, profundidade e portais vindos do mapa); **Sessão C**, o Quebre de propósito e a primeira metade do desafio (o salão desenhado por você, ligado à floresta); **Sessão D**, a segunda metade (a transição e a clareira).
@@ -148,11 +149,12 @@ winget install --id Tiled.Tiled -e
 ```
 
 ```bash
-# bash (Linux), pelo Flatpak; a primeira linha só é necessária uma vez
-flatpak remote-add --user --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
-flatpak install --user flathub org.mapeditor.Tiled
-flatpak run org.mapeditor.Tiled    # abre o Tiled
+# bash (Linux, Ubuntu): o snap já vem instalado no Ubuntu
+sudo snap install tiled
+tiled &    # abre o Tiled sem prender o terminal (ou procure "Tiled" no menu de aplicativos)
 ```
+
+Em outra distribuição sem snap, instale pelo Flatpak (`org.mapeditor.Tiled`) ou pelo AppImage do site do Tiled.
 
 Abra `assets/mapas/floresta.tmx` no Tiled (Arquivo → Abrir) e explore:
 
@@ -441,6 +443,7 @@ Duas camadas, dois jeitos de quebrar.
 | A tela escurece e clareia sem parar ao passar por uma porta | O ponto de chegada ficou dentro do portal (ou encostado nele): o herói chega tocando a porta de volta | Mova o ponto no Tiled para um tile e meio longe da porta e salve |
 | `KeyError` com o nome de um mapa no `cenas[...]` | O `destino` do portal tem erro de digitação, ou a cena não está no `criar_cenas()` | O `destino` é o nome do arquivo do mapa, sem `.tmx`, igual à chave do `criar_cenas()` |
 | `TypeError` no `scale_by` ao carregar o mapa | Há um retângulo ou ponto na camada `arvores`: lá só entram objetos de tile (com imagem) | Apague o objeto ou mova-o para a camada certa; para pôr um toco, use a ferramenta Inserir Tile (T) |
+| O Tiled abre com a janela estranha ou sem responder ao mouse, no Ubuntu | A sessão Wayland do Ubuntu e o Qt 5 do Tiled não se dão bem | Abra pelo terminal com `DISABLE_WAYLAND=1 tiled &` |
 
 ## 🧩 Desafio de Engenharia
 
@@ -514,7 +517,7 @@ Os três `TODO` são curtos (uma ou duas linhas): o desafio de verdade é entend
 
 Lembre as regras de uso de IA do M00B: pode pedir explicação de conceito e de erro, não pode pedir a solução pronta, e deve saber explicar ao Engenheiro Sênior cada trecho que veio de uma IA. **Sem mentor?** Escreva essa explicação na mensagem do commit.
 
-**Entrega:** push na `main` e três prints enviados ao Engenheiro Sênior: a clareira no jogo, o salão com o Mago e a tela no meio de uma transição. **Sem mentor?** Guarde os prints numa pasta `entregas/` dentro de `curso-arquivos/`: viram o seu portfólio.
+**Entrega:** push na `main` e três prints enviados ao Engenheiro Sênior: a clareira no jogo, o salão com o Mago e a tela no meio de uma transição. **Sem mentor?** Guarde os prints na pasta `entregas/` do projeto e inclua-os no commit: viram o seu portfólio, dentro do seu repositório.
 
 ## ⭐ Bônus (opcional)
 

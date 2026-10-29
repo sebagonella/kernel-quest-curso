@@ -15,6 +15,7 @@ MVC e suas variações (MVP, MVVM, arquitetura em camadas) estão em praticament
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M03A, com o desafio concluído: a moeda rúnica definida pelas propriedades `imagem` e `valor` no Tiled, e os oito números de ajuste com nome.
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M03B $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M03B ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M03B/` dentro de `curso-arquivos/`, com a pasta `src/` (o jogo em camadas), o `main.py` novo, o `prova_model.py` e o `teste_conexao_gemini.py` atualizado.
 - Comando para conferir: com a venv ativa, `python main.py` abre o menu, e o jogo inteiro funciona.
 - Duas sessões: **Sessão A**, Passos 1a a 2 (a estrutura nova, os seus dados nela e as regras do Model); **Sessão B**, Passos 3 e 4, o Quebre de propósito e o desafio (a leitura da View e do Controller, e o jogo passando a rodar pelas camadas).

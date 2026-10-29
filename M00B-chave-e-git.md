@@ -15,9 +15,9 @@ Nenhuma empresa guarda senha ou chave de API dentro do código: elas ficam em va
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M00A, com o desafio concluído (nome do jogo na janela).
-- Arquivos prontos deste módulo: `curso-arquivos/M00B/` (`requirements.txt`, `.env.example` e `teste_conexao_gemini.py`).
+- Arquivos prontos deste módulo: `curso-arquivos/M00B/` (`requirements.txt`, `.env.example` e `teste_conexao_gemini.py`), que já vieram no ZIP do Passo 0 do M00A.
 - Uma conta Google (para a chave do Gemini) e uma conta no GitHub (crie em https://github.com/signup, se ainda não tiver).
-- Duas sessões: **Sessão A**, Passos 1 a 5 (a chave, o teste e o projeto no GitHub); **Sessão B**, Passos 6 e 7, o Quebre de propósito e o desafio.
+- Duas sessões: **Sessão A**, Passos 1 a 5 (a chave, o teste e o projeto no GitHub); **Sessão B**, Passos 6 a 8 (o Sênior no time, as regras de IA e o curso clonado), o Quebre de propósito e o desafio.
 - Comando para conferir: com a venv ativa, `python main.py` abre a janela com o nome do jogo e "Bem-vindo, <seu nome>!".
 
 ## ❓ Pergunta do dia
@@ -177,7 +177,7 @@ winget install --id GitHub.cli -e
 sudo apt install git gh
 ```
 
-Feche o VS Code inteiro e abra de novo (o terminal dele herda o PATH antigo até o VS Code reiniciar). Os comandos `git` e `gh` a seguir são iguais no PowerShell e no bash. Configure quem você é: isso aparece em cada commit. Use o mesmo e-mail da sua conta do GitHub.
+Feche o VS Code inteiro e abra de novo (o terminal dele herda o PATH antigo até o VS Code reiniciar). Os comandos `git` e `gh` a seguir são iguais no PowerShell e no bash. Configure quem você é: isso aparece em cada commit. Use o mesmo e-mail da sua conta do GitHub (se preferir não deixar o seu e-mail nos commits, use o endereço *noreply* que o GitHub mostra em Settings > Emails).
 
 ```bash
 git config --global user.name "Seu Nome"
@@ -220,16 +220,18 @@ git add .
 git status
 ```
 
-Na lista do `git status`, devem aparecer `.env.example`, `.gitignore`, `.vscode/settings.json`, `main.py`, `requirements.txt`, `teste_conexao_gemini.py` e os arquivos dentro de `assets/` e `ferramentas/` (um por linha). O `.vscode/settings.json` vai junto de propósito: a configuração do editor viaja com o projeto. **Não** podem aparecer `.env` nem `.venv/`. Se aparecerem, pare e chame o Engenheiro Sênior antes do commit. Se a lista estiver certa, faça o commit. O `feat:` no começo da mensagem diz o tipo da mudança (funcionalidade nova); é um padrão de mercado chamado Conventional Commits, que você vai usar em todo o curso:
+Na lista do `git status`, devem aparecer `.env.example`, `.gitignore`, `.vscode/settings.json`, `main.py`, `requirements.txt`, `teste_conexao_gemini.py` e os arquivos dentro de `assets/`, `entregas/` e `ferramentas/` (um por linha). O `.vscode/settings.json` vai junto de propósito: a configuração do editor viaja com o projeto. **Não** podem aparecer `.env` nem `.venv/`. Se aparecerem, pare e chame o Engenheiro Sênior antes do commit. **Sem mentor?** Não faça o commit: rode `git reset` (tira tudo da lista do próximo commit, sem apagar nenhum arquivo), corrija a causa (quase sempre o nome ou o lugar do `.gitignore`, que fica na raiz, ao lado do `main.py`; veja os Problemas comuns) e repita `git add .` e `git status`. Se a lista estiver certa, faça o commit. O `feat:` no começo da mensagem diz o tipo da mudança (funcionalidade nova); é um padrão de mercado chamado Conventional Commits, que você vai usar em todo o curso:
 
 ```bash
 git commit -m "feat: primeira janela e bancada com .env"
 gh repo create rpg-engine --private --source . --push
 ```
 
+Esse primeiro commit leva tudo o que você fez no M00A (o `main.py`, a arte gerada, os arquivos prontos e o print em `entregas/`): o seu repositório começa com o trabalho do primeiro dia. O `--push` do `gh repo create` já enviou o commit para o GitHub. Daqui em diante, cada `git commit` fica só no seu computador até você rodar `git push`, que envia para o GitHub os commits que ainda não estão lá.
+
 Abra o repositório no navegador (`gh repo view --web`) e confira: o código está lá, e o `.env` não.
 
-> ⏸️ **Fim da Sessão A.** Projeto no GitHub, jogo funcionando. Se a sessão já passou de uma hora, pare aqui; os Passos 6 e 7, o Quebre de propósito e o desafio ficam para a Sessão B.
+> ⏸️ **Fim da Sessão A.** Projeto no GitHub, jogo funcionando. Se a sessão já passou de uma hora, pare aqui; os Passos 6 a 8, o Quebre de propósito e o desafio ficam para a Sessão B.
 
 > 🔍 **Pare e pesquise: versionamento com Git** — Qual a diferença entre `git add` e `git commit`? O que o GitHub acrescenta ao Git que você já tem no computador?
 
@@ -247,6 +249,32 @@ Combine com o Engenheiro Sênior (ou consigo mesmo, se estuda sozinho), e lembre
 - **Não pode:** pedir a solução pronta do desafio.
 - **Deve:** explicar ao Engenheiro Sênior cada trecho que veio de uma IA. Se não souber explicar, o trecho não entra. Sem mentor, a explicação vai na mensagem do commit (a partir do M03C, na descrição do Pull Request).
 - **No editor:** as sugestões automáticas de IA ficam desligadas no projeto (o `.vscode/settings.json` do M00A). Mais adiante no curso, você vai religá-las de propósito para revisar o que a IA sugere.
+
+### Passo 8: o curso também é um repositório
+
+O ZIP do M00A foi uma foto do curso naquele dia. Agora que você tem o Git, troque a foto por um clone: uma cópia do repositório do curso que se atualiza com um comando. Clone na sua pasta pessoal, **fora** do projeto (o caminho completo no comando garante isso, de qualquer pasta):
+
+```powershell
+# PowerShell (Windows)
+git clone https://github.com/sebagonella/kernel-quest-curso.git $HOME\kernel-quest-curso
+```
+
+```bash
+# bash (Linux)
+git clone https://github.com/sebagonella/kernel-quest-curso.git ~/kernel-quest-curso
+```
+
+Confira: `Get-ChildItem $HOME\kernel-quest-curso` (PowerShell) ou `ls ~/kernel-quest-curso` (bash) mostra os módulos (`M00A-primeira-janela.md`, ...) e a pasta `arquivos`. A partir do M01, o Ponto de partida de cada módulo traz dois comandos: um `git pull` no clone (`git -C $HOME\kernel-quest-curso pull` no PowerShell, `git -C ~/kernel-quest-curso pull` no bash), que traz o módulo novo e as correções (o `-C` diz ao Git em qual pasta trabalhar, sem você sair do projeto), e a cópia da pasta do módulo para `curso-arquivos/`.
+
+São três repositórios no curso, e você escreve em só um:
+
+| Repositório | De quem | O que você faz com ele |
+| --- | --- | --- |
+| `kernel-quest-curso` | do autor, público | Só lê e atualiza, com `git pull`, no clone `kernel-quest-curso/` |
+| `rpg-engine` | **seu**, privado | Escreve: `git add`, `git commit` e `git push` a cada módulo |
+| `kernel-quest-modelo` | do autor, público | Nada: serve só para quem começa o curso no M03C |
+
+O clone do curso nunca recebe commit seu, e o `rpg-engine` nunca recebe o curso inteiro: só os arquivos que cada módulo manda copiar.
 
 ## 💥 Quebre de propósito
 
@@ -273,10 +301,13 @@ O código de erro diz onde procurar: 400, 401 ou 403 apontam a chave; 404, o nom
 | Erro 429 no teste | Cota por minuto do plano gratuito | Espere um minuto e tente de novo |
 | `git` ou `gh` não encontrado | O VS Code foi aberto antes da instalação | Feche o VS Code inteiro e abra de novo |
 | `gh auth login` pede navegador | É o fluxo normal | Siga o código exibido no terminal |
-| `.env` aparece no `git status` mesmo com `.gitignore` | O arquivo se chama `.gitignore.txt` | Renomeie no VS Code para `.gitignore` e rode `git status` de novo |
+| `.env` aparece no `git status` mesmo com `.gitignore` | O arquivo se chama `.gitignore.txt` | Renomeie no VS Code para `.gitignore`, rode `git reset` (o `git add` já tinha posto o `.env` na lista do commit) e repita `git add .` e `git status` |
 | `.env.example` não encontrado | O gerenciador de arquivos esconde arquivos que começam com ponto, e ele ficou para trás | Copie pelo nome: `cp ~/curso-arquivos/M00B/.env.example .` (bash) ou `Copy-Item $HOME\curso-arquivos\M00B\.env.example .` (PowerShell) |
+| `git clone` diz `destination path ... already exists` | Já existe uma pasta `kernel-quest-curso` na sua pasta pessoal | Se ela veio de um clone anterior, use-a (`git -C $HOME\kernel-quest-curso pull` ou `git -C ~/kernel-quest-curso pull`); se não, apague-a e clone de novo |
+| O `git pull` do curso recusa, falando de *local changes* | Um arquivo do clone do curso foi editado por engano (o clone é só leitura) | Desfaça as mudanças no clone: `git -C $HOME\kernel-quest-curso restore .` (PowerShell) ou `git -C ~/kernel-quest-curso restore .` (bash), e rode o `pull` de novo |
+| O `git push` do README é recusado com `rejected ... (fetch first)` | O README foi criado pelo botão *Add a README* do site, e o GitHub tem um commit que o seu computador não tem | `git pull` e depois `git push`. Da próxima vez, crie o README no VS Code |
 | `warning: LF will be replaced by CRLF` (Windows) | O Git ajustando o fim de linha para o Windows | É normal; pode seguir |
-| O `.env` apareceu no GitHub | Foi commitado antes do `.gitignore` | Chame o Engenheiro Sênior: troque a chave no AI Studio (a antiga vazou) e removam juntos do histórico. **Sem mentor?** Troque a chave na hora (é o que importa: a antiga deixa de valer); depois, o jeito mais simples de limpar o histórico neste começo é apagar o repositório no GitHub e criá-lo de novo, já com o `.gitignore` |
+| O `.env` apareceu no GitHub | Foi commitado antes do `.gitignore`, ou com o `.gitignore` de nome errado | Na hora, no AI Studio, **apague** a chave antiga (ela vazou e precisa deixar de valer), crie outra e cole a nova no `.env`. Depois, com o Engenheiro Sênior, tirem o `.env` do Git. **Sem mentor?** Confira que o `.gitignore` está na raiz, com esse nome exato. Rode `git rm -r -q --cached .` (tira tudo da lista do Git sem apagar nenhum arquivo do computador), `git add .` e `git status`: agora sem `.env` e sem `.venv/`. Termine com `git commit -m "chore: tira o .env e a .venv do repositório"` e `git push`. O histórico ainda guarda a chave antiga, que já foi apagada; a nova nunca entra no Git. Não apague o repositório: recriá-lo enviaria o mesmo histórico de novo |
 
 ## 🧩 Desafio de Engenharia
 
@@ -285,10 +316,11 @@ Deixe a bancada pronta para o trabalho em time.
 **Critérios de aceite:**
 
 - [ ] `python teste_conexao_gemini.py` responde com `[OK]`.
-- [ ] Repositório privado no GitHub, com `.gitignore`; o `.env` **não** aparece no GitHub.
+- [ ] Repositório privado no GitHub, com `.gitignore`; o `.env` e a `.venv/` **não** aparecem no GitHub.
 - [ ] Se você tem um mentor, o Engenheiro Sênior é colaborador do repositório.
-- [ ] Primeira Issue criada, com o título "Módulo 01" (procure como criar uma Issue pelo site ou com `gh issue create`).
-- [ ] `README.md` na raiz do repositório, com o nome do jogo e a seção "Como rodar" (criar a venv, instalar as dependências, criar o `.env` a partir do `.env.example`), em PowerShell e bash, num segundo commit no padrão Conventional Commits (`docs: ...`).
+- [ ] Primeira Issue criada no **seu** repositório, com o título "Módulo 01" (procure como criar uma Issue pela aba Issues do `rpg-engine` no site ou com `gh issue create`, rodado na pasta do projeto).
+- [ ] `README.md` na raiz do repositório, com o nome do jogo e a seção "Como rodar" (criar a venv, instalar as dependências, criar o `.env` a partir do `.env.example`), em PowerShell e bash, criado no VS Code (não pelo botão *Add a README* do site), num segundo commit no padrão Conventional Commits (`docs: ...`), enviado com `git push` (no site, o README aparece na página do repositório).
+- [ ] O curso clonado em `kernel-quest-curso/`, na sua pasta pessoal: o M01 começa com um `git pull` nele.
 - [ ] Você explica ao Engenheiro Sênior, sem ler e em até 5 minutos, os três termos das caixas 🔍 (`.env`, chave de API e Git). **Sem mentor?** Grave a explicação em áudio e ouça de volta.
 
 **Entrega:** push na `main` e o link do repositório enviado ao Engenheiro Sênior (sem mentor, anote o link: é o começo do seu portfólio).

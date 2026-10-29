@@ -5,7 +5,29 @@
 - **Para quem:** adultos (**18 anos ou mais**, exigência dos termos da Gemini API) que estão começando em programação e gostam de jogos. Nenhuma experiência prévia é necessária.
 - **O que você precisa:** um PC com Windows 10/11 ou Linux, uma conta no GitHub e uma chave gratuita do Gemini (o módulo M00B mostra como criar). macOS não é suportado.
 - **Com ou sem mentor:** o curso foi pensado para alguém que acompanha você (o "Engenheiro Sênior"), mas funciona sozinho. Veja "Quem é o Engenheiro Sênior" abaixo.
-- **Como começar:** abra o [M00A — Primeira janela](M00A-primeira-janela.md) e siga na ordem. Os módulos novos chegam aqui conforme ficam prontos; o [CHANGELOG](CHANGELOG.md) diz o que mudou em cada versão.
+- **Como começar:** leia "Seus repositórios e pastas", logo abaixo, e abra o [M00A — Primeira janela](M00A-primeira-janela.md): o Passo 0 dele baixa os arquivos do curso. Depois, siga na ordem. Os módulos novos chegam aqui conforme ficam prontos.
+
+## Seus repositórios e pastas
+
+O curso usa três repositórios no GitHub, e você escreve em só um deles:
+
+| Repositório | De quem | O que você faz com ele |
+| --- | --- | --- |
+| `kernel-quest-curso` (este) | do autor, público | **Só lê:** os módulos, os prints e os arquivos prontos (`arquivos/MNN/`). Você baixa em ZIP no M00A e, a partir do M00B, mantém um clone atualizado com `git pull` |
+| `<seu-usuario>/rpg-engine` | **seu**, privado | **Escreve:** é o seu jogo. Nasce no M00B, já com tudo o que você fez no M00A, e a cada módulo recebe o seu código, os arquivos prontos que o módulo manda copiar e os prints que você guardar (`entregas/`). Se você tem um mentor, ele entra como colaborador |
+| [`kernel-quest-modelo`](https://github.com/sebagonella/kernel-quest-modelo) | do autor, público | **Só para quem começa no M03C** (veja "Começar no meio do curso"). Quem começa do zero não usa |
+
+Na sua pasta pessoal (`C:\Users\<você>` no Windows, `~` no Linux) ficam três pastas:
+
+```
+curso-arquivos/      os arquivos prontos de cada módulo (M00A/, M00B/, ...), fora de qualquer Git
+kernel-quest-curso/  o clone deste repositório (a partir do M00B)
+rpg-engine/          o seu jogo, que vira o seu repositório no M00B
+```
+
+**Como os arquivos chegam:** no M00A, o Passo 0 baixa este repositório em ZIP e cria a `curso-arquivos/`. No M00B, você clona este repositório. A partir do M01, o Ponto de partida de cada módulo traz dois comandos: um `git pull` no clone (que traz o módulo novo e as correções) e a cópia da pasta do módulo para `curso-arquivos/`. Os passos dizem o que copiar de lá para o projeto.
+
+**Novidades e correções:** cada versão sai como *Release* neste repositório, dizendo o que você precisa fazer. Para ser avisado, use **Watch > Custom > Releases** no topo desta página. O [CHANGELOG](CHANGELOG.md) guarda o histórico.
 
 ## Tecnologias
 
@@ -27,7 +49,7 @@ Cada aluno usa a **própria chave** do Gemini. No plano gratuito, o Google pode 
 
 ## Como usar
 
-- **Arquivos prontos:** cada módulo tem uma pasta `arquivos/MNN/` neste repositório com o que você não precisa escrever (arte, `requirements.txt`, scripts). Guarde todas numa pasta `curso-arquivos/` na sua pasta pessoal, **fora** do projeto (`C:\Users\<você>\curso-arquivos` no Windows, `~/curso-arquivos` no Linux). O módulo diz o que copiar para o projeto.
+- **Arquivos prontos:** cada módulo tem uma pasta `arquivos/MNN/` neste repositório com o que você não precisa escrever (arte, `requirements.txt`, scripts). Eles ficam na pasta `curso-arquivos/` da sua pasta pessoal, **fora** do projeto (veja "Seus repositórios e pastas"), e o módulo diz o que copiar de lá para o projeto.
 - **Prints:** a pasta `img/` mostra como a tela deve ficar ao fim de cada módulo.
 - **Dúvidas:** primeiro a seção "Problemas comuns" do módulo; depois, o Engenheiro Sênior. **Sem mentor?** Releia o passo anterior ao erro, leia a mensagem de erro inteira (a última linha costuma dizer o motivo) e pesquise essa linha. Achou um erro **no material** (passo que não funciona como descrito)? Abra uma Issue neste repositório.
 
@@ -48,7 +70,7 @@ O curso trata você como um Engenheiro Júnior em treinamento, e o **Engenheiro 
 
 ## Começar no meio do curso
 
-Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir do [repositório-modelo](https://github.com/sebagonella/kernel-quest-modelo), que traz o jogo pronto no ponto de partida do M03C (o fim do M03B). Clique em **"Use this template"**, siga o README do modelo (o que instalar antes, a venv, o `.env` e a personalização) e abra o M03C.
+Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir do [repositório-modelo](https://github.com/sebagonella/kernel-quest-modelo), que traz o jogo pronto no ponto de partida do M03C (o fim do M03B). Clique em **"Use this template"**, siga o README do modelo (o que instalar antes, o nome `rpg-engine`, a venv, o `.env`, os arquivos do curso, o convite ao mentor e a personalização) e abra o M03C.
 
 **Começando do zero, não use o modelo:** o M00A e o M00B ensinam a montar o projeto e o repositório com as próprias mãos, e isso é parte do curso. O modelo também traz as respostas dos desafios do M00A ao M03B.
 

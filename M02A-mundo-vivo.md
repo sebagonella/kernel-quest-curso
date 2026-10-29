@@ -15,6 +15,7 @@ Todo sistema com muitas "coisas parecidas" (clientes, pedidos, sensores, inimigo
 ## 🚦 Ponto de partida
 
 - Seu projeto deve estar como no fim do M01, com o desafio concluído (o Mago lembra o Cristal de Kernel e a Sentinela do Salão responde).
+- **Arquivos do curso:** traga a pasta deste módulo do seu clone do curso (feito no M00B). PowerShell: `git -C $HOME\kernel-quest-curso pull` e `Copy-Item -Recurse -Force $HOME\kernel-quest-curso\arquivos\M02A $HOME\curso-arquivos\`. bash: `git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M02A ~/curso-arquivos/`.
 - Arquivos prontos deste módulo: pasta `M02A/` dentro de `curso-arquivos/`, com a pasta `assets/` (arte nova).
 - Comando para conferir: com a venv ativa, `python main.py` abre o título e, depois, o salão com o Mago e a Sentinela.
 - Duas sessões: **Sessão A**, Passos 1a a 2 (o herói animado e a classe `NPC`); **Sessão B**, Passos 3a a 3c, o Quebre de propósito e o desafio (o mundo com três cenas).
@@ -51,6 +52,17 @@ TEMPO_QUADRO = 0.15  # segundos que cada quadro da caminhada fica na tela
 # Ordem das colunas nas folhas do pacote (andar.png e parado.png).
 COLUNA = {"baixo": 0, "cima": 1, "esquerda": 2, "direita": 3}
 ```
+
+A função `escrever` ganha um parâmetro a mais, `centro_x`, para centralizar um texto em qualquer ponto da tela, e não só no meio: no Passo 2, a dica "ESPAÇO para falar" vai aparecer sobre o NPC que estiver perto. Troque a função inteira por esta (se a sua solução do desafio do M01 já fez algo parecido, use esta versão do mesmo jeito: o Passo 2 chama o parâmetro pela posição, como sexto argumento):
+
+```python
+def escrever(tela, fonte, texto, cor, centro_y, centro_x=LARGURA // 2):
+    """Desenha um texto centralizado em (centro_x, centro_y); sem centro_x, no meio da tela."""
+    imagem = fonte.render(texto, True, cor)
+    tela.blit(imagem, imagem.get_rect(center=(centro_x, centro_y)))
+```
+
+O `centro_x=LARGURA // 2` é um **valor padrão**: quem chama a função sem o sexto argumento (todas as chamadas que você já tem) continua escrevendo no meio da tela.
 
 Logo depois da função `escrever`, acrescente a função que fatia uma folha em quadros. O `subsurface` devolve um pedaço retangular de uma imagem, sem copiar os pixels:
 
@@ -314,7 +326,7 @@ def porta_tocada(rect, area):
     return None
 ```
 
-O `area=AREA_LIVRE` é um parâmetro com valor padrão: só a masmorra, que acaba no paredão, passa uma área diferente. E repare que a masmorra não tem porta leste nos dados: o portão continua fechado até alguém ter a chave.
+O `area=AREA_LIVRE` é outro parâmetro com valor padrão, como o `centro_x` da `escrever`: só a masmorra, que acaba no paredão, passa uma área diferente. E repare que a masmorra não tem porta leste nos dados: o portão continua fechado até alguém ter a chave.
 
 Rode `python main.py`: o jogo deve estar **igual**. Nada usa a `Cena` ainda, mas rodar agora já pega erros de sintaxe neste trecho grande (parêntese, recuo, aspas), antes de eles se misturarem com as próximas mudanças. Um nome digitado errado dentro de uma função só aparece quando ela for chamada, no 3b.
 
@@ -430,6 +442,7 @@ Ainda com 15 FPS, troque só a linha do `x` (`heroi_rect.x += dx * VELOCIDADE * 
 
 | Sintoma | Causa provável | Como resolver |
 | --- | --- | --- |
+| `TypeError: escrever() takes 5 positional arguments but 6 were given` perto de um NPC | A função `escrever` ainda é a antiga, sem o `centro_x` | Troque a função pela versão do Passo 1a |
 | `[ERRO] Arquivo não encontrado: .../personagens/heroi/andar.png` | A pasta `assets/` do módulo não foi copiada, ou virou `assets/assets/` | Copie o **conteúdo** de `curso-arquivos/M02A/assets/` para `assets/` |
 | O herói quase não se mexe | A `VELOCIDADE` ainda vale 4: com `dt`, são 4 pixels por **segundo** | Use `VELOCIDADE = 200` |
 | Depois de uma fala da IA, o herói dá um salto | Faltou o teto do `dt`: o quadro após o congelamento vale segundos | Confira `dt = min(dt, 0.1)` logo depois do `relogio.tick` |
@@ -442,6 +455,7 @@ Ainda com 15 FPS, troque só a linha do `x` (`heroi_rect.x += dx * VELOCIDADE * 
 | O herói vai e volta entre duas cenas sem parar | O ponto de chegada ficou encostado na porta | Mantenha o `+ 20` / `- 20` do ponto de chegada |
 | `NameError: name 'npcs' is not defined` | Sobrou um `npcs` depois do Passo 3b | Troque por `cena.npcs` |
 | `NameError: name 'fundo' is not defined` (ou `'area_livre'`) | No Passo 3b, um nome saiu do `main()` mas ainda é usado | Faça os cinco itens do 3b: o desenho usa `cena.fundo` e o `clamp_ip` usa `cena.area` |
+| `TypeError: escrever() got an unexpected keyword argument ...` | Alguma chamada sua (do desafio do M01) usa o parâmetro com outro nome, como `x=` | Troque o nome na chamada por `centro_x=`, ou passe o valor como sexto argumento, sem nome |
 
 ## 🧩 Desafio de Engenharia
 
@@ -468,7 +482,7 @@ se ele colidiu com algum NPC: desfaça só o movimento em y
 
 Lembre as regras de uso de IA do M00B: pode pedir explicação de conceito e de erro, não pode pedir a solução pronta, e deve saber explicar ao Engenheiro Sênior cada trecho que veio de uma IA. **Sem mentor?** Escreva essa explicação na mensagem do commit.
 
-**Entrega:** push na `main` e um print do NPC novo respondendo, enviado ao Engenheiro Sênior, com os dois tempos da travessia. **Sem mentor?** Guarde os prints numa pasta `entregas/` dentro de `curso-arquivos/`: viram o seu portfólio.
+**Entrega:** push na `main` e um print do NPC novo respondendo, enviado ao Engenheiro Sênior, com os dois tempos da travessia. **Sem mentor?** Guarde os prints na pasta `entregas/` do projeto e inclua-os no commit: viram o seu portfólio, dentro do seu repositório.
 
 ## ⭐ Bônus (opcional)
 

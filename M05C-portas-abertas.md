@@ -122,7 +122,7 @@ Rode, para ver o Quadro de demonstração como o jogo vai lê-lo:
 python -c "from src.controllers import ler_invasores; print(ler_invasores())"
 ```
 
-Agora importe `instrucao_vigia` do `models` (em ordem alfabética, depois do `Slime`) e, no `carregar_cenas`, na lista de NPCs da floresta, logo depois da linha do Caçador Rurik:
+Agora importe `instrucao_vigia` do `models` (em ordem alfabética, depois do `Slime`) e, no `carregar_cenas`, na lista de NPCs da floresta, logo depois da linha do NPC do M02A (a que usa o `INSTRUCAO_CACADOR`):
 
 ```python
             criar_vigia(),

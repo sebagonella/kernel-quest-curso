@@ -44,6 +44,8 @@ Ao longo dos passos aparecem caixas **🔍 Pare e pesquise**: pesquise as duas p
 
 ### Passo 1: o jogo no Linux
 
+> **Já fazia o curso no Linux?** Pule a instalação, o `git config` e os clones: o seu `~/rpg-engine` e o `~/kernel-quest-curso` já existem. Rode `cd ~/rpg-engine`, `git switch main`, `git pull`, `source .venv/bin/activate` e `pip install -r requirements-dev.txt`, traga a pasta deste módulo (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M05A ~/curso-arquivos/`) e siga para a branch, no fim deste passo.
+
 Abra o terminal (no Ubuntu, `Ctrl+Alt+T`; no WSL, o app "Ubuntu"). Primeiro, as ferramentas. O Ubuntu 24.04 já traz o Python 3.12; faltam o módulo de venv, o Git e o GitHub CLI:
 
 ```bash
@@ -82,7 +84,7 @@ cp .env.example .env
 nano .env
 ```
 
-Traga também os arquivos do módulo. A pasta `curso-arquivos/` ficou no Windows; no Linux, baixe o repositório do curso uma vez e copie a pasta deste módulo (nos próximos, é só copiar a pasta nova):
+Traga também os arquivos do módulo. O clone do curso e a pasta `curso-arquivos/` ficaram no Windows; no Linux, clone o curso de novo, como no M00B, e copie a pasta deste módulo:
 
 ```bash
 git clone https://github.com/sebagonella/kernel-quest-curso.git ~/kernel-quest-curso
@@ -90,7 +92,11 @@ mkdir -p ~/curso-arquivos
 cp -r ~/kernel-quest-curso/arquivos/M05A ~/curso-arquivos/
 ```
 
-(Nos próximos módulos, um `git -C ~/kernel-quest-curso pull` traz as pastas novas.) Por fim, a branch do módulo e o jogo:
+(Nos próximos módulos, como no Windows, o Ponto de partida traz o `git -C ~/kernel-quest-curso pull` e a cópia da pasta nova.)
+
+Para editar o código, use o VS Code também no Linux. No dual boot ou na máquina virtual, instale com `sudo snap install code --classic` e, dentro dele, a extensão "Python", como no M00A. No WSL2, instale no VS Code do Windows a extensão "WSL" e, no terminal do Ubuntu, rode `code .` dentro da pasta do projeto: o VS Code do Windows abre a pasta do Linux; instale então a extensão "Python" do lado do Linux (botão "Install in WSL: Ubuntu"). Nos dois casos, escolha o interpretador da `.venv` (como no M00A) e confira que o `.vscode/settings.json` veio no clone.
+
+Por fim, a branch do módulo e o jogo:
 
 ```bash
 git switch -c modulo-05a
@@ -148,7 +154,7 @@ No `src/models.py`, logo depois do `import logging`:
 import platform
 ```
 
-E logo depois do `INSTRUCAO_CACADOR` (o parêntese que fecha o Rurik), a persona do Tux:
+E logo depois do `INSTRUCAO_CACADOR` (o parêntese que fecha a persona do seu NPC do M02A), a persona do Tux:
 
 ```python
 # platform.release() é a versão do kernel da máquina: o Tux conhece o chão que pisa.
@@ -244,10 +250,10 @@ ls -la
 
 No Linux, todo arquivo cujo nome começa com ponto fica oculto: o `.env`, o `.gitignore`, a pasta `.git` e a `.venv` só aparecem com o `-a`. O `-l` mostra os detalhes: permissões, dono, tamanho, data. As duas primeiras linhas, `.` e `..`, são a própria pasta e a pasta de cima (`cd ..` sobe um nível; `cd ~` volta para a sua pasta pessoal; `cd -` volta para onde você estava).
 
-**Missão 2: quem lê o `NIVEL_LOG`.** Desde o M03C, o `NIVEL_LOG` do `.env` escolhe quanto detalhe o log mostra. Em que arquivo e em que linha o jogo o lê? O `grep` procura um texto dentro de arquivos: `-r` em todas as subpastas, `-n` com o número da linha, e `--include` só nos arquivos `.py` (para não descer na `.venv`):
+**Missão 2: quem lê o `NIVEL_LOG`.** Desde o M03C, o `NIVEL_LOG` do `.env` escolhe quanto detalhe o log mostra. Em que arquivo e em que linha o jogo o lê? O `grep` procura um texto dentro de arquivos: `-r` em todas as subpastas, `-n` com o número da linha, `--include` só nos arquivos `.py` (nada de imagens ou binários) e `--exclude-dir` pula a pasta `.venv` inteira (sem ela, o `grep` leria também todos os `.py` das bibliotecas instaladas):
 
 ```bash
-grep -rn NIVEL_LOG --include="*.py" .
+grep -rn NIVEL_LOG --include="*.py" --exclude-dir=.venv .
 ```
 
 Três linhas: duas no `main.py` (o import e o `logging.basicConfig`) e uma no `src/config.py`, a que lê do ambiente. Agora junte dois comandos com um **pipe** (`|`): a saída do primeiro vira a entrada do segundo. Quais linhas do `ls -la` falam de `env`? (Repare quem mais aparece: o `grep` acha o texto em qualquer parte do nome.)
@@ -273,7 +279,7 @@ cp ~/curso-arquivos/M05A/run.sh .
 ls -l run.sh
 ```
 
-`-rw-r--r--`: o primeiro caractere é o tipo (`-` arquivo, `d` pasta) e o resto são três trios de `r` (ler), `w` (escrever) e `x` (executar), para o **dono**, o **grupo** e os **outros**. Cada trio também é um número, a soma de `r` = 4, `w` = 2 e `x` = 1:
+`-rw-rw-r--` (em alguns sistemas, como o WSL, `-rw-r--r--`): o primeiro caractere é o tipo (`-` arquivo, `d` pasta) e o resto são três trios de `r` (ler), `w` (escrever) e `x` (executar), para o **dono**, o **grupo** e os **outros**. Cada trio também é um número, a soma de `r` = 4, `w` = 2 e `x` = 1:
 
 | Permissão | rwx | Octal |
 | --- | --- | --- |
@@ -283,7 +289,7 @@ ls -l run.sh
 | Só ler | `r--` | 4 |
 | Nada | `---` | 0 |
 
-Então `-rw-r--r--` é `644`. Dê a permissão de execução e confira:
+Então `-rw-rw-r--` é `664` (e `-rw-r--r--`, `644`). Dê a permissão de execução e confira:
 
 ```bash
 chmod +x run.sh
@@ -291,7 +297,7 @@ ls -l run.sh
 ./run.sh
 ```
 
-Agora é `-rwxr-xr-x`, ou `755`, e o jogo abre. Feche o jogo e leia o `run.sh` (`cat run.sh` mostra o arquivo no terminal):
+Agora é `-rwxrwxr-x`, ou `775` (no WSL, `-rwxr-xr-x`, `755`): o `+x` acrescentou o `x` nos três trios, sem mexer no resto, e o jogo abre. Feche o jogo e leia o `run.sh` (`cat run.sh` mostra o arquivo no terminal):
 
 1. O que o `set -e` muda se a venv não existir?
 2. O `cd "$(dirname "$0")"` leva para onde? Rode `cd ~` e depois `~/rpg-engine/run.sh`: o jogo abre mesmo fora da pasta do projeto. Por quê? (Feche o jogo e volte com `cd -`.)
@@ -319,13 +325,13 @@ Rode `./run.sh` de novo: o jogo abre igual.
 
 ### Passo 7 (Preveja): processos
 
-Todo programa rodando é um **processo**, com um número (o PID). **Preveja:** com o jogo aberto pelo `run.sh`, quantos processos com `python` no nome a lista vai mostrar? Abra o jogo com `./run.sh` e deixe-o aberto. Abra uma segunda aba do terminal (`Ctrl+Shift+T`), entre na pasta do projeto e liste os processos que têm `python` no nome:
+Todo programa rodando é um **processo**, com um número (o PID). **Preveja:** com o jogo aberto pelo `run.sh`, quantas linhas com `main.py` a lista vai mostrar? Abra o jogo com `./run.sh` e deixe-o aberto. Abra uma segunda aba do terminal (`Ctrl+Shift+T`), entre na pasta do projeto e liste os processos que têm `main.py` na linha de comando:
 
 ```bash
-ps aux | grep python
+ps aux | grep main.py
 ```
 
-O `ps aux` lista todos os processos da máquina; o `grep` filtra. Uma das linhas é a do jogo, terminando em `python main.py`; a segunda coluna é o PID. A outra linha é o próprio `grep python`, que também é um processo. Graças ao `exec` do `run.sh`, o jogo é um processo só: sem ele, haveria também um `bash ./run.sh` esperando o Python terminar.
+O `ps aux` lista todos os processos da máquina; o `grep` filtra. Uma das linhas é a do jogo, terminando em `python main.py`; a segunda coluna é o PID. A outra linha é o próprio `grep main.py`, que também é um processo (e também tem `main.py` na linha de comando). Graças ao `exec` do `run.sh`, o jogo é um processo só: sem ele, haveria também um `bash ./run.sh` esperando o Python terminar (que o `ps aux | grep run.sh` mostraria).
 
 Agora o mesmo, ao vivo. Rode `htop` (no Ubuntu ele já vem; se faltar, `sudo apt install htop`). Aperte `F4`, digite `main.py` para filtrar, e veja o consumo de processador e de memória do jogo mudar enquanto você anda pelo mapa. `q` sai.
 
@@ -383,6 +389,7 @@ mv assets/personagens/heroi/Andar.png assets/personagens/heroi/andar.png
 | `wsl --install` funciona, mas a janela do jogo não abre | Windows 10, sem o WSLg | Use a máquina virtual, ou atualize para o Windows 11 |
 | O Tux não aparece | O `TODO` do Passo 4 ainda devolve a lista vazia, ou o jogo está rodando no Windows | Confira a condição com `sys.platform.startswith("linux")` |
 | `ModuleNotFoundError` ao rodar `python main.py` | A venv não está ativa (o terminal usa o Python do sistema) | `source .venv/bin/activate`, ou use o `./run.sh`, que ativa sozinho |
+| `bash\r: No such file or directory` ao rodar o `run.sh` | O arquivo foi copiado do Windows (`/mnt/c/...`), com o fim de linha do Windows (CRLF) | Copie do clone do curso feito no Linux (`~/kernel-quest-curso`), nunca de `/mnt/c` |
 
 ## 🧩 Desafio de Engenharia
 
@@ -390,13 +397,13 @@ Três tarefas de quem cuida de um sistema Linux: um script que falha bem, um tes
 
 1. **O `run.sh` falha com clareza.** Sem o `.env`, o jogo abre sem a chave e só reclama na primeira fala, longe da causa. Complete o `TODO` do `run.sh`: se o arquivo `.env` não existir, escreva uma mensagem que diga o que falta e o comando que resolve, e saia com `exit 1`. Teste renomeando o `.env` (`mv .env .env.guardado`), rodando e desfazendo. Dica: pesquise o `if [ ! -f arquivo ]` do bash.
 2. **Um teste que não depende da máquina.** Copie `~/curso-arquivos/M05A/tests/test_tux.py` para a pasta `tests/`. O teste precisa provar a regra do Tux nos dois sistemas, mas roda numa máquina só: o seu Linux, ou o Ubuntu do CI. A saída é a fixture `monkeypatch` do pytest, que troca um valor só durante o teste e desfaz a troca no fim. O primeiro teste chega pronto e finge o Linux com `monkeypatch.setattr(sys, "platform", "linux")`; leia como ele faz. Complete o segundo: finja o Windows (`"win32"`) e o macOS (`"darwin"`) e prove que o Tux não aparece. Para conferir que o teste pega o erro, troque a condição do `npcs_do_sistema` por `True`, rode o pytest (ele deve falhar) e desfaça.
-3. **Encerrar pelo terminal.** Com o jogo aberto pelo `run.sh` numa aba, encerre-o da outra aba com `kill` e o PID que o `ps aux | grep python` mostrar. Repare no que aparece na aba do jogo.
+3. **Encerrar pelo terminal.** Com o jogo aberto pelo `run.sh` numa aba, encerre-o da outra aba com `kill` e o PID que o `ps aux | grep main.py` mostrar. Repare no que aparece na aba do jogo.
 
 **Critérios de aceite:**
 
 - [ ] `./run.sh` sem o `.env` mostra uma mensagem clara (o que falta e como resolver) e sai com código 1 (confira com `echo $?` logo depois); com o `.env`, abre o jogo.
 - [ ] `tests/test_tux.py` usa o `monkeypatch` e prova que o Tux só existe quando `sys.platform` começa com `linux`; `python -m pytest -q` passa, com dois testes a mais que antes e falha se a condição do Tux for trocada por `True`.
-- [ ] `ps aux | grep python` mostra o jogo rodando, e `kill <PID>` o encerra. Cole as duas saídas na descrição do PR.
+- [ ] `ps aux | grep main.py` mostra o jogo rodando, e `kill <PID>` o encerra. Cole as duas saídas na descrição do PR.
 - [ ] **Nomes que os próximos módulos usam:** `run.sh` na raiz do projeto; `assets/personagens/tux/parado.png` (o M05B troca só essa imagem); `INSTRUCAO_TUX` no `src/models.py`; o `sprite_id` `"tux"`; `npcs_do_sistema()` no `src/controllers.py`.
 - [ ] Você explica ao Engenheiro Sênior, sem ler e em até 5 minutos, os cinco termos das caixas 🔍 (introspecção de sistema, sistema de arquivos, permissões, script de shell e processo). **Sem mentor?** Grave a explicação em áudio e ouça de volta.
 
