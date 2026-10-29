@@ -2,6 +2,10 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.5.0
+
+- M04A — Testes: o modo depuração (F3), o baú da floresta e os testes automáticos com pytest.
+
 ## v0.4.0
 
 Primeira publicação: módulos M00A a M03C (Fundamentos e início de Engenharia).

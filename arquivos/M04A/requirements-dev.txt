@@ -1,0 +1,5 @@
+# Ferramentas de quem desenvolve o jogo (quem só joga precisa apenas do requirements.txt).
+# A linha abaixo instala também tudo o que o jogo usa.
+-r requirements.txt
+# pytest: roda os testes automáticos da pasta tests/.
+pytest>=9.2,<10

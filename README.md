@@ -59,5 +59,6 @@ O curso trata você como um Engenheiro Júnior em treinamento, e o **Engenheiro 
 | [M03A — Moedas e HUD](M03A-moedas-hud.md) | Moedas no chão, o contador no HUD e os ajustes num arquivo só |
 | [M03B — Camadas](M03B-camadas.md) | O mesmo jogo, organizado em camadas, com as regras provadas sem janela |
 | [M03C — Loja do Brok e GitHub](M03C-loja-github.md) | A loja do Brok, a poção e o primeiro Pull Request |
+| [M04A — Testes](M04A-testes.md) | Um baú na floresta, o modo depuração (F3) e as regras provadas por testes automáticos |
 
 Os próximos módulos chegam conforme você avança.
