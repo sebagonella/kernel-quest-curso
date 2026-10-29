@@ -2,6 +2,10 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.8.0
+
+- M05B — Chave SSH e o Tux: o Tux desenhado por você no Piskel, a licença da arte nos créditos e o repositório acessado por chave SSH.
+
 ## v0.7.0
 
 - M05A — Território Pinguim: o jogo no Linux (dual boot, WSL2 ou máquina virtual), o ermitão Tux, o sistema e o kernel no HUD, o `run.sh` e o terminal (arquivos, permissões e processos).
