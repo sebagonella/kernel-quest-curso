@@ -67,3 +67,4 @@ Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir
 | [M03C — Loja do Brok e GitHub](M03C-loja-github.md) | A loja do Brok, a poção e o primeiro Pull Request |
 | [M04A — Testes](M04A-testes.md) | Um baú na floresta, o modo depuração (F3) e as regras provadas por testes automáticos |
 | [M04B — CI e slimes](M04B-ci-slimes.md) | Slimes que tiram vida, corações no HUD e os testes rodando no GitHub a cada push |
+| [M05A — Território Pinguim](M05A-linux.md) | O jogo no Linux, o ermitão Tux e o terminal: arquivos, permissões e processos |

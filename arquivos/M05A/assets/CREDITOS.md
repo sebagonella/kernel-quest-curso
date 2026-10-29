@@ -1,0 +1,16 @@
+# Créditos da arte
+
+| Arquivo | Autor | Fonte (link) | Licença | Modificado? |
+| --- | --- | --- | --- | --- |
+| personagens/, cenarios/ | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Recortado e renomeado; cenários montados a partir dos tilesets |
+| personagens/<id>/, personagens/sombra.png, cenarios/salao.png (porta), cenarios/floresta.png, cenarios/masmorra.png | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado; cenários montados a partir dos tilesets; grade da masmorra desenhada |
+| personagens/<id>/retrato.png, interface/, musicas/, sons/ | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado; aba do nome da caixa de diálogo alargada |
+| fontes/Jersey10-Regular.ttf | Sarah Cadigan-Fried | https://fonts.google.com/specimen/Jersey+10 | OFL (ver fontes/OFL.txt) | Não |
+| mapas/tiles/ | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Tilesets renomeados; grade.png desenhada; mapas .tmx montados com os tiles do pacote |
+| itens/moeda.png, sons/moeda.wav | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado |
+| itens/moeda_runica.png | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Coin2 recolorida (laranja → roxo) |
+| itens/pocao.png, itens/armadura.png, itens/amuleto.png | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado |
+| sons/compra.wav, sons/pocao.wav | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado |
+| itens/bau.png, sons/bau.wav | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado |
+| monstros/slime.png, interface/coracao.png, sons/dano.wav | Pixel-boy e AAA (pacote Ninja Adventure) | https://pixel-boy.itch.io/ninja-adventure-asset-pack | CC0 | Renomeado |
+| personagens/tux/parado.png, personagens/tux/retrato.png | Kernel Quest (provisório, desenhado no estilo do pacote) | — | CC0 | Arte original; o aluno troca pelo seu Tux no M05B |
