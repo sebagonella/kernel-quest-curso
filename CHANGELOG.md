@@ -2,6 +2,12 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.11.0
+
+**O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M06B ~/curso-arquivos/`) e abra o M06B. O módulo instala uma dependência nova (`pip install -r requirements.txt`, no Passo 1).
+
+- M06B — IA que age: a resposta da IA vira dados validados (saída estruturada com Pydantic: fala, emoção e ação), balões de emoção acima dos NPCs, o painel "Receber" da Chave da Masmorra depois da missão do Mago, a loja do Brok aberta pela conversa, o Guarda do Portão e a função que decide o que a IA pode fazer no jogo (defesa contra injeção de prompt).
+
 ## v0.10.0
 
 **O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M06A ~/curso-arquivos/`) e abra o M06A.
