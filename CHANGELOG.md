@@ -2,6 +2,10 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.9.0
+
+- M05C — Portas abertas: um servidor SSH na sua máquina, endurecido (só chave, sem root, lista de usuários), uma noite de ataques lida no log e o Quadro da Vigia no jogo; a exposição real fica na Missão no mundo real (opcional).
+
 ## v0.8.0
 
 - M05B — Chave SSH e o Tux: o Tux desenhado por você no Piskel, a licença da arte nos créditos e o repositório acessado por chave SSH.

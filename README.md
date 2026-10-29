@@ -69,3 +69,4 @@ Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir
 | [M04B — CI e slimes](M04B-ci-slimes.md) | Slimes que tiram vida, corações no HUD e os testes rodando no GitHub a cada push |
 | [M05A — Território Pinguim](M05A-linux.md) | O jogo no Linux, o ermitão Tux e o terminal: arquivos, permissões e processos |
 | [M05B — Chave SSH e o Tux](M05B-ssh-tux.md) | O Tux desenhado por você e o repositório acessado por chave SSH |
+| [M05C — Portas abertas](M05C-portas-abertas.md) | Um servidor SSH endurecido, uma noite de ataques lida no log e o Quadro da Vigia na muralha |

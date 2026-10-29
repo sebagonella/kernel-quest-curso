@@ -1,0 +1,1411 @@
+2026-10-24T20:57:48.120331-03:00 aprendiz-pc sudo:    aluno : TTY=pts/1 ; PWD=/home/aluno ; USER=root ; COMMAND=/usr/sbin/sshd -t
+2026-10-24T20:57:57.168542-03:00 aprendiz-pc sudo:    aluno : TTY=pts/1 ; PWD=/home/aluno ; USER=root ; COMMAND=/usr/bin/systemctl restart ssh
+2026-10-24T20:57:58.170752-03:00 aprendiz-pc sshd[1187]: Received signal 15; terminating.
+2026-10-24T20:57:58.228874-03:00 aprendiz-pc sshd[2204]: Server listening on 0.0.0.0 port 22.
+2026-10-24T20:57:58.228916-03:00 aprendiz-pc sshd[2204]: Server listening on :: port 22.
+2026-10-24T20:58:12.220773-03:00 aprendiz-pc sudo:    aluno : TTY=pts/2 ; PWD=/home/aluno ; USER=root ; COMMAND=/usr/bin/tail -f /var/log/auth.log
+2026-10-24T21:01:40.512870-03:00 aprendiz-pc sshd[2210]: Accepted publickey for aluno from 198.51.100.23 port 40122 ssh2: ED25519 SHA256:Q2xhdmUgZGUgZXhlbXBsbywgbmFvIHVzZQ
+2026-10-24T21:01:40.517280-03:00 aprendiz-pc sshd[2210]: pam_unix(sshd:session): session opened for user aluno(uid=1000) by aluno(uid=0)
+2026-10-24T21:01:40.521972-03:00 aprendiz-pc systemd-logind: New session 7 of user aluno.
+2026-10-24T21:02:11.513091-03:00 aprendiz-pc sshd[2210]: Received disconnect from 198.51.100.23 port 40122:11: disconnected by user
+2026-10-24T21:02:11.513272-03:00 aprendiz-pc sshd[2210]: Disconnected from user aluno 198.51.100.23 port 40122
+2026-10-24T21:02:11.517990-03:00 aprendiz-pc sshd[2210]: pam_unix(sshd:session): session closed for user aluno
+2026-10-24T21:05:17.088412-03:00 aprendiz-pc sshd[2218]: User root from 198.51.100.20 not allowed because not listed in AllowUsers
+2026-10-24T21:05:17.464325-03:00 aprendiz-pc sshd[2218]: Received disconnect from 198.51.100.20 port 51013:11: Bye Bye [preauth]
+2026-10-24T21:05:17.464536-03:00 aprendiz-pc sshd[2218]: Disconnected from invalid user root 198.51.100.20 port 51013 [preauth]
+2026-10-24T21:05:34.507071-03:00 aprendiz-pc sshd[2226]: Connection closed by 198.51.100.126 port 56364 [preauth]
+2026-10-24T21:05:46.758542-03:00 aprendiz-pc sshd[2235]: Invalid user hadoop from 192.0.2.191 port 45263
+2026-10-24T21:05:47.287285-03:00 aprendiz-pc sshd[2235]: Connection closed by invalid user hadoop 192.0.2.191 port 45263 [preauth]
+2026-10-24T21:06:06.711201-03:00 aprendiz-pc sshd[2241]: Invalid user postgres from 203.0.113.199 port 36024
+2026-10-24T21:06:07.401127-03:00 aprendiz-pc sshd[2241]: Connection closed by invalid user postgres 203.0.113.199 port 36024 [preauth]
+2026-10-24T21:06:22.353170-03:00 aprendiz-pc sshd[2249]: Connection closed by 198.51.100.103 port 58893 [preauth]
+2026-10-24T21:06:22.758627-03:00 aprendiz-pc sshd[2258]: Invalid user administrador_do_sistema_principal from 198.51.100.103 port 35778
+2026-10-24T21:06:23.339391-03:00 aprendiz-pc sshd[2258]: Connection closed by invalid user administrador_do_sistema_principal 198.51.100.103 port 35778 [preauth]
+2026-10-24T21:06:24.968818-03:00 aprendiz-pc sshd[2260]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:06:25.840679-03:00 aprendiz-pc sshd[2269]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:06:26.510989-03:00 aprendiz-pc sshd[2269]: Connection closed by invalid user root 198.51.100.103 port 36049 [preauth]
+2026-10-24T21:06:27.748937-03:00 aprendiz-pc sshd[2276]: Invalid user postgres from 198.51.100.103 port 59698
+2026-10-24T21:06:28.154871-03:00 aprendiz-pc sshd[2276]: Connection closed by invalid user postgres 198.51.100.103 port 59698 [preauth]
+2026-10-24T21:06:28.889941-03:00 aprendiz-pc sshd[2283]: Invalid user admin from 198.51.100.103 port 36382
+2026-10-24T21:06:29.780165-03:00 aprendiz-pc sshd[2283]: Connection closed by invalid user admin 198.51.100.103 port 36382 [preauth]
+2026-10-24T21:06:30.277247-03:00 aprendiz-pc sshd[2291]: Invalid user user from 198.51.100.103 port 42183
+2026-10-24T21:06:30.835567-03:00 aprendiz-pc sshd[2291]: Connection closed by invalid user user 198.51.100.103 port 42183 [preauth]
+2026-10-24T21:06:30.690979-03:00 aprendiz-pc sshd[2294]: Invalid user user from 198.51.100.103 port 60931
+2026-10-24T21:06:31.570777-03:00 aprendiz-pc sshd[2294]: Connection closed by invalid user user 198.51.100.103 port 60931 [preauth]
+2026-10-24T21:06:31.577273-03:00 aprendiz-pc sshd[2300]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:06:32.179094-03:00 aprendiz-pc sshd[2300]: Received disconnect from 198.51.100.103 port 39431:11: Bye Bye [preauth]
+2026-10-24T21:06:32.179305-03:00 aprendiz-pc sshd[2300]: Disconnected from invalid user root 198.51.100.103 port 39431 [preauth]
+2026-10-24T21:06:32.617131-03:00 aprendiz-pc sshd[2307]: Invalid user user from 198.51.100.103 port 59919
+2026-10-24T21:06:33.131470-03:00 aprendiz-pc sshd[2307]: Received disconnect from 198.51.100.103 port 59919:11: Bye Bye [preauth]
+2026-10-24T21:06:33.131681-03:00 aprendiz-pc sshd[2307]: Disconnected from invalid user user 198.51.100.103 port 59919 [preauth]
+2026-10-24T21:06:34.851483-03:00 aprendiz-pc sshd[2309]: Invalid user admin from 198.51.100.103 port 54381
+2026-10-24T21:06:35.542911-03:00 aprendiz-pc sshd[2309]: Connection closed by invalid user admin 198.51.100.103 port 54381 [preauth]
+2026-10-24T21:06:35.497504-03:00 aprendiz-pc sshd[2312]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:06:36.189901-03:00 aprendiz-pc sshd[2312]: Connection closed by invalid user root 203.0.113.129 port 34096 [preauth]
+2026-10-24T21:06:56.413158-03:00 aprendiz-pc sshd[2318]: User root from 203.0.113.30 not allowed because not listed in AllowUsers
+2026-10-24T21:06:56.862058-03:00 aprendiz-pc sshd[2318]: Connection closed by invalid user root 203.0.113.30 port 60943 [preauth]
+2026-10-24T21:07:03.545892-03:00 aprendiz-pc sshd[2327]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:07:04.336981-03:00 aprendiz-pc sshd[2327]: Connection closed by invalid user root 203.0.113.219 port 49151 [preauth]
+2026-10-24T21:07:07.958803-03:00 aprendiz-pc sshd[2333]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:07:08.469149-03:00 aprendiz-pc sshd[2333]: Received disconnect from 198.51.100.103 port 60555:11: Bye Bye [preauth]
+2026-10-24T21:07:08.469360-03:00 aprendiz-pc sshd[2333]: Disconnected from invalid user root 198.51.100.103 port 60555 [preauth]
+2026-10-24T21:07:14.886782-03:00 aprendiz-pc sshd[2340]: Invalid user user from 203.0.113.199 port 41822
+2026-10-24T21:07:15.153842-03:00 aprendiz-pc sshd[2340]: Connection closed by invalid user user 203.0.113.199 port 41822 [preauth]
+2026-10-24T21:07:18.867249-03:00 aprendiz-pc sshd[2346]: Invalid user ubnt from 198.51.100.167 port 57817
+2026-10-24T21:07:19.335537-03:00 aprendiz-pc sshd[2346]: Received disconnect from 198.51.100.167 port 57817:11: Bye Bye [preauth]
+2026-10-24T21:07:19.335748-03:00 aprendiz-pc sshd[2346]: Disconnected from invalid user ubnt 198.51.100.167 port 57817 [preauth]
+2026-10-24T21:07:36.041337-03:00 aprendiz-pc sshd[2353]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:07:36.229471-03:00 aprendiz-pc sshd[2353]: Connection closed by invalid user root 203.0.113.219 port 52832 [preauth]
+2026-10-24T21:07:49.501256-03:00 aprendiz-pc sshd[2357]: Invalid user admin from 192.0.2.50 port 59068
+2026-10-24T21:07:50.098144-03:00 aprendiz-pc sshd[2357]: Connection closed by invalid user admin 192.0.2.50 port 59068 [preauth]
+2026-10-24T21:07:50.191074-03:00 aprendiz-pc sshd[2365]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:07:50.911609-03:00 aprendiz-pc sshd[2365]: Connection closed by invalid user root 192.0.2.50 port 48186 [preauth]
+2026-10-24T21:07:51.003562-03:00 aprendiz-pc sshd[2372]: Invalid user ubuntu from 192.0.2.50 port 32808
+2026-10-24T21:07:51.837907-03:00 aprendiz-pc sshd[2372]: Connection closed by invalid user ubuntu 192.0.2.50 port 32808 [preauth]
+2026-10-24T21:07:52.147481-03:00 aprendiz-pc sshd[2381]: Invalid user postgres from 192.0.2.50 port 57732
+2026-10-24T21:07:52.463951-03:00 aprendiz-pc sshd[2381]: Connection closed by invalid user postgres 192.0.2.50 port 57732 [preauth]
+2026-10-24T21:07:54.280212-03:00 aprendiz-pc sshd[2385]: Invalid user debian from 192.0.2.50 port 41280
+2026-10-24T21:07:54.737291-03:00 aprendiz-pc sshd[2385]: Connection closed by invalid user debian 192.0.2.50 port 41280 [preauth]
+2026-10-24T21:07:55.346171-03:00 aprendiz-pc sshd[2391]: Invalid user usu\303\241rio from 192.0.2.50 port 34827
+2026-10-24T21:07:55.755086-03:00 aprendiz-pc sshd[2391]: Connection closed by invalid user usu\303\241rio 192.0.2.50 port 34827 [preauth]
+2026-10-24T21:07:56.226468-03:00 aprendiz-pc sshd[2393]: Invalid user ubnt from 192.0.2.50 port 54422
+2026-10-24T21:07:56.976701-03:00 aprendiz-pc sshd[2393]: Received disconnect from 192.0.2.50 port 54422:11: Bye Bye [preauth]
+2026-10-24T21:07:56.976912-03:00 aprendiz-pc sshd[2393]: Disconnected from invalid user ubnt 192.0.2.50 port 54422 [preauth]
+2026-10-24T21:07:57.628552-03:00 aprendiz-pc sshd[2396]: Invalid user ubuntu from 203.0.113.129 port 38538
+2026-10-24T21:07:58.206003-03:00 aprendiz-pc sshd[2396]: Connection closed by invalid user ubuntu 203.0.113.129 port 38538 [preauth]
+2026-10-24T21:07:58.636656-03:00 aprendiz-pc sshd[2398]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:07:59.043428-03:00 aprendiz-pc sshd[2398]: Connection closed by invalid user root 203.0.113.129 port 47759 [preauth]
+2026-10-24T21:07:59.533378-03:00 aprendiz-pc sshd[2407]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:08:00.299644-03:00 aprendiz-pc sshd[2407]: Received disconnect from 203.0.113.129 port 59594:11: Bye Bye [preauth]
+2026-10-24T21:08:00.299855-03:00 aprendiz-pc sshd[2407]: Disconnected from invalid user root 203.0.113.129 port 59594 [preauth]
+2026-10-24T21:08:00.384114-03:00 aprendiz-pc sshd[2412]: Invalid user admin from 203.0.113.129 port 34753
+2026-10-24T21:08:01.082954-03:00 aprendiz-pc sshd[2412]: Connection closed by invalid user admin 203.0.113.129 port 34753 [preauth]
+2026-10-24T21:08:01.468210-03:00 aprendiz-pc sshd[2418]: Invalid user x$(reboot) from 203.0.113.129 port 47443
+2026-10-24T21:08:02.343457-03:00 aprendiz-pc sshd[2418]: Received disconnect from 203.0.113.129 port 47443:11: Bye Bye [preauth]
+2026-10-24T21:08:02.343668-03:00 aprendiz-pc sshd[2418]: Disconnected from invalid user x$(reboot) 203.0.113.129 port 47443 [preauth]
+2026-10-24T21:08:02.236951-03:00 aprendiz-pc sshd[2421]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:08:02.998579-03:00 aprendiz-pc sshd[2421]: Received disconnect from 203.0.113.129 port 46773:11: Bye Bye [preauth]
+2026-10-24T21:08:02.998790-03:00 aprendiz-pc sshd[2421]: Disconnected from invalid user root 203.0.113.129 port 46773 [preauth]
+2026-10-24T21:08:03.128291-03:00 aprendiz-pc sshd[2429]: Invalid user guest from 203.0.113.129 port 35517
+2026-10-24T21:08:03.893559-03:00 aprendiz-pc sshd[2429]: Connection closed by invalid user guest 203.0.113.129 port 35517 [preauth]
+2026-10-24T21:08:05.486735-03:00 aprendiz-pc sshd[2435]: Invalid user support from 203.0.113.129 port 39614
+2026-10-24T21:08:05.647267-03:00 aprendiz-pc sshd[2435]: Connection closed by invalid user support 203.0.113.129 port 39614 [preauth]
+2026-10-24T21:08:07.628752-03:00 aprendiz-pc sshd[2444]: Invalid user ubuntu from 203.0.113.129 port 48122
+2026-10-24T21:08:08.250477-03:00 aprendiz-pc sshd[2444]: Connection closed by invalid user ubuntu 203.0.113.129 port 48122 [preauth]
+2026-10-24T21:08:09.785120-03:00 aprendiz-pc sshd[2450]: Invalid user admin from 198.51.100.103 port 40776
+2026-10-24T21:08:10.376776-03:00 aprendiz-pc sshd[2450]: Received disconnect from 198.51.100.103 port 40776:11: Bye Bye [preauth]
+2026-10-24T21:08:10.376987-03:00 aprendiz-pc sshd[2450]: Disconnected from invalid user admin 198.51.100.103 port 40776 [preauth]
+2026-10-24T21:08:25.678733-03:00 aprendiz-pc sshd[2456]: User root from 203.0.113.45 not allowed because not listed in AllowUsers
+2026-10-24T21:08:26.075751-03:00 aprendiz-pc sshd[2456]: Received disconnect from 203.0.113.45 port 42724:11: Bye Bye [preauth]
+2026-10-24T21:08:26.075962-03:00 aprendiz-pc sshd[2456]: Disconnected from invalid user root 203.0.113.45 port 42724 [preauth]
+2026-10-24T21:08:37.129952-03:00 aprendiz-pc sshd[2459]: Invalid user debian from 203.0.113.144 port 37403
+2026-10-24T21:08:37.894607-03:00 aprendiz-pc sshd[2459]: Connection closed by invalid user debian 203.0.113.144 port 37403 [preauth]
+2026-10-24T21:08:58.235706-03:00 aprendiz-pc sshd[2463]: Invalid user pi from 198.51.100.219 port 53858
+2026-10-24T21:08:58.964052-03:00 aprendiz-pc sshd[2463]: Received disconnect from 198.51.100.219 port 53858:11: Bye Bye [preauth]
+2026-10-24T21:08:58.964263-03:00 aprendiz-pc sshd[2463]: Disconnected from invalid user pi 198.51.100.219 port 53858 [preauth]
+2026-10-24T21:09:04.143457-03:00 aprendiz-pc sshd[2471]: Connection closed by 203.0.113.129 port 52163 [preauth]
+2026-10-24T21:09:05.472865-03:00 aprendiz-pc sshd[2477]: Invalid user mysql from 203.0.113.129 port 35069
+2026-10-24T21:09:05.761541-03:00 aprendiz-pc sshd[2477]: Received disconnect from 203.0.113.129 port 35069:11: Bye Bye [preauth]
+2026-10-24T21:09:05.761752-03:00 aprendiz-pc sshd[2477]: Disconnected from invalid user mysql 203.0.113.129 port 35069 [preauth]
+2026-10-24T21:09:06.594454-03:00 aprendiz-pc sshd[2483]: Invalid user admin from 203.0.113.129 port 38316
+2026-10-24T21:09:07.203838-03:00 aprendiz-pc sshd[2483]: Connection closed by invalid user admin 203.0.113.129 port 38316 [preauth]
+2026-10-24T21:09:08.018087-03:00 aprendiz-pc sshd[2488]: Invalid user user from 203.0.113.129 port 49233
+2026-10-24T21:09:08.508701-03:00 aprendiz-pc sshd[2488]: Connection closed by invalid user user 203.0.113.129 port 49233 [preauth]
+2026-10-24T21:09:10.124793-03:00 aprendiz-pc sshd[2492]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:09:10.337833-03:00 aprendiz-pc sshd[2492]: Received disconnect from 203.0.113.129 port 56126:11: Bye Bye [preauth]
+2026-10-24T21:09:10.338044-03:00 aprendiz-pc sshd[2492]: Disconnected from invalid user root 203.0.113.129 port 56126 [preauth]
+2026-10-24T21:09:10.815646-03:00 aprendiz-pc sshd[2498]: Invalid user jenkins from 203.0.113.129 port 39934
+2026-10-24T21:09:11.594214-03:00 aprendiz-pc sshd[2498]: Connection closed by invalid user jenkins 203.0.113.129 port 39934 [preauth]
+2026-10-24T21:09:13.266160-03:00 aprendiz-pc sshd[2506]: Invalid user user from 203.0.113.129 port 51385
+2026-10-24T21:09:13.793352-03:00 aprendiz-pc sshd[2506]: Connection closed by invalid user user 203.0.113.129 port 51385 [preauth]
+2026-10-24T21:09:15.737962-03:00 aprendiz-pc sshd[2509]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:09:16.640031-03:00 aprendiz-pc sshd[2517]: Invalid user guest from 203.0.113.129 port 59625
+2026-10-24T21:09:17.379450-03:00 aprendiz-pc sshd[2517]: Connection closed by invalid user guest 203.0.113.129 port 59625 [preauth]
+2026-10-24T21:09:18.446083-03:00 aprendiz-pc sshd[2526]: Invalid user admin from 203.0.113.129 port 49823
+2026-10-24T21:09:18.658786-03:00 aprendiz-pc sshd[2526]: Received disconnect from 203.0.113.129 port 49823:11: Bye Bye [preauth]
+2026-10-24T21:09:18.658997-03:00 aprendiz-pc sshd[2526]: Disconnected from invalid user admin 203.0.113.129 port 49823 [preauth]
+2026-10-24T21:09:19.468204-03:00 aprendiz-pc sshd[2531]: Invalid user admin from 203.0.113.129 port 47609
+2026-10-24T21:09:20.209712-03:00 aprendiz-pc sshd[2531]: Connection closed by invalid user admin 203.0.113.129 port 47609 [preauth]
+2026-10-24T21:09:20.662072-03:00 aprendiz-pc sshd[2539]: Invalid user ubuntu from 203.0.113.234 port 35387
+2026-10-24T21:09:21.171453-03:00 aprendiz-pc sshd[2539]: Received disconnect from 203.0.113.234 port 35387:11: Bye Bye [preauth]
+2026-10-24T21:09:21.171664-03:00 aprendiz-pc sshd[2539]: Disconnected from invalid user ubuntu 203.0.113.234 port 35387 [preauth]
+2026-10-24T21:09:32.045720-03:00 aprendiz-pc sshd[2546]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:09:40.339612-03:00 aprendiz-pc sshd[2555]: Invalid user  from 192.0.2.87 port 48551
+2026-10-24T21:09:40.499533-03:00 aprendiz-pc sshd[2555]: Connection closed by invalid user  192.0.2.87 port 48551 [preauth]
+2026-10-24T21:09:46.412874-03:00 aprendiz-pc sshd[2557]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:09:46.821429-03:00 aprendiz-pc sshd[2557]: Connection closed by invalid user root 203.0.113.234 port 51095 [preauth]
+2026-10-24T21:09:56.036439-03:00 aprendiz-pc sshd[2566]: Invalid user guest from 198.51.100.66 port 52600
+2026-10-24T21:09:56.767393-03:00 aprendiz-pc sshd[2566]: Received disconnect from 198.51.100.66 port 52600:11: Bye Bye [preauth]
+2026-10-24T21:09:56.767604-03:00 aprendiz-pc sshd[2566]: Disconnected from invalid user guest 198.51.100.66 port 52600 [preauth]
+2026-10-24T21:09:58.500163-03:00 aprendiz-pc sshd[2572]: Invalid user hadoop from 192.0.2.104 port 56389
+2026-10-24T21:09:59.020491-03:00 aprendiz-pc sshd[2572]: Connection closed by invalid user hadoop 192.0.2.104 port 56389 [preauth]
+2026-10-24T21:10:19.263481-03:00 aprendiz-pc sshd[2581]: Invalid user test from 203.0.113.20 port 37862
+2026-10-24T21:10:19.536166-03:00 aprendiz-pc sshd[2581]: Connection closed by invalid user test 203.0.113.20 port 37862 [preauth]
+2026-10-24T21:10:20.995063-03:00 aprendiz-pc sshd[2585]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:10:21.226577-03:00 aprendiz-pc sshd[2585]: Connection closed by invalid user root 203.0.113.20 port 56503 [preauth]
+2026-10-24T21:10:23.348335-03:00 aprendiz-pc sshd[2591]: Invalid user admin from 203.0.113.20 port 44214
+2026-10-24T21:10:23.550071-03:00 aprendiz-pc sshd[2591]: Connection closed by invalid user admin 203.0.113.20 port 44214 [preauth]
+2026-10-24T21:10:25.077838-03:00 aprendiz-pc sshd[2597]: Invalid user postgres from 203.0.113.20 port 44041
+2026-10-24T21:10:25.486214-03:00 aprendiz-pc sshd[2597]: Connection closed by invalid user postgres 203.0.113.20 port 44041 [preauth]
+2026-10-24T21:10:27.009510-03:00 aprendiz-pc sshd[2601]: Invalid user ubuntu from 203.0.113.219 port 50849
+2026-10-24T21:10:27.208724-03:00 aprendiz-pc sshd[2601]: Connection closed by invalid user ubuntu 203.0.113.219 port 50849 [preauth]
+2026-10-24T21:10:31.378368-03:00 aprendiz-pc sshd[2603]: Invalid user admin from 198.51.100.167 port 42596
+2026-10-24T21:10:32.065559-03:00 aprendiz-pc sshd[2603]: Connection closed by invalid user admin 198.51.100.167 port 42596 [preauth]
+2026-10-24T21:10:33.356987-03:00 aprendiz-pc sshd[2608]: Invalid user admin from 198.51.100.167 port 58641
+2026-10-24T21:10:33.528020-03:00 aprendiz-pc sshd[2608]: Connection closed by invalid user admin 198.51.100.167 port 58641 [preauth]
+2026-10-24T21:10:34.536808-03:00 aprendiz-pc sshd[2617]: Invalid user admin from 198.51.100.167 port 46428
+2026-10-24T21:10:34.763926-03:00 aprendiz-pc sshd[2617]: Connection closed by invalid user admin 198.51.100.167 port 46428 [preauth]
+2026-10-24T21:10:36.282829-03:00 aprendiz-pc sshd[2626]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:10:36.688902-03:00 aprendiz-pc sshd[2626]: Connection closed by invalid user root 198.51.100.167 port 43848 [preauth]
+2026-10-24T21:10:38.503190-03:00 aprendiz-pc sshd[2630]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:10:38.798472-03:00 aprendiz-pc sshd[2630]: Received disconnect from 198.51.100.167 port 48404:11: Bye Bye [preauth]
+2026-10-24T21:10:38.798683-03:00 aprendiz-pc sshd[2630]: Disconnected from invalid user root 198.51.100.167 port 48404 [preauth]
+2026-10-24T21:10:39.732085-03:00 aprendiz-pc sshd[2637]: Invalid user admin from 198.51.100.167 port 46936
+2026-10-24T21:10:40.308715-03:00 aprendiz-pc sshd[2637]: Received disconnect from 198.51.100.167 port 46936:11: Bye Bye [preauth]
+2026-10-24T21:10:40.308926-03:00 aprendiz-pc sshd[2637]: Disconnected from invalid user admin 198.51.100.167 port 46936 [preauth]
+2026-10-24T21:10:40.698800-03:00 aprendiz-pc sshd[2641]: Invalid user test from 198.51.100.167 port 53403
+2026-10-24T21:10:41.477017-03:00 aprendiz-pc sshd[2641]: Connection closed by invalid user test 198.51.100.167 port 53403 [preauth]
+2026-10-24T21:10:42.141414-03:00 aprendiz-pc sshd[2643]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:10:42.538503-03:00 aprendiz-pc sshd[2643]: Connection closed by invalid user root 198.51.100.167 port 60682 [preauth]
+2026-10-24T21:10:44.556262-03:00 aprendiz-pc sshd[2648]: Invalid user ubnt from 198.51.100.167 port 45723
+2026-10-24T21:10:45.115547-03:00 aprendiz-pc sshd[2648]: Connection closed by invalid user ubnt 198.51.100.167 port 45723 [preauth]
+2026-10-24T21:10:45.645189-03:00 aprendiz-pc sshd[2653]: Invalid user oracle from 198.51.100.167 port 48296
+2026-10-24T21:10:46.508284-03:00 aprendiz-pc sshd[2653]: Connection closed by invalid user oracle 198.51.100.167 port 48296 [preauth]
+2026-10-24T21:10:47.001073-03:00 aprendiz-pc sshd[2655]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:10:47.422509-03:00 aprendiz-pc sshd[2655]: Received disconnect from 203.0.113.219 port 47091:11: Bye Bye [preauth]
+2026-10-24T21:10:47.422720-03:00 aprendiz-pc sshd[2655]: Disconnected from invalid user root 203.0.113.219 port 47091 [preauth]
+2026-10-24T21:10:58.073400-03:00 aprendiz-pc sshd[2663]: Invalid user support from 198.51.100.103 port 58236
+2026-10-24T21:10:58.885822-03:00 aprendiz-pc sshd[2663]: Connection closed by invalid user support 198.51.100.103 port 58236 [preauth]
+2026-10-24T21:11:16.350972-03:00 aprendiz-pc sshd[2665]: Invalid user deploy from 198.51.100.118 port 37197
+2026-10-24T21:11:16.629418-03:00 aprendiz-pc sshd[2665]: Connection closed by invalid user deploy 198.51.100.118 port 37197 [preauth]
+2026-10-24T21:11:29.019590-03:00 aprendiz-pc sshd[2670]: Invalid user postgres from 192.0.2.50 port 50306
+2026-10-24T21:11:29.873972-03:00 aprendiz-pc sshd[2670]: Connection closed by invalid user postgres 192.0.2.50 port 50306 [preauth]
+2026-10-24T21:11:29.991861-03:00 aprendiz-pc sshd[2672]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:11:30.230795-03:00 aprendiz-pc sshd[2672]: Received disconnect from 192.0.2.50 port 37192:11: Bye Bye [preauth]
+2026-10-24T21:11:30.231006-03:00 aprendiz-pc sshd[2672]: Disconnected from invalid user root 192.0.2.50 port 37192 [preauth]
+2026-10-24T21:11:32.478634-03:00 aprendiz-pc sshd[2681]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:11:32.816210-03:00 aprendiz-pc sshd[2681]: Connection closed by invalid user root 192.0.2.50 port 37012 [preauth]
+2026-10-24T21:11:33.837654-03:00 aprendiz-pc sshd[2686]: Invalid user deploy from 192.0.2.50 port 55601
+2026-10-24T21:11:34.606273-03:00 aprendiz-pc sshd[2686]: Received disconnect from 192.0.2.50 port 55601:11: Bye Bye [preauth]
+2026-10-24T21:11:34.606484-03:00 aprendiz-pc sshd[2686]: Disconnected from invalid user deploy 192.0.2.50 port 55601 [preauth]
+2026-10-24T21:11:34.527787-03:00 aprendiz-pc sshd[2690]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:11:35.148286-03:00 aprendiz-pc sshd[2690]: Connection closed by invalid user root 198.51.100.103 port 45820 [preauth]
+2026-10-24T21:11:50.210921-03:00 aprendiz-pc sshd[2695]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:11:51.084817-03:00 aprendiz-pc sshd[2695]: Received disconnect from 203.0.113.234 port 37694:11: Bye Bye [preauth]
+2026-10-24T21:11:51.085028-03:00 aprendiz-pc sshd[2695]: Disconnected from invalid user root 203.0.113.234 port 37694 [preauth]
+2026-10-24T21:11:56.737269-03:00 aprendiz-pc sshd[2700]: User root from 192.0.2.224 not allowed because not listed in AllowUsers
+2026-10-24T21:11:57.390768-03:00 aprendiz-pc sshd[2700]: Received disconnect from 192.0.2.224 port 46040:11: Bye Bye [preauth]
+2026-10-24T21:11:57.390979-03:00 aprendiz-pc sshd[2700]: Disconnected from invalid user root 192.0.2.224 port 46040 [preauth]
+2026-10-24T21:12:18.025284-03:00 aprendiz-pc sshd[2709]: Invalid user ubnt from 203.0.113.46 port 43855
+2026-10-24T21:12:18.632039-03:00 aprendiz-pc sshd[2709]: Connection closed by invalid user ubnt 203.0.113.46 port 43855 [preauth]
+2026-10-24T21:12:36.500120-03:00 aprendiz-pc sshd[2711]: Invalid user guest from 203.0.113.234 port 37319
+2026-10-24T21:12:37.338440-03:00 aprendiz-pc sshd[2711]: Connection closed by invalid user guest 203.0.113.234 port 37319 [preauth]
+2026-10-24T21:12:38.991836-03:00 aprendiz-pc sshd[2715]: Invalid user ubuntu from 192.0.2.122 port 46841
+2026-10-24T21:12:39.782628-03:00 aprendiz-pc sshd[2715]: Connection closed by invalid user ubuntu 192.0.2.122 port 46841 [preauth]
+2026-10-24T21:12:45.449394-03:00 aprendiz-pc sshd[2717]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:12:45.606543-03:00 aprendiz-pc sshd[2717]: Received disconnect from 192.0.2.87 port 36244:11: Bye Bye [preauth]
+2026-10-24T21:12:45.606754-03:00 aprendiz-pc sshd[2717]: Disconnected from invalid user root 192.0.2.87 port 36244 [preauth]
+2026-10-24T21:12:54.879141-03:00 aprendiz-pc sshd[2721]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:12:55.045434-03:00 aprendiz-pc sshd[2721]: Connection closed by invalid user root 198.51.100.167 port 48709 [preauth]
+2026-10-24T21:13:07.777961-03:00 aprendiz-pc sshd[2723]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:13:08.002701-03:00 aprendiz-pc sshd[2723]: Connection closed by invalid user root 192.0.2.50 port 35708 [preauth]
+2026-10-24T21:13:21.690692-03:00 aprendiz-pc sshd[2732]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:13:21.872564-03:00 aprendiz-pc sshd[2732]: Connection closed by invalid user root 203.0.113.20 port 59297 [preauth]
+2026-10-24T21:13:22.324320-03:00 aprendiz-pc sshd[2737]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:13:22.773923-03:00 aprendiz-pc sshd[2737]: Connection closed by invalid user root 203.0.113.20 port 35513 [preauth]
+2026-10-24T21:13:24.654337-03:00 aprendiz-pc sshd[2742]: Invalid user oper@dor from 203.0.113.20 port 55700
+2026-10-24T21:13:24.839410-03:00 aprendiz-pc sshd[2742]: Received disconnect from 203.0.113.20 port 55700:11: Bye Bye [preauth]
+2026-10-24T21:13:24.839621-03:00 aprendiz-pc sshd[2742]: Disconnected from invalid user oper@dor 203.0.113.20 port 55700 [preauth]
+2026-10-24T21:13:27.130744-03:00 aprendiz-pc sshd[2747]: Invalid user ubuntu from 203.0.113.20 port 41996
+2026-10-24T21:13:27.364821-03:00 aprendiz-pc sshd[2747]: Connection closed by invalid user ubuntu 203.0.113.20 port 41996 [preauth]
+2026-10-24T21:13:28.122241-03:00 aprendiz-pc sshd[2750]: Connection closed by 203.0.113.20 port 59897 [preauth]
+2026-10-24T21:13:30.188531-03:00 aprendiz-pc sshd[2757]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:13:30.634124-03:00 aprendiz-pc sshd[2757]: Connection closed by invalid user root 203.0.113.20 port 47498 [preauth]
+2026-10-24T21:13:32.073582-03:00 aprendiz-pc sshd[2760]: banner exchange: Connection from 203.0.113.46 port 50888: invalid format
+2026-10-24T21:13:34.534640-03:00 aprendiz-pc sshd[2764]: Invalid user mysql from 203.0.113.46 port 48047
+2026-10-24T21:13:34.957952-03:00 aprendiz-pc sshd[2764]: Connection closed by invalid user mysql 203.0.113.46 port 48047 [preauth]
+2026-10-24T21:13:36.318753-03:00 aprendiz-pc sshd[2767]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:13:36.699157-03:00 aprendiz-pc sshd[2767]: Connection closed by invalid user root 203.0.113.46 port 33654 [preauth]
+2026-10-24T21:13:37.957481-03:00 aprendiz-pc sshd[2769]: Invalid user oper@dor from 203.0.113.46 port 58924
+2026-10-24T21:13:38.801529-03:00 aprendiz-pc sshd[2769]: Connection closed by invalid user oper@dor 203.0.113.46 port 58924 [preauth]
+2026-10-24T21:13:39.109221-03:00 aprendiz-pc sshd[2778]: Invalid user x$(reboot) from 203.0.113.46 port 49967
+2026-10-24T21:13:39.289680-03:00 aprendiz-pc sshd[2778]: Connection closed by invalid user x$(reboot) 203.0.113.46 port 49967 [preauth]
+2026-10-24T21:13:40.154711-03:00 aprendiz-pc sshd[2786]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:13:41.716043-03:00 aprendiz-pc sshd[2790]: Invalid user pi from 203.0.113.46 port 55096
+2026-10-24T21:13:41.921725-03:00 aprendiz-pc sshd[2790]: Received disconnect from 203.0.113.46 port 55096:11: Bye Bye [preauth]
+2026-10-24T21:13:41.921936-03:00 aprendiz-pc sshd[2790]: Disconnected from invalid user pi 203.0.113.46 port 55096 [preauth]
+2026-10-24T21:13:42.584920-03:00 aprendiz-pc sshd[2799]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:13:43.233533-03:00 aprendiz-pc sshd[2799]: Connection closed by invalid user root 203.0.113.46 port 38720 [preauth]
+2026-10-24T21:13:44.985723-03:00 aprendiz-pc sshd[2805]: Invalid user ubnt from 203.0.113.144 port 37673
+2026-10-24T21:13:45.374465-03:00 aprendiz-pc sshd[2805]: Connection closed by invalid user ubnt 203.0.113.144 port 37673 [preauth]
+2026-10-24T21:13:45.737181-03:00 aprendiz-pc sshd[2814]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:13:46.419813-03:00 aprendiz-pc sshd[2814]: Connection closed by invalid user root 203.0.113.144 port 47296 [preauth]
+2026-10-24T21:13:48.047611-03:00 aprendiz-pc sshd[2816]: Invalid user admin from 203.0.113.144 port 52148
+2026-10-24T21:13:48.455955-03:00 aprendiz-pc sshd[2816]: Connection closed by invalid user admin 203.0.113.144 port 52148 [preauth]
+2026-10-24T21:13:50.076644-03:00 aprendiz-pc sshd[2821]: banner exchange: Connection from 203.0.113.144 port 56680: invalid format
+2026-10-24T21:13:51.390348-03:00 aprendiz-pc sshd[2825]: Invalid user support from 203.0.113.144 port 47853
+2026-10-24T21:13:52.072986-03:00 aprendiz-pc sshd[2825]: Received disconnect from 203.0.113.144 port 47853:11: Bye Bye [preauth]
+2026-10-24T21:13:52.073197-03:00 aprendiz-pc sshd[2825]: Disconnected from invalid user support 203.0.113.144 port 47853 [preauth]
+2026-10-24T21:13:52.119745-03:00 aprendiz-pc sshd[2834]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:13:52.574362-03:00 aprendiz-pc sshd[2834]: Connection closed by invalid user root 203.0.113.144 port 42853 [preauth]
+2026-10-24T21:13:52.687241-03:00 aprendiz-pc sshd[2840]: Invalid user admin from 203.0.113.144 port 38579
+2026-10-24T21:13:53.227519-03:00 aprendiz-pc sshd[2840]: Connection closed by invalid user admin 203.0.113.144 port 38579 [preauth]
+2026-10-24T21:13:53.598235-03:00 aprendiz-pc sshd[2846]: Invalid user usu\303\241rio from 203.0.113.144 port 59249
+2026-10-24T21:13:53.918202-03:00 aprendiz-pc sshd[2846]: Connection closed by invalid user usu\303\241rio 203.0.113.144 port 59249 [preauth]
+2026-10-24T21:13:55.222492-03:00 aprendiz-pc sshd[2854]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:13:55.844450-03:00 aprendiz-pc sshd[2854]: Connection closed by invalid user root 203.0.113.144 port 40831 [preauth]
+2026-10-24T21:13:57.626589-03:00 aprendiz-pc sshd[2858]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:13:58.342123-03:00 aprendiz-pc sshd[2858]: Connection closed by invalid user root 203.0.113.129 port 53916 [preauth]
+2026-10-24T21:13:59.148959-03:00 aprendiz-pc sshd[2864]: Invalid user test from 203.0.113.129 port 39822
+2026-10-24T21:13:59.461497-03:00 aprendiz-pc sshd[2864]: Connection closed by invalid user test 203.0.113.129 port 39822 [preauth]
+2026-10-24T21:14:00.082747-03:00 aprendiz-pc sshd[2870]: Invalid user ubuntu from 203.0.113.129 port 58014
+2026-10-24T21:14:00.760571-03:00 aprendiz-pc sshd[2870]: Connection closed by invalid user ubuntu 203.0.113.129 port 58014 [preauth]
+2026-10-24T21:14:01.236791-03:00 aprendiz-pc sshd[2879]: Connection closed by 203.0.113.129 port 45471 [preauth]
+2026-10-24T21:14:03.559549-03:00 aprendiz-pc sshd[2885]: Invalid user admin from 203.0.113.129 port 33122
+2026-10-24T21:14:03.888774-03:00 aprendiz-pc sshd[2885]: Connection closed by invalid user admin 203.0.113.129 port 33122 [preauth]
+2026-10-24T21:14:04.338847-03:00 aprendiz-pc sshd[2894]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:14:04.662620-03:00 aprendiz-pc sshd[2894]: Connection closed by invalid user root 203.0.113.129 port 34175 [preauth]
+2026-10-24T21:14:04.782852-03:00 aprendiz-pc sshd[2903]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:14:05.424250-03:00 aprendiz-pc sshd[2903]: Connection closed by invalid user root 198.51.100.167 port 36335 [preauth]
+2026-10-24T21:14:11.926855-03:00 aprendiz-pc sshd[2905]: Invalid user oracle from 203.0.113.144 port 55383
+2026-10-24T21:14:12.534133-03:00 aprendiz-pc sshd[2905]: Connection closed by invalid user oracle 203.0.113.144 port 55383 [preauth]
+2026-10-24T21:14:14.070788-03:00 aprendiz-pc sshd[2913]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:14:16.166520-03:00 aprendiz-pc sshd[2922]: Invalid user pi from 203.0.113.144 port 46635
+2026-10-24T21:14:16.970815-03:00 aprendiz-pc sshd[2922]: Connection closed by invalid user pi 203.0.113.144 port 46635 [preauth]
+2026-10-24T21:14:18.068605-03:00 aprendiz-pc sshd[2929]: banner exchange: Connection from 203.0.113.144 port 43884: invalid format
+2026-10-24T21:14:19.956010-03:00 aprendiz-pc sshd[2938]: Invalid user postgres from 203.0.113.144 port 35889
+2026-10-24T21:14:20.476388-03:00 aprendiz-pc sshd[2938]: Connection closed by invalid user postgres 203.0.113.144 port 35889 [preauth]
+2026-10-24T21:14:21.259263-03:00 aprendiz-pc sshd[2940]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:14:22.001040-03:00 aprendiz-pc sshd[2940]: Received disconnect from 203.0.113.144 port 42434:11: Bye Bye [preauth]
+2026-10-24T21:14:22.001251-03:00 aprendiz-pc sshd[2940]: Disconnected from invalid user root 203.0.113.144 port 42434 [preauth]
+2026-10-24T21:14:22.747151-03:00 aprendiz-pc sshd[2948]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:14:22.984703-03:00 aprendiz-pc sshd[2948]: Connection closed by invalid user root 203.0.113.144 port 56345 [preauth]
+2026-10-24T21:14:23.851643-03:00 aprendiz-pc sshd[2952]: Invalid user  from 203.0.113.144 port 39408
+2026-10-24T21:14:24.627912-03:00 aprendiz-pc sshd[2952]: Connection closed by invalid user  203.0.113.144 port 39408 [preauth]
+2026-10-24T21:14:24.660956-03:00 aprendiz-pc sshd[2961]: Connection closed by 203.0.113.144 port 57315 [preauth]
+2026-10-24T21:14:26.615716-03:00 aprendiz-pc sshd[2969]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:14:27.152418-03:00 aprendiz-pc sshd[2969]: Received disconnect from 203.0.113.144 port 49905:11: Bye Bye [preauth]
+2026-10-24T21:14:27.152629-03:00 aprendiz-pc sshd[2969]: Disconnected from invalid user root 203.0.113.144 port 49905 [preauth]
+2026-10-24T21:14:27.188299-03:00 aprendiz-pc sshd[2973]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:14:28.396573-03:00 aprendiz-pc sshd[2976]: Invalid user admin from 203.0.113.144 port 47026
+2026-10-24T21:14:28.612976-03:00 aprendiz-pc sshd[2976]: Received disconnect from 203.0.113.144 port 47026:11: Bye Bye [preauth]
+2026-10-24T21:14:28.613187-03:00 aprendiz-pc sshd[2976]: Disconnected from invalid user admin 203.0.113.144 port 47026 [preauth]
+2026-10-24T21:14:30.602872-03:00 aprendiz-pc sshd[2983]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:14:31.210375-03:00 aprendiz-pc sshd[2983]: Connection closed by invalid user root 203.0.113.144 port 46823 [preauth]
+2026-10-24T21:14:32.811859-03:00 aprendiz-pc sshd[2987]: Invalid user git from 203.0.113.234 port 34326
+2026-10-24T21:14:33.470271-03:00 aprendiz-pc sshd[2987]: Connection closed by invalid user git 203.0.113.234 port 34326 [preauth]
+2026-10-24T21:14:44.718992-03:00 aprendiz-pc sshd[2989]: Invalid user jenkins from 198.51.100.118 port 50149
+2026-10-24T21:14:45.069030-03:00 aprendiz-pc sshd[2989]: Received disconnect from 198.51.100.118 port 50149:11: Bye Bye [preauth]
+2026-10-24T21:14:45.069241-03:00 aprendiz-pc sshd[2989]: Disconnected from invalid user jenkins 198.51.100.118 port 50149 [preauth]
+2026-10-24T21:14:45.272298-03:00 aprendiz-pc sshd[2993]: Invalid user user from 198.51.100.118 port 37841
+2026-10-24T21:14:45.741999-03:00 aprendiz-pc sshd[2993]: Connection closed by invalid user user 198.51.100.118 port 37841 [preauth]
+2026-10-24T21:14:46.257841-03:00 aprendiz-pc sshd[3002]: User root from 198.51.100.118 not allowed because not listed in AllowUsers
+2026-10-24T21:14:46.588115-03:00 aprendiz-pc sshd[3002]: Connection closed by invalid user root 198.51.100.118 port 50411 [preauth]
+2026-10-24T21:14:47.488643-03:00 aprendiz-pc sshd[3008]: Connection closed by 198.51.100.118 port 43252 [preauth]
+2026-10-24T21:14:49.684581-03:00 aprendiz-pc sshd[3015]: Invalid user support from 198.51.100.118 port 44955
+2026-10-24T21:14:50.379821-03:00 aprendiz-pc sshd[3015]: Received disconnect from 198.51.100.118 port 44955:11: Bye Bye [preauth]
+2026-10-24T21:14:50.380032-03:00 aprendiz-pc sshd[3015]: Disconnected from invalid user support 198.51.100.118 port 44955 [preauth]
+2026-10-24T21:14:50.772759-03:00 aprendiz-pc sshd[3024]: Invalid user guest from 198.51.100.118 port 36304
+2026-10-24T21:14:51.180476-03:00 aprendiz-pc sshd[3024]: Connection closed by invalid user guest 198.51.100.118 port 36304 [preauth]
+2026-10-24T21:14:52.218245-03:00 aprendiz-pc sshd[3026]: User root from 198.51.100.118 not allowed because not listed in AllowUsers
+2026-10-24T21:14:52.455975-03:00 aprendiz-pc sshd[3026]: Connection closed by invalid user root 198.51.100.118 port 55095 [preauth]
+2026-10-24T21:14:53.035590-03:00 aprendiz-pc sshd[3029]: Invalid user test from 198.51.100.118 port 37047
+2026-10-24T21:14:53.889645-03:00 aprendiz-pc sshd[3029]: Connection closed by invalid user test 198.51.100.118 port 37047 [preauth]
+2026-10-24T21:14:55.016164-03:00 aprendiz-pc sshd[3038]: Invalid user ftpuser from 198.51.100.118 port 46820
+2026-10-24T21:14:55.680574-03:00 aprendiz-pc sshd[3038]: Connection closed by invalid user ftpuser 198.51.100.118 port 46820 [preauth]
+2026-10-24T21:14:55.467439-03:00 aprendiz-pc sshd[3042]: User root from 198.51.100.118 not allowed because not listed in AllowUsers
+2026-10-24T21:14:55.771160-03:00 aprendiz-pc sshd[3042]: Connection closed by invalid user root 198.51.100.118 port 44966 [preauth]
+2026-10-24T21:14:57.872441-03:00 aprendiz-pc sshd[3047]: Connection closed by 198.51.100.118 port 57323 [preauth]
+2026-10-24T21:14:58.435028-03:00 aprendiz-pc sshd[3049]: Invalid user postgres from 198.51.100.118 port 33295
+2026-10-24T21:14:59.331606-03:00 aprendiz-pc sshd[3049]: Connection closed by invalid user postgres 198.51.100.118 port 33295 [preauth]
+2026-10-24T21:15:00.552796-03:00 aprendiz-pc sshd[3054]: User root from 198.51.100.118 not allowed because not listed in AllowUsers
+2026-10-24T21:15:01.318673-03:00 aprendiz-pc sshd[3054]: Connection closed by invalid user root 198.51.100.118 port 36389 [preauth]
+2026-10-24T21:15:01.867298-03:00 aprendiz-pc sshd[3060]: Invalid user Admin from 192.0.2.50 port 33513
+2026-10-24T21:15:02.446676-03:00 aprendiz-pc sshd[3060]: Connection closed by invalid user Admin 192.0.2.50 port 33513 [preauth]
+2026-10-24T21:15:02.398084-03:00 aprendiz-pc sshd[3063]: Invalid user ubnt from 192.0.2.50 port 56251
+2026-10-24T21:15:02.802850-03:00 aprendiz-pc sshd[3063]: Connection closed by invalid user ubnt 192.0.2.50 port 56251 [preauth]
+2026-10-24T21:15:03.044525-03:00 aprendiz-pc sshd[3069]: Invalid user git from 192.0.2.50 port 43540
+2026-10-24T21:15:03.564126-03:00 aprendiz-pc sshd[3069]: Connection closed by invalid user git 192.0.2.50 port 43540 [preauth]
+2026-10-24T21:15:03.561731-03:00 aprendiz-pc sshd[3076]: Invalid user Admin from 192.0.2.50 port 41925
+2026-10-24T21:15:04.218588-03:00 aprendiz-pc sshd[3076]: Received disconnect from 192.0.2.50 port 41925:11: Bye Bye [preauth]
+2026-10-24T21:15:04.218799-03:00 aprendiz-pc sshd[3076]: Disconnected from invalid user Admin 192.0.2.50 port 41925 [preauth]
+2026-10-24T21:15:05.398129-03:00 aprendiz-pc sshd[3084]: Invalid user admin from 192.0.2.50 port 58566
+2026-10-24T21:15:05.580341-03:00 aprendiz-pc sshd[3084]: Connection closed by invalid user admin 192.0.2.50 port 58566 [preauth]
+2026-10-24T21:15:05.877959-03:00 aprendiz-pc sshd[3091]: Invalid user git from 192.0.2.50 port 44548
+2026-10-24T21:15:06.377353-03:00 aprendiz-pc sshd[3091]: Connection closed by invalid user git 192.0.2.50 port 44548 [preauth]
+2026-10-24T21:15:06.789375-03:00 aprendiz-pc sshd[3098]: Invalid user admin from 192.0.2.50 port 59237
+2026-10-24T21:15:07.395052-03:00 aprendiz-pc sshd[3098]: Connection closed by invalid user admin 192.0.2.50 port 59237 [preauth]
+2026-10-24T21:15:07.385297-03:00 aprendiz-pc sshd[3105]: Invalid user admin from 192.0.2.50 port 40842
+2026-10-24T21:15:07.950991-03:00 aprendiz-pc sshd[3105]: Connection closed by invalid user admin 192.0.2.50 port 40842 [preauth]
+2026-10-24T21:15:09.186604-03:00 aprendiz-pc sshd[3112]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:15:09.342019-03:00 aprendiz-pc sshd[3112]: Connection closed by invalid user root 192.0.2.50 port 45589 [preauth]
+2026-10-24T21:15:10.734889-03:00 aprendiz-pc sshd[3116]: Invalid user test from 192.0.2.50 port 33310
+2026-10-24T21:15:10.970813-03:00 aprendiz-pc sshd[3116]: Connection closed by invalid user test 192.0.2.50 port 33310 [preauth]
+2026-10-24T21:15:11.535191-03:00 aprendiz-pc sshd[3118]: Invalid user admin test from 192.0.2.50 port 37429
+2026-10-24T21:15:12.337869-03:00 aprendiz-pc sshd[3118]: Connection closed by invalid user admin test 192.0.2.50 port 37429 [preauth]
+2026-10-24T21:15:13.902840-03:00 aprendiz-pc sshd[3126]: Invalid user test from 192.0.2.50 port 48039
+2026-10-24T21:15:14.662127-03:00 aprendiz-pc sshd[3126]: Connection closed by invalid user test 192.0.2.50 port 48039 [preauth]
+2026-10-24T21:15:14.537623-03:00 aprendiz-pc sshd[3132]: User root from 203.0.113.45 not allowed because not listed in AllowUsers
+2026-10-24T21:15:14.963202-03:00 aprendiz-pc sshd[3132]: Connection closed by invalid user root 203.0.113.45 port 34860 [preauth]
+2026-10-24T21:15:20.555723-03:00 aprendiz-pc sshd[3141]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:15:20.832119-03:00 aprendiz-pc sshd[3141]: Received disconnect from 203.0.113.234 port 41687:11: Bye Bye [preauth]
+2026-10-24T21:15:20.832330-03:00 aprendiz-pc sshd[3141]: Disconnected from invalid user root 203.0.113.234 port 41687 [preauth]
+2026-10-24T21:15:41.423365-03:00 aprendiz-pc sshd[3144]: Invalid user admin from 198.51.100.103 port 48485
+2026-10-24T21:15:41.622269-03:00 aprendiz-pc sshd[3144]: Connection closed by invalid user admin 198.51.100.103 port 48485 [preauth]
+2026-10-24T21:15:52.093454-03:00 aprendiz-pc sshd[3153]: Invalid user admin test from 203.0.113.63 port 37362
+2026-10-24T21:15:52.478165-03:00 aprendiz-pc sshd[3153]: Connection closed by invalid user admin test 203.0.113.63 port 37362 [preauth]
+2026-10-24T21:16:00.107929-03:00 aprendiz-pc sshd[3161]: Invalid user ubuntu from 198.51.100.150 port 51546
+2026-10-24T21:16:00.362286-03:00 aprendiz-pc sshd[3161]: Connection closed by invalid user ubuntu 198.51.100.150 port 51546 [preauth]
+2026-10-24T21:16:12.289191-03:00 aprendiz-pc sshd[3165]: Invalid user jenkins from 192.0.2.50 port 34874
+2026-10-24T21:16:12.784963-03:00 aprendiz-pc sshd[3165]: Connection closed by invalid user jenkins 192.0.2.50 port 34874 [preauth]
+2026-10-24T21:16:23.029009-03:00 aprendiz-pc sshd[3170]: Invalid user admin from 192.0.2.87 port 58060
+2026-10-24T21:16:23.519175-03:00 aprendiz-pc sshd[3170]: Connection closed by invalid user admin 192.0.2.87 port 58060 [preauth]
+2026-10-24T21:16:42.009825-03:00 aprendiz-pc sshd[3179]: Invalid user ubnt from 192.0.2.104 port 39563
+2026-10-24T21:16:42.844553-03:00 aprendiz-pc sshd[3179]: Connection closed by invalid user ubnt 192.0.2.104 port 39563 [preauth]
+2026-10-24T21:16:43.863331-03:00 aprendiz-pc sshd[3186]: Invalid user ubuntu from 192.0.2.104 port 40638
+2026-10-24T21:16:44.156227-03:00 aprendiz-pc sshd[3186]: Received disconnect from 192.0.2.104 port 40638:11: Bye Bye [preauth]
+2026-10-24T21:16:44.156438-03:00 aprendiz-pc sshd[3186]: Disconnected from invalid user ubuntu 192.0.2.104 port 40638 [preauth]
+2026-10-24T21:16:46.140978-03:00 aprendiz-pc sshd[3194]: Connection closed by 192.0.2.104 port 40537 [preauth]
+2026-10-24T21:16:47.762380-03:00 aprendiz-pc sshd[3201]: Invalid user postgres from 192.0.2.104 port 43532
+2026-10-24T21:16:48.390564-03:00 aprendiz-pc sshd[3201]: Connection closed by invalid user postgres 192.0.2.104 port 43532 [preauth]
+2026-10-24T21:16:48.939527-03:00 aprendiz-pc sshd[3204]: User root from 192.0.2.104 not allowed because not listed in AllowUsers
+2026-10-24T21:16:49.146198-03:00 aprendiz-pc sshd[3204]: Connection closed by invalid user root 192.0.2.104 port 59575 [preauth]
+2026-10-24T21:16:49.344413-03:00 aprendiz-pc sshd[3213]: Invalid user test from 192.0.2.104 port 51253
+2026-10-24T21:16:50.008729-03:00 aprendiz-pc sshd[3213]: Connection closed by invalid user test 192.0.2.104 port 51253 [preauth]
+2026-10-24T21:16:50.552402-03:00 aprendiz-pc sshd[3216]: Invalid user ../../etc from 192.0.2.37 port 58341
+2026-10-24T21:16:50.975824-03:00 aprendiz-pc sshd[3216]: Received disconnect from 192.0.2.37 port 58341:11: Bye Bye [preauth]
+2026-10-24T21:16:50.976035-03:00 aprendiz-pc sshd[3216]: Disconnected from invalid user ../../etc 192.0.2.37 port 58341 [preauth]
+2026-10-24T21:17:00.452772-03:00 aprendiz-pc sshd[3221]: Invalid user admin from 203.0.113.45 port 56130
+2026-10-24T21:17:01.066275-03:00 aprendiz-pc sshd[3221]: Connection closed by invalid user admin 203.0.113.45 port 56130 [preauth]
+2026-10-24T21:17:16.091566-03:00 aprendiz-pc sshd[3228]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:17:21.993318-03:00 aprendiz-pc sshd[3237]: Invalid user test from 203.0.113.144 port 36417
+2026-10-24T21:17:22.638648-03:00 aprendiz-pc sshd[3237]: Connection closed by invalid user test 203.0.113.144 port 36417 [preauth]
+2026-10-24T21:17:39.434632-03:00 aprendiz-pc sshd[3242]: Invalid user admin from 192.0.2.87 port 60162
+2026-10-24T21:17:40.259779-03:00 aprendiz-pc sshd[3242]: Connection closed by invalid user admin 192.0.2.87 port 60162 [preauth]
+2026-10-24T21:17:46.112981-03:00 aprendiz-pc sshd[3249]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:17:46.702999-03:00 aprendiz-pc sshd[3249]: Connection closed by invalid user root 192.0.2.87 port 50464 [preauth]
+2026-10-24T21:17:54.654714-03:00 aprendiz-pc sshd[3253]: Invalid user user from 203.0.113.144 port 58361
+2026-10-24T21:17:55.376158-03:00 aprendiz-pc sshd[3253]: Connection closed by invalid user user 203.0.113.144 port 58361 [preauth]
+2026-10-24T21:18:01.522709-03:00 aprendiz-pc sshd[3257]: Invalid user test from 192.0.2.50 port 37702
+2026-10-24T21:18:02.290316-03:00 aprendiz-pc sshd[3257]: Received disconnect from 192.0.2.50 port 37702:11: Bye Bye [preauth]
+2026-10-24T21:18:02.290527-03:00 aprendiz-pc sshd[3257]: Disconnected from invalid user test 192.0.2.50 port 37702 [preauth]
+2026-10-24T21:18:15.247220-03:00 aprendiz-pc sshd[3263]: User root from 192.0.2.191 not allowed because not listed in AllowUsers
+2026-10-24T21:18:15.528144-03:00 aprendiz-pc sshd[3263]: Connection closed by invalid user root 192.0.2.191 port 54100 [preauth]
+2026-10-24T21:18:24.171184-03:00 aprendiz-pc sshd[3272]: Invalid user admin from 203.0.113.234 port 45315
+2026-10-24T21:18:24.763372-03:00 aprendiz-pc sshd[3272]: Connection closed by invalid user admin 203.0.113.234 port 45315 [preauth]
+2026-10-24T21:18:34.855576-03:00 aprendiz-pc sshd[3281]: Invalid user user from 192.0.2.50 port 53312
+2026-10-24T21:18:35.647024-03:00 aprendiz-pc sshd[3281]: Connection closed by invalid user user 192.0.2.50 port 53312 [preauth]
+2026-10-24T21:18:53.469404-03:00 aprendiz-pc sshd[3289]: Invalid user user from 203.0.113.144 port 45252
+2026-10-24T21:18:53.730292-03:00 aprendiz-pc sshd[3289]: Connection closed by invalid user user 203.0.113.144 port 45252 [preauth]
+2026-10-24T21:19:08.436781-03:00 aprendiz-pc sshd[3297]: Invalid user support from 203.0.113.46 port 45816
+2026-10-24T21:19:09.158293-03:00 aprendiz-pc sshd[3297]: Connection closed by invalid user support 203.0.113.46 port 45816 [preauth]
+2026-10-24T21:19:22.049106-03:00 aprendiz-pc sshd[3306]: Invalid user postgres from 198.51.100.167 port 49723
+2026-10-24T21:19:22.359584-03:00 aprendiz-pc sshd[3306]: Connection closed by invalid user postgres 198.51.100.167 port 49723 [preauth]
+2026-10-24T21:19:43.223829-03:00 aprendiz-pc sshd[3314]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:19:43.449483-03:00 aprendiz-pc sshd[3314]: Connection closed by invalid user root 198.51.100.167 port 53775 [preauth]
+2026-10-24T21:19:44.639231-03:00 aprendiz-pc sshd[3322]: Connection closed by 198.51.100.167 port 40854 [preauth]
+2026-10-24T21:19:46.864434-03:00 aprendiz-pc sshd[3324]: Invalid user administrador_do_sistema_principal from 198.51.100.167 port 35861
+2026-10-24T21:19:47.495939-03:00 aprendiz-pc sshd[3324]: Received disconnect from 198.51.100.167 port 35861:11: Bye Bye [preauth]
+2026-10-24T21:19:47.496150-03:00 aprendiz-pc sshd[3324]: Disconnected from invalid user administrador_do_sistema_principal 198.51.100.167 port 35861 [preauth]
+2026-10-24T21:19:48.047487-03:00 aprendiz-pc sshd[3326]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:19:48.413557-03:00 aprendiz-pc sshd[3326]: Connection closed by invalid user root 198.51.100.167 port 36986 [preauth]
+2026-10-24T21:19:50.094270-03:00 aprendiz-pc sshd[3329]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:19:50.815971-03:00 aprendiz-pc sshd[3329]: Received disconnect from 198.51.100.167 port 45287:11: Bye Bye [preauth]
+2026-10-24T21:19:50.816182-03:00 aprendiz-pc sshd[3329]: Disconnected from invalid user root 198.51.100.167 port 45287 [preauth]
+2026-10-24T21:19:52.352049-03:00 aprendiz-pc sshd[3336]: Invalid user ubuntu from 198.51.100.167 port 43263
+2026-10-24T21:19:52.757416-03:00 aprendiz-pc sshd[3336]: Connection closed by invalid user ubuntu 198.51.100.167 port 43263 [preauth]
+2026-10-24T21:19:54.339755-03:00 aprendiz-pc sshd[3338]: Invalid user admin from 198.51.100.167 port 49119
+2026-10-24T21:19:54.889573-03:00 aprendiz-pc sshd[3338]: Connection closed by invalid user admin 198.51.100.167 port 49119 [preauth]
+2026-10-24T21:19:54.932012-03:00 aprendiz-pc sshd[3345]: Invalid user postgres from 198.51.100.167 port 50192
+2026-10-24T21:19:55.268673-03:00 aprendiz-pc sshd[3345]: Received disconnect from 198.51.100.167 port 50192:11: Bye Bye [preauth]
+2026-10-24T21:19:55.268884-03:00 aprendiz-pc sshd[3345]: Disconnected from invalid user postgres 198.51.100.167 port 50192 [preauth]
+2026-10-24T21:19:55.428309-03:00 aprendiz-pc sshd[3352]: Invalid user admin from 198.51.100.167 port 35295
+2026-10-24T21:19:55.610067-03:00 aprendiz-pc sshd[3352]: Connection closed by invalid user admin 198.51.100.167 port 35295 [preauth]
+2026-10-24T21:19:56.000737-03:00 aprendiz-pc sshd[3356]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:19:56.171025-03:00 aprendiz-pc sshd[3356]: Connection closed by invalid user root 198.51.100.167 port 40119 [preauth]
+2026-10-24T21:19:56.603536-03:00 aprendiz-pc sshd[3360]: Invalid user ubuntu from 203.0.113.46 port 48254
+2026-10-24T21:19:56.987637-03:00 aprendiz-pc sshd[3360]: Connection closed by invalid user ubuntu 203.0.113.46 port 48254 [preauth]
+2026-10-24T21:20:13.038501-03:00 aprendiz-pc sshd[3363]: Invalid user oracle from 203.0.113.234 port 45530
+2026-10-24T21:20:13.801444-03:00 aprendiz-pc sshd[3363]: Connection closed by invalid user oracle 203.0.113.234 port 45530 [preauth]
+2026-10-24T21:20:33.125453-03:00 aprendiz-pc sshd[3368]: Invalid user ubnt from 203.0.113.46 port 33729
+2026-10-24T21:20:33.441705-03:00 aprendiz-pc sshd[3368]: Connection closed by invalid user ubnt 203.0.113.46 port 33729 [preauth]
+2026-10-24T21:20:53.122682-03:00 aprendiz-pc sshd[3373]: Invalid user user from 203.0.113.46 port 38329
+2026-10-24T21:20:53.350861-03:00 aprendiz-pc sshd[3373]: Connection closed by invalid user user 203.0.113.46 port 38329 [preauth]
+2026-10-24T21:21:03.042724-03:00 aprendiz-pc sshd[3375]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:21:03.206937-03:00 aprendiz-pc sshd[3375]: Received disconnect from 203.0.113.46 port 50868:11: Bye Bye [preauth]
+2026-10-24T21:21:03.207148-03:00 aprendiz-pc sshd[3375]: Disconnected from invalid user root 203.0.113.46 port 50868 [preauth]
+2026-10-24T21:21:13.023697-03:00 aprendiz-pc sshd[3383]: User root from 198.51.100.66 not allowed because not listed in AllowUsers
+2026-10-24T21:21:13.378620-03:00 aprendiz-pc sshd[3383]: Connection closed by invalid user root 198.51.100.66 port 53799 [preauth]
+2026-10-24T21:21:18.907011-03:00 aprendiz-pc sshd[3387]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:21:19.642851-03:00 aprendiz-pc sshd[3396]: Connection closed by 192.0.2.50 port 47997 [preauth]
+2026-10-24T21:21:21.163613-03:00 aprendiz-pc sshd[3405]: Connection closed by 192.0.2.50 port 38157 [preauth]
+2026-10-24T21:21:21.578404-03:00 aprendiz-pc sshd[3407]: Invalid user user from 192.0.2.50 port 33928
+2026-10-24T21:21:21.760055-03:00 aprendiz-pc sshd[3407]: Received disconnect from 192.0.2.50 port 33928:11: Bye Bye [preauth]
+2026-10-24T21:21:21.760266-03:00 aprendiz-pc sshd[3407]: Disconnected from invalid user user 192.0.2.50 port 33928 [preauth]
+2026-10-24T21:21:23.207650-03:00 aprendiz-pc sshd[3409]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:21:23.847263-03:00 aprendiz-pc sshd[3409]: Connection closed by invalid user root 192.0.2.50 port 51109 [preauth]
+2026-10-24T21:21:23.999435-03:00 aprendiz-pc sshd[3417]: Invalid user oracle from 192.0.2.50 port 34100
+2026-10-24T21:21:24.892369-03:00 aprendiz-pc sshd[3417]: Received disconnect from 192.0.2.50 port 34100:11: Bye Bye [preauth]
+2026-10-24T21:21:24.892580-03:00 aprendiz-pc sshd[3417]: Disconnected from invalid user oracle 192.0.2.50 port 34100 [preauth]
+2026-10-24T21:21:25.718638-03:00 aprendiz-pc sshd[3419]: Invalid user git from 192.0.2.50 port 33295
+2026-10-24T21:21:26.258674-03:00 aprendiz-pc sshd[3419]: Connection closed by invalid user git 192.0.2.50 port 33295 [preauth]
+2026-10-24T21:21:27.445735-03:00 aprendiz-pc sshd[3422]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:21:27.654686-03:00 aprendiz-pc sshd[3422]: Connection closed by invalid user root 192.0.2.50 port 44575 [preauth]
+2026-10-24T21:21:28.055911-03:00 aprendiz-pc sshd[3429]: Invalid user debian from 192.0.2.50 port 39481
+2026-10-24T21:21:28.380518-03:00 aprendiz-pc sshd[3429]: Connection closed by invalid user debian 192.0.2.50 port 39481 [preauth]
+2026-10-24T21:21:28.621905-03:00 aprendiz-pc sshd[3437]: Invalid user admin from 192.0.2.50 port 44576
+2026-10-24T21:21:29.075276-03:00 aprendiz-pc sshd[3437]: Connection closed by invalid user admin 192.0.2.50 port 44576 [preauth]
+2026-10-24T21:21:29.969243-03:00 aprendiz-pc sshd[3443]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:21:30.718983-03:00 aprendiz-pc sshd[3443]: Received disconnect from 192.0.2.50 port 57238:11: Bye Bye [preauth]
+2026-10-24T21:21:30.719194-03:00 aprendiz-pc sshd[3443]: Disconnected from invalid user root 192.0.2.50 port 57238 [preauth]
+2026-10-24T21:21:30.572712-03:00 aprendiz-pc sshd[3450]: Invalid user test from 192.0.2.50 port 51297
+2026-10-24T21:21:31.321883-03:00 aprendiz-pc sshd[3450]: Connection closed by invalid user test 192.0.2.50 port 51297 [preauth]
+2026-10-24T21:21:31.614969-03:00 aprendiz-pc sshd[3458]: Invalid user support from 192.0.2.50 port 57080
+2026-10-24T21:21:32.298968-03:00 aprendiz-pc sshd[3458]: Received disconnect from 192.0.2.50 port 57080:11: Bye Bye [preauth]
+2026-10-24T21:21:32.299179-03:00 aprendiz-pc sshd[3458]: Disconnected from invalid user support 192.0.2.50 port 57080 [preauth]
+2026-10-24T21:21:32.425395-03:00 aprendiz-pc sshd[3463]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:21:33.124524-03:00 aprendiz-pc sshd[3463]: Connection closed by invalid user root 198.51.100.103 port 48745 [preauth]
+2026-10-24T21:21:34.189511-03:00 aprendiz-pc sshd[3468]: Invalid user admin from 198.51.100.103 port 51682
+2026-10-24T21:21:34.476089-03:00 aprendiz-pc sshd[3468]: Connection closed by invalid user admin 198.51.100.103 port 51682 [preauth]
+2026-10-24T21:21:35.533691-03:00 aprendiz-pc sshd[3475]: Invalid user git from 198.51.100.103 port 42332
+2026-10-24T21:21:36.325382-03:00 aprendiz-pc sshd[3475]: Connection closed by invalid user git 198.51.100.103 port 42332 [preauth]
+2026-10-24T21:21:36.589702-03:00 aprendiz-pc sshd[3480]: Invalid user admin;cat from 198.51.100.103 port 33652
+2026-10-24T21:21:36.857604-03:00 aprendiz-pc sshd[3480]: Received disconnect from 198.51.100.103 port 33652:11: Bye Bye [preauth]
+2026-10-24T21:21:36.857815-03:00 aprendiz-pc sshd[3480]: Disconnected from invalid user admin;cat 198.51.100.103 port 33652 [preauth]
+2026-10-24T21:21:37.304927-03:00 aprendiz-pc sshd[3487]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:21:37.575074-03:00 aprendiz-pc sshd[3487]: Received disconnect from 198.51.100.103 port 38552:11: Bye Bye [preauth]
+2026-10-24T21:21:37.575285-03:00 aprendiz-pc sshd[3487]: Disconnected from invalid user root 198.51.100.103 port 38552 [preauth]
+2026-10-24T21:21:38.851051-03:00 aprendiz-pc sshd[3490]: Invalid user ubuntu from 198.51.100.103 port 60121
+2026-10-24T21:21:39.651169-03:00 aprendiz-pc sshd[3490]: Connection closed by invalid user ubuntu 198.51.100.103 port 60121 [preauth]
+2026-10-24T21:21:40.106193-03:00 aprendiz-pc sshd[3494]: Invalid user ubuntu from 198.51.100.103 port 47428
+2026-10-24T21:21:40.645752-03:00 aprendiz-pc sshd[3494]: Connection closed by invalid user ubuntu 198.51.100.103 port 47428 [preauth]
+2026-10-24T21:21:41.797701-03:00 aprendiz-pc sshd[3497]: Invalid user ubnt from 198.51.100.103 port 56825
+2026-10-24T21:21:42.494981-03:00 aprendiz-pc sshd[3497]: Connection closed by invalid user ubnt 198.51.100.103 port 56825 [preauth]
+2026-10-24T21:21:43.316425-03:00 aprendiz-pc sshd[3500]: Connection closed by 198.51.100.103 port 52267 [preauth]
+2026-10-24T21:21:45.768032-03:00 aprendiz-pc sshd[3504]: Invalid user jo\303\243o from 198.51.100.103 port 38631
+2026-10-24T21:21:46.427027-03:00 aprendiz-pc sshd[3504]: Connection closed by invalid user jo\303\243o 198.51.100.103 port 38631 [preauth]
+2026-10-24T21:21:46.400500-03:00 aprendiz-pc sshd[3507]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:21:46.880908-03:00 aprendiz-pc sshd[3509]: Invalid user admin from 192.0.2.122 port 36617
+2026-10-24T21:21:47.719543-03:00 aprendiz-pc sshd[3509]: Connection closed by invalid user admin 192.0.2.122 port 36617 [preauth]
+2026-10-24T21:22:02.067252-03:00 aprendiz-pc sshd[3517]: User root from 192.0.2.104 not allowed because not listed in AllowUsers
+2026-10-24T21:22:02.628707-03:00 aprendiz-pc sshd[3517]: Connection closed by invalid user root 192.0.2.104 port 48563 [preauth]
+2026-10-24T21:22:22.045045-03:00 aprendiz-pc sshd[3522]: Invalid user ubuntu from 198.51.100.66 port 55645
+2026-10-24T21:22:22.922379-03:00 aprendiz-pc sshd[3522]: Connection closed by invalid user ubuntu 198.51.100.66 port 55645 [preauth]
+2026-10-24T21:22:40.248984-03:00 aprendiz-pc sshd[3528]: Connection closed by 203.0.113.219 port 60090 [preauth]
+2026-10-24T21:22:41.941349-03:00 aprendiz-pc sshd[3531]: Invalid user ubuntu from 203.0.113.219 port 51250
+2026-10-24T21:22:42.739138-03:00 aprendiz-pc sshd[3531]: Connection closed by invalid user ubuntu 203.0.113.219 port 51250 [preauth]
+2026-10-24T21:22:44.262740-03:00 aprendiz-pc sshd[3539]: Invalid user user from 203.0.113.219 port 59913
+2026-10-24T21:22:44.938243-03:00 aprendiz-pc sshd[3539]: Connection closed by invalid user user 203.0.113.219 port 59913 [preauth]
+2026-10-24T21:22:45.624601-03:00 aprendiz-pc sshd[3542]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:22:46.290041-03:00 aprendiz-pc sshd[3542]: Connection closed by invalid user root 203.0.113.219 port 52969 [preauth]
+2026-10-24T21:22:47.003294-03:00 aprendiz-pc sshd[3550]: Invalid user postgres from 203.0.113.219 port 39163
+2026-10-24T21:22:47.345147-03:00 aprendiz-pc sshd[3550]: Connection closed by invalid user postgres 203.0.113.219 port 39163 [preauth]
+2026-10-24T21:22:48.902757-03:00 aprendiz-pc sshd[3552]: Invalid user admin from 203.0.113.219 port 45405
+2026-10-24T21:22:49.466968-03:00 aprendiz-pc sshd[3552]: Connection closed by invalid user admin 203.0.113.219 port 45405 [preauth]
+2026-10-24T21:22:50.462267-03:00 aprendiz-pc sshd[3554]: Invalid user admin from 198.51.100.103 port 53903
+2026-10-24T21:22:50.625583-03:00 aprendiz-pc sshd[3554]: Connection closed by invalid user admin 198.51.100.103 port 53903 [preauth]
+2026-10-24T21:23:09.193887-03:00 aprendiz-pc sshd[3562]: Invalid user admin from 192.0.2.15 port 36032
+2026-10-24T21:23:09.509600-03:00 aprendiz-pc sshd[3562]: Connection closed by invalid user admin 192.0.2.15 port 36032 [preauth]
+2026-10-24T21:23:12.387880-03:00 aprendiz-pc sshd[3567]: Invalid user ubuntu from 203.0.113.222 port 52269
+2026-10-24T21:23:12.975996-03:00 aprendiz-pc sshd[3567]: Received disconnect from 203.0.113.222 port 52269:11: Bye Bye [preauth]
+2026-10-24T21:23:12.976207-03:00 aprendiz-pc sshd[3567]: Disconnected from invalid user ubuntu 203.0.113.222 port 52269 [preauth]
+2026-10-24T21:23:18.263874-03:00 aprendiz-pc sshd[3573]: User root from 192.0.2.95 not allowed because not listed in AllowUsers
+2026-10-24T21:23:19.094117-03:00 aprendiz-pc sshd[3573]: Connection closed by invalid user root 192.0.2.95 port 45027 [preauth]
+2026-10-24T21:23:35.320053-03:00 aprendiz-pc sshd[3577]: Invalid user admin from 192.0.2.191 port 42264
+2026-10-24T21:23:35.687463-03:00 aprendiz-pc sshd[3577]: Received disconnect from 192.0.2.191 port 42264:11: Bye Bye [preauth]
+2026-10-24T21:23:35.687674-03:00 aprendiz-pc sshd[3577]: Disconnected from invalid user admin 192.0.2.191 port 42264 [preauth]
+2026-10-24T21:23:55.245575-03:00 aprendiz-pc sshd[3585]: Invalid user ftpuser from 203.0.113.46 port 45698
+2026-10-24T21:23:56.025780-03:00 aprendiz-pc sshd[3585]: Connection closed by invalid user ftpuser 203.0.113.46 port 45698 [preauth]
+2026-10-24T21:23:57.147350-03:00 aprendiz-pc sshd[3587]: Invalid user git from 203.0.113.46 port 35110
+2026-10-24T21:23:57.332335-03:00 aprendiz-pc sshd[3587]: Connection closed by invalid user git 203.0.113.46 port 35110 [preauth]
+2026-10-24T21:23:58.837665-03:00 aprendiz-pc sshd[3591]: Connection closed by 203.0.113.46 port 36324 [preauth]
+2026-10-24T21:24:00.506437-03:00 aprendiz-pc sshd[3593]: Invalid user pi from 203.0.113.46 port 43907
+2026-10-24T21:24:00.753843-03:00 aprendiz-pc sshd[3593]: Connection closed by invalid user pi 203.0.113.46 port 43907 [preauth]
+2026-10-24T21:24:02.311959-03:00 aprendiz-pc sshd[3601]: Invalid user ubnt from 203.0.113.46 port 56295
+2026-10-24T21:24:02.889377-03:00 aprendiz-pc sshd[3601]: Connection closed by invalid user ubnt 203.0.113.46 port 56295 [preauth]
+2026-10-24T21:24:03.211878-03:00 aprendiz-pc sshd[3606]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:24:03.454495-03:00 aprendiz-pc sshd[3606]: Connection closed by invalid user root 203.0.113.46 port 51921 [preauth]
+2026-10-24T21:24:04.047520-03:00 aprendiz-pc sshd[3615]: Invalid user ubnt from 203.0.113.46 port 37441
+2026-10-24T21:24:04.779275-03:00 aprendiz-pc sshd[3615]: Connection closed by invalid user ubnt 203.0.113.46 port 37441 [preauth]
+2026-10-24T21:24:05.989054-03:00 aprendiz-pc sshd[3617]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:24:06.326901-03:00 aprendiz-pc sshd[3617]: Connection closed by invalid user root 203.0.113.46 port 52288 [preauth]
+2026-10-24T21:24:07.240215-03:00 aprendiz-pc sshd[3624]: Invalid user admin;cat from 198.51.100.167 port 48552
+2026-10-24T21:24:07.785251-03:00 aprendiz-pc sshd[3624]: Connection closed by invalid user admin;cat 198.51.100.167 port 48552 [preauth]
+2026-10-24T21:24:08.142785-03:00 aprendiz-pc sshd[3630]: Invalid user debian from 198.51.100.167 port 59432
+2026-10-24T21:24:08.729593-03:00 aprendiz-pc sshd[3630]: Connection closed by invalid user debian 198.51.100.167 port 59432 [preauth]
+2026-10-24T21:24:09.716368-03:00 aprendiz-pc sshd[3637]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:24:10.490621-03:00 aprendiz-pc sshd[3637]: Connection closed by invalid user root 198.51.100.167 port 56801 [preauth]
+2026-10-24T21:24:11.902189-03:00 aprendiz-pc sshd[3639]: Connection closed by 198.51.100.167 port 57054 [preauth]
+2026-10-24T21:24:13.472808-03:00 aprendiz-pc sshd[3647]: Invalid user admin from 198.51.100.167 port 33954
+2026-10-24T21:24:13.934452-03:00 aprendiz-pc sshd[3647]: Connection closed by invalid user admin 198.51.100.167 port 33954 [preauth]
+2026-10-24T21:24:15.877302-03:00 aprendiz-pc sshd[3652]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:24:16.649441-03:00 aprendiz-pc sshd[3652]: Received disconnect from 198.51.100.167 port 58561:11: Bye Bye [preauth]
+2026-10-24T21:24:16.649652-03:00 aprendiz-pc sshd[3652]: Disconnected from invalid user root 198.51.100.167 port 58561 [preauth]
+2026-10-24T21:24:16.551792-03:00 aprendiz-pc sshd[3657]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:24:17.289666-03:00 aprendiz-pc sshd[3657]: Connection closed by invalid user root 198.51.100.167 port 53017 [preauth]
+2026-10-24T21:24:18.832823-03:00 aprendiz-pc sshd[3665]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:24:19.325791-03:00 aprendiz-pc sshd[3665]: Connection closed by invalid user root 198.51.100.167 port 54473 [preauth]
+2026-10-24T21:24:21.117751-03:00 aprendiz-pc sshd[3670]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:24:21.868833-03:00 aprendiz-pc sshd[3670]: Connection closed by invalid user root 198.51.100.167 port 57225 [preauth]
+2026-10-24T21:24:22.050216-03:00 aprendiz-pc sshd[3675]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:24:22.906091-03:00 aprendiz-pc sshd[3675]: Connection closed by invalid user root 198.51.100.167 port 36437 [preauth]
+2026-10-24T21:24:24.396068-03:00 aprendiz-pc sshd[3681]: Invalid user jo\303\243o from 198.51.100.167 port 57443
+2026-10-24T21:24:25.104216-03:00 aprendiz-pc sshd[3681]: Connection closed by invalid user jo\303\243o 198.51.100.167 port 57443 [preauth]
+2026-10-24T21:24:25.250117-03:00 aprendiz-pc sshd[3690]: Invalid user guest from 192.0.2.91 port 37499
+2026-10-24T21:24:26.108293-03:00 aprendiz-pc sshd[3690]: Connection closed by invalid user guest 192.0.2.91 port 37499 [preauth]
+2026-10-24T21:24:38.241325-03:00 aprendiz-pc sshd[3698]: Invalid user oracle from 198.51.100.167 port 35079
+2026-10-24T21:24:38.859736-03:00 aprendiz-pc sshd[3698]: Connection closed by invalid user oracle 198.51.100.167 port 35079 [preauth]
+2026-10-24T21:24:44.174704-03:00 aprendiz-pc sshd[3705]: User root from 192.0.2.191 not allowed because not listed in AllowUsers
+2026-10-24T21:24:44.426606-03:00 aprendiz-pc sshd[3705]: Connection closed by invalid user root 192.0.2.191 port 36069 [preauth]
+2026-10-24T21:24:47.231116-03:00 aprendiz-pc sshd[3707]: Connection closed by 198.51.100.220 port 46185 [preauth]
+2026-10-24T21:25:02.133841-03:00 aprendiz-pc sshd[3713]: Connection closed by 198.51.100.20 port 56466 [preauth]
+2026-10-24T21:25:23.691565-03:00 aprendiz-pc sshd[3716]: User root from 203.0.113.199 not allowed because not listed in AllowUsers
+2026-10-24T21:25:24.379522-03:00 aprendiz-pc sshd[3716]: Connection closed by invalid user root 203.0.113.199 port 48620 [preauth]
+2026-10-24T21:25:24.746493-03:00 aprendiz-pc sshd[3722]: Invalid user ubnt from 203.0.113.199 port 45074
+2026-10-24T21:25:25.603079-03:00 aprendiz-pc sshd[3722]: Connection closed by invalid user ubnt 203.0.113.199 port 45074 [preauth]
+2026-10-24T21:25:25.251167-03:00 aprendiz-pc sshd[3731]: Invalid user admin from 203.0.113.199 port 48852
+2026-10-24T21:25:26.107553-03:00 aprendiz-pc sshd[3731]: Connection closed by invalid user admin 203.0.113.199 port 48852 [preauth]
+2026-10-24T21:25:26.110023-03:00 aprendiz-pc sshd[3738]: banner exchange: Connection from 203.0.113.199 port 44361: invalid format
+2026-10-24T21:25:26.946181-03:00 aprendiz-pc sshd[3745]: Invalid user admin from 203.0.113.222 port 55716
+2026-10-24T21:25:27.487181-03:00 aprendiz-pc sshd[3745]: Connection closed by invalid user admin 203.0.113.222 port 55716 [preauth]
+2026-10-24T21:25:30.738802-03:00 aprendiz-pc sshd[3750]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:25:31.336966-03:00 aprendiz-pc sshd[3750]: Connection closed by invalid user root 203.0.113.219 port 54467 [preauth]
+2026-10-24T21:25:38.343594-03:00 aprendiz-pc sshd[3757]: User root from 198.51.100.86 not allowed because not listed in AllowUsers
+2026-10-24T21:25:39.062769-03:00 aprendiz-pc sshd[3757]: Received disconnect from 198.51.100.86 port 32814:11: Bye Bye [preauth]
+2026-10-24T21:25:39.062980-03:00 aprendiz-pc sshd[3757]: Disconnected from invalid user root 198.51.100.86 port 32814 [preauth]
+2026-10-24T21:25:41.046662-03:00 aprendiz-pc sshd[3762]: Invalid user deploy from 198.51.100.103 port 53117
+2026-10-24T21:25:41.576357-03:00 aprendiz-pc sshd[3762]: Received disconnect from 198.51.100.103 port 53117:11: Bye Bye [preauth]
+2026-10-24T21:25:41.576568-03:00 aprendiz-pc sshd[3762]: Disconnected from invalid user deploy 198.51.100.103 port 53117 [preauth]
+2026-10-24T21:25:49.868571-03:00 aprendiz-pc sshd[3768]: Invalid user minecraft from 192.0.2.216 port 55959
+2026-10-24T21:25:50.762802-03:00 aprendiz-pc sshd[3768]: Connection closed by invalid user minecraft 192.0.2.216 port 55959 [preauth]
+2026-10-24T21:25:51.706802-03:00 aprendiz-pc sshd[3771]: Invalid user deploy from 192.0.2.216 port 36735
+2026-10-24T21:25:52.489395-03:00 aprendiz-pc sshd[3771]: Connection closed by invalid user deploy 192.0.2.216 port 36735 [preauth]
+2026-10-24T21:25:52.915223-03:00 aprendiz-pc sshd[3780]: Invalid user git from 192.0.2.216 port 48088
+2026-10-24T21:25:53.413721-03:00 aprendiz-pc sshd[3780]: Connection closed by invalid user git 192.0.2.216 port 48088 [preauth]
+2026-10-24T21:25:53.672625-03:00 aprendiz-pc sshd[3782]: User root from 192.0.2.216 not allowed because not listed in AllowUsers
+2026-10-24T21:25:53.934329-03:00 aprendiz-pc sshd[3782]: Received disconnect from 192.0.2.216 port 43896:11: Bye Bye [preauth]
+2026-10-24T21:25:53.934540-03:00 aprendiz-pc sshd[3782]: Disconnected from invalid user root 192.0.2.216 port 43896 [preauth]
+2026-10-24T21:25:54.301384-03:00 aprendiz-pc sshd[3791]: Invalid user admin from 192.0.2.216 port 49982
+2026-10-24T21:25:55.134672-03:00 aprendiz-pc sshd[3791]: Connection closed by invalid user admin 192.0.2.216 port 49982 [preauth]
+2026-10-24T21:25:55.127722-03:00 aprendiz-pc sshd[3795]: User root from 192.0.2.216 not allowed because not listed in AllowUsers
+2026-10-24T21:25:55.897355-03:00 aprendiz-pc sshd[3795]: Connection closed by invalid user root 192.0.2.216 port 60010 [preauth]
+2026-10-24T21:25:57.489899-03:00 aprendiz-pc sshd[3804]: User root from 192.0.2.216 not allowed because not listed in AllowUsers
+2026-10-24T21:25:57.759636-03:00 aprendiz-pc sshd[3804]: Connection closed by invalid user root 192.0.2.216 port 32959 [preauth]
+2026-10-24T21:25:58.865359-03:00 aprendiz-pc sshd[3808]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:25:59.273092-03:00 aprendiz-pc sshd[3808]: Connection closed by invalid user root 198.51.100.103 port 48797 [preauth]
+2026-10-24T21:26:09.657803-03:00 aprendiz-pc sshd[3812]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:26:09.894350-03:00 aprendiz-pc sshd[3812]: Connection closed by invalid user root 203.0.113.46 port 52435 [preauth]
+2026-10-24T21:26:29.514252-03:00 aprendiz-pc sshd[3821]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:26:29.664996-03:00 aprendiz-pc sshd[3821]: Connection closed by invalid user root 192.0.2.50 port 54480 [preauth]
+2026-10-24T21:26:45.556559-03:00 aprendiz-pc sshd[3823]: User root from 203.0.113.222 not allowed because not listed in AllowUsers
+2026-10-24T21:26:46.050983-03:00 aprendiz-pc sshd[3823]: Connection closed by invalid user root 203.0.113.222 port 56099 [preauth]
+2026-10-24T21:26:50.882845-03:00 aprendiz-pc sshd[3825]: Invalid user test from 203.0.113.222 port 34726
+2026-10-24T21:26:51.558046-03:00 aprendiz-pc sshd[3825]: Connection closed by invalid user test 203.0.113.222 port 34726 [preauth]
+2026-10-24T21:27:10.533304-03:00 aprendiz-pc sshd[3831]: User root from 203.0.113.13 not allowed because not listed in AllowUsers
+2026-10-24T21:27:11.404151-03:00 aprendiz-pc sshd[3831]: Connection closed by invalid user root 203.0.113.13 port 56556 [preauth]
+2026-10-24T21:27:30.655741-03:00 aprendiz-pc sshd[3835]: User root from 198.51.100.230 not allowed because not listed in AllowUsers
+2026-10-24T21:27:31.525681-03:00 aprendiz-pc sshd[3835]: Received disconnect from 198.51.100.230 port 48998:11: Bye Bye [preauth]
+2026-10-24T21:27:31.525892-03:00 aprendiz-pc sshd[3835]: Disconnected from invalid user root 198.51.100.230 port 48998 [preauth]
+2026-10-24T21:27:41.609814-03:00 aprendiz-pc sshd[3837]: Invalid user oracle from 203.0.113.46 port 36383
+2026-10-24T21:27:41.859828-03:00 aprendiz-pc sshd[3837]: Connection closed by invalid user oracle 203.0.113.46 port 36383 [preauth]
+2026-10-24T21:27:47.515053-03:00 aprendiz-pc sshd[3844]: Invalid user ../../etc from 203.0.113.234 port 52886
+2026-10-24T21:27:48.255454-03:00 aprendiz-pc sshd[3844]: Connection closed by invalid user ../../etc 203.0.113.234 port 52886 [preauth]
+2026-10-24T21:27:55.021862-03:00 aprendiz-pc sshd[3849]: User root from 192.0.2.191 not allowed because not listed in AllowUsers
+2026-10-24T21:27:55.665078-03:00 aprendiz-pc sshd[3849]: Connection closed by invalid user root 192.0.2.191 port 56437 [preauth]
+2026-10-24T21:28:05.235422-03:00 aprendiz-pc sshd[3853]: Invalid user admin from 192.0.2.21 port 37793
+2026-10-24T21:28:06.012009-03:00 aprendiz-pc sshd[3853]: Connection closed by invalid user admin 192.0.2.21 port 37793 [preauth]
+2026-10-24T21:28:10.089886-03:00 aprendiz-pc sshd[3858]: Invalid user test from 203.0.113.179 port 42354
+2026-10-24T21:28:10.913805-03:00 aprendiz-pc sshd[3858]: Connection closed by invalid user test 203.0.113.179 port 42354 [preauth]
+2026-10-24T21:28:10.780854-03:00 aprendiz-pc sshd[3862]: Invalid user ubuntu from 203.0.113.179 port 38525
+2026-10-24T21:28:11.636110-03:00 aprendiz-pc sshd[3862]: Connection closed by invalid user ubuntu 203.0.113.179 port 38525 [preauth]
+2026-10-24T21:28:11.719639-03:00 aprendiz-pc sshd[3870]: Invalid user user from 203.0.113.179 port 54929
+2026-10-24T21:28:12.196545-03:00 aprendiz-pc sshd[3870]: Connection closed by invalid user user 203.0.113.179 port 54929 [preauth]
+2026-10-24T21:28:12.600547-03:00 aprendiz-pc sshd[3876]: User root from 203.0.113.179 not allowed because not listed in AllowUsers
+2026-10-24T21:28:12.942242-03:00 aprendiz-pc sshd[3876]: Connection closed by invalid user root 203.0.113.179 port 33835 [preauth]
+2026-10-24T21:28:13.064892-03:00 aprendiz-pc sshd[3879]: Invalid user support from 203.0.113.179 port 36363
+2026-10-24T21:28:13.964527-03:00 aprendiz-pc sshd[3879]: Connection closed by invalid user support 203.0.113.179 port 36363 [preauth]
+2026-10-24T21:28:15.178688-03:00 aprendiz-pc sshd[3888]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:28:21.031237-03:00 aprendiz-pc sshd[3892]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:28:25.529360-03:00 aprendiz-pc sshd[3901]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:28:41.107650-03:00 aprendiz-pc sshd[3904]: Invalid user ftpuser from 192.0.2.87 port 60878
+2026-10-24T21:28:41.318409-03:00 aprendiz-pc sshd[3904]: Connection closed by invalid user ftpuser 192.0.2.87 port 60878 [preauth]
+2026-10-24T21:28:43.420399-03:00 aprendiz-pc sshd[3906]: Invalid user admin from 192.0.2.87 port 56639
+2026-10-24T21:28:43.690309-03:00 aprendiz-pc sshd[3906]: Connection closed by invalid user admin 192.0.2.87 port 56639 [preauth]
+2026-10-24T21:28:44.576845-03:00 aprendiz-pc sshd[3910]: Connection closed by 192.0.2.87 port 41321 [preauth]
+2026-10-24T21:28:46.819012-03:00 aprendiz-pc sshd[3919]: Invalid user support from 192.0.2.87 port 48970
+2026-10-24T21:28:47.493428-03:00 aprendiz-pc sshd[3919]: Connection closed by invalid user support 192.0.2.87 port 48970 [preauth]
+2026-10-24T21:28:47.383251-03:00 aprendiz-pc sshd[3927]: Invalid user git from 192.0.2.87 port 41524
+2026-10-24T21:28:47.735943-03:00 aprendiz-pc sshd[3927]: Connection closed by invalid user git 192.0.2.87 port 41524 [preauth]
+2026-10-24T21:28:49.857197-03:00 aprendiz-pc sshd[3929]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:28:50.444199-03:00 aprendiz-pc sshd[3929]: Connection closed by invalid user root 192.0.2.87 port 45473 [preauth]
+2026-10-24T21:28:51.725837-03:00 aprendiz-pc sshd[3937]: Invalid user hadoop from 192.0.2.87 port 53502
+2026-10-24T21:28:52.010417-03:00 aprendiz-pc sshd[3937]: Connection closed by invalid user hadoop 192.0.2.87 port 53502 [preauth]
+2026-10-24T21:28:53.250163-03:00 aprendiz-pc sshd[3942]: Invalid user test from 192.0.2.87 port 40409
+2026-10-24T21:28:53.777460-03:00 aprendiz-pc sshd[3942]: Connection closed by invalid user test 192.0.2.87 port 40409 [preauth]
+2026-10-24T21:28:55.281663-03:00 aprendiz-pc sshd[3947]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:28:56.104314-03:00 aprendiz-pc sshd[3947]: Connection closed by invalid user root 192.0.2.87 port 58978 [preauth]
+2026-10-24T21:28:56.218409-03:00 aprendiz-pc sshd[3954]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:28:57.107542-03:00 aprendiz-pc sshd[3954]: Connection closed by invalid user root 192.0.2.87 port 35115 [preauth]
+2026-10-24T21:28:58.698422-03:00 aprendiz-pc sshd[3958]: Invalid user test from 192.0.2.87 port 36964
+2026-10-24T21:28:59.130823-03:00 aprendiz-pc sshd[3958]: Connection closed by invalid user test 192.0.2.87 port 36964 [preauth]
+2026-10-24T21:29:00.473818-03:00 aprendiz-pc sshd[3963]: User root from 203.0.113.222 not allowed because not listed in AllowUsers
+2026-10-24T21:29:01.194308-03:00 aprendiz-pc sshd[3963]: Connection closed by invalid user root 203.0.113.222 port 40951 [preauth]
+2026-10-24T21:29:12.538424-03:00 aprendiz-pc sshd[3965]: banner exchange: Connection from 203.0.113.42 port 56838: invalid format
+2026-10-24T21:29:16.835619-03:00 aprendiz-pc sshd[3974]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:29:17.322250-03:00 aprendiz-pc sshd[3974]: Connection closed by invalid user root 203.0.113.46 port 46692 [preauth]
+2026-10-24T21:29:22.107433-03:00 aprendiz-pc sshd[3977]: Invalid user oracle from 192.0.2.224 port 60319
+2026-10-24T21:29:22.506086-03:00 aprendiz-pc sshd[3977]: Received disconnect from 192.0.2.224 port 60319:11: Bye Bye [preauth]
+2026-10-24T21:29:22.506297-03:00 aprendiz-pc sshd[3977]: Disconnected from invalid user oracle 192.0.2.224 port 60319 [preauth]
+2026-10-24T21:29:23.260090-03:00 aprendiz-pc sshd[3986]: Invalid user test from 192.0.2.224 port 49367
+2026-10-24T21:29:23.871429-03:00 aprendiz-pc sshd[3986]: Connection closed by invalid user test 192.0.2.224 port 49367 [preauth]
+2026-10-24T21:29:25.651613-03:00 aprendiz-pc sshd[3994]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:29:26.794806-03:00 aprendiz-pc sshd[3996]: Invalid user admin from 192.0.2.224 port 54918
+2026-10-24T21:29:27.517762-03:00 aprendiz-pc sshd[3996]: Connection closed by invalid user admin 192.0.2.224 port 54918 [preauth]
+2026-10-24T21:29:28.849536-03:00 aprendiz-pc sshd[3998]: Invalid user ftpuser from 192.0.2.224 port 60511
+2026-10-24T21:29:29.676323-03:00 aprendiz-pc sshd[3998]: Connection closed by invalid user ftpuser 192.0.2.224 port 60511 [preauth]
+2026-10-24T21:29:29.927125-03:00 aprendiz-pc sshd[4002]: Invalid user git from 192.0.2.224 port 41995
+2026-10-24T21:29:30.121432-03:00 aprendiz-pc sshd[4002]: Connection closed by invalid user git 192.0.2.224 port 41995 [preauth]
+2026-10-24T21:29:30.715581-03:00 aprendiz-pc sshd[4009]: User root from 192.0.2.224 not allowed because not listed in AllowUsers
+2026-10-24T21:29:31.567681-03:00 aprendiz-pc sshd[4009]: Connection closed by invalid user root 192.0.2.224 port 60083 [preauth]
+2026-10-24T21:29:33.089648-03:00 aprendiz-pc sshd[4015]: Invalid user ubuntu from 192.0.2.224 port 50300
+2026-10-24T21:29:33.452016-03:00 aprendiz-pc sshd[4015]: Connection closed by invalid user ubuntu 192.0.2.224 port 50300 [preauth]
+2026-10-24T21:29:34.805052-03:00 aprendiz-pc sshd[4020]: Invalid user deploy from 192.0.2.224 port 43565
+2026-10-24T21:29:35.052063-03:00 aprendiz-pc sshd[4020]: Connection closed by invalid user deploy 192.0.2.224 port 43565 [preauth]
+2026-10-24T21:29:35.219800-03:00 aprendiz-pc sshd[4024]: Invalid user test from 192.0.2.224 port 45999
+2026-10-24T21:29:35.865609-03:00 aprendiz-pc sshd[4024]: Connection closed by invalid user test 192.0.2.224 port 45999 [preauth]
+2026-10-24T21:29:37.563134-03:00 aprendiz-pc sshd[4029]: Invalid user user from 192.0.2.224 port 51152
+2026-10-24T21:29:38.267755-03:00 aprendiz-pc sshd[4029]: Connection closed by invalid user user 192.0.2.224 port 51152 [preauth]
+2026-10-24T21:29:39.993148-03:00 aprendiz-pc sshd[4037]: Invalid user hadoop from 203.0.113.222 port 44161
+2026-10-24T21:29:40.817106-03:00 aprendiz-pc sshd[4037]: Connection closed by invalid user hadoop 203.0.113.222 port 44161 [preauth]
+2026-10-24T21:29:58.300923-03:00 aprendiz-pc sshd[4040]: Invalid user git from 203.0.113.222 port 41231
+2026-10-24T21:29:58.794240-03:00 aprendiz-pc sshd[4040]: Connection closed by invalid user git 203.0.113.222 port 41231 [preauth]
+2026-10-24T21:30:03.361741-03:00 aprendiz-pc sshd[4044]: Invalid user ubuntu from 203.0.113.144 port 55653
+2026-10-24T21:30:04.227387-03:00 aprendiz-pc sshd[4044]: Connection closed by invalid user ubuntu 203.0.113.144 port 55653 [preauth]
+2026-10-24T21:30:20.658642-03:00 aprendiz-pc sshd[4050]: Invalid user test from 192.0.2.50 port 44012
+2026-10-24T21:30:21.338956-03:00 aprendiz-pc sshd[4050]: Connection closed by invalid user test 192.0.2.50 port 44012 [preauth]
+2026-10-24T21:30:24.180145-03:00 aprendiz-pc sshd[4054]: User root from 203.0.113.13 not allowed because not listed in AllowUsers
+2026-10-24T21:30:24.350629-03:00 aprendiz-pc sshd[4054]: Connection closed by invalid user root 203.0.113.13 port 60883 [preauth]
+2026-10-24T21:30:34.942897-03:00 aprendiz-pc sshd[4057]: Invalid user git from 203.0.113.222 port 42249
+2026-10-24T21:30:35.822389-03:00 aprendiz-pc sshd[4057]: Connection closed by invalid user git 203.0.113.222 port 42249 [preauth]
+2026-10-24T21:30:49.768505-03:00 aprendiz-pc sshd[4062]: Invalid user ubnt from 198.51.100.103 port 55676
+2026-10-24T21:30:50.478895-03:00 aprendiz-pc sshd[4062]: Connection closed by invalid user ubnt 198.51.100.103 port 55676 [preauth]
+2026-10-24T21:30:51.875947-03:00 aprendiz-pc sshd[4067]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:30:52.567584-03:00 aprendiz-pc sshd[4067]: Received disconnect from 198.51.100.103 port 53305:11: Bye Bye [preauth]
+2026-10-24T21:30:52.567795-03:00 aprendiz-pc sshd[4067]: Disconnected from invalid user root 198.51.100.103 port 53305 [preauth]
+2026-10-24T21:30:53.167442-03:00 aprendiz-pc sshd[4076]: Invalid user deploy from 198.51.100.103 port 39053
+2026-10-24T21:30:53.416533-03:00 aprendiz-pc sshd[4076]: Connection closed by invalid user deploy 198.51.100.103 port 39053 [preauth]
+2026-10-24T21:30:54.639587-03:00 aprendiz-pc sshd[4083]: Invalid user pi from 198.51.100.103 port 59658
+2026-10-24T21:30:54.815246-03:00 aprendiz-pc sshd[4083]: Connection closed by invalid user pi 198.51.100.103 port 59658 [preauth]
+2026-10-24T21:30:55.546395-03:00 aprendiz-pc sshd[4086]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:30:55.941824-03:00 aprendiz-pc sshd[4086]: Connection closed by invalid user root 198.51.100.103 port 45042 [preauth]
+2026-10-24T21:30:55.981647-03:00 aprendiz-pc sshd[4095]: Invalid user git from 198.51.100.103 port 50399
+2026-10-24T21:30:56.173736-03:00 aprendiz-pc sshd[4095]: Connection closed by invalid user git 198.51.100.103 port 50399 [preauth]
+2026-10-24T21:30:57.830951-03:00 aprendiz-pc sshd[4097]: Invalid user admin from 198.51.100.103 port 45739
+2026-10-24T21:30:58.635686-03:00 aprendiz-pc sshd[4097]: Connection closed by invalid user admin 198.51.100.103 port 45739 [preauth]
+2026-10-24T21:30:59.794835-03:00 aprendiz-pc sshd[4099]: Invalid user ubuntu from 198.51.100.103 port 38444
+2026-10-24T21:31:00.000105-03:00 aprendiz-pc sshd[4099]: Connection closed by invalid user ubuntu 198.51.100.103 port 38444 [preauth]
+2026-10-24T21:31:01.505379-03:00 aprendiz-pc sshd[4102]: Invalid user oracle from 198.51.100.103 port 43899
+2026-10-24T21:31:01.928958-03:00 aprendiz-pc sshd[4102]: Connection closed by invalid user oracle 198.51.100.103 port 43899 [preauth]
+2026-10-24T21:31:02.681700-03:00 aprendiz-pc sshd[4104]: Invalid user admin from 198.51.100.103 port 34409
+2026-10-24T21:31:03.243958-03:00 aprendiz-pc sshd[4104]: Connection closed by invalid user admin 198.51.100.103 port 34409 [preauth]
+2026-10-24T21:31:03.548292-03:00 aprendiz-pc sshd[4113]: Invalid user admin from 203.0.113.42 port 59191
+2026-10-24T21:31:04.111223-03:00 aprendiz-pc sshd[4113]: Connection closed by invalid user admin 203.0.113.42 port 59191 [preauth]
+2026-10-24T21:31:04.989555-03:00 aprendiz-pc sshd[4119]: Invalid user test from 203.0.113.42 port 36676
+2026-10-24T21:31:05.208957-03:00 aprendiz-pc sshd[4119]: Received disconnect from 203.0.113.42 port 36676:11: Bye Bye [preauth]
+2026-10-24T21:31:05.209168-03:00 aprendiz-pc sshd[4119]: Disconnected from invalid user test 203.0.113.42 port 36676 [preauth]
+2026-10-24T21:31:07.252371-03:00 aprendiz-pc sshd[4127]: User root from 203.0.113.42 not allowed because not listed in AllowUsers
+2026-10-24T21:31:07.586574-03:00 aprendiz-pc sshd[4127]: Connection closed by invalid user root 203.0.113.42 port 60387 [preauth]
+2026-10-24T21:31:08.488104-03:00 aprendiz-pc sshd[4136]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:31:09.020481-03:00 aprendiz-pc sshd[4145]: Invalid user ubuntu from 203.0.113.42 port 45675
+2026-10-24T21:31:09.277830-03:00 aprendiz-pc sshd[4145]: Connection closed by invalid user ubuntu 203.0.113.42 port 45675 [preauth]
+2026-10-24T21:31:10.443811-03:00 aprendiz-pc sshd[4154]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:31:10.921094-03:00 aprendiz-pc sshd[4157]: User root from 203.0.113.42 not allowed because not listed in AllowUsers
+2026-10-24T21:31:11.112120-03:00 aprendiz-pc sshd[4157]: Connection closed by invalid user root 203.0.113.42 port 42174 [preauth]
+2026-10-24T21:31:11.964474-03:00 aprendiz-pc sshd[4165]: User root from 203.0.113.42 not allowed because not listed in AllowUsers
+2026-10-24T21:31:12.148366-03:00 aprendiz-pc sshd[4165]: Connection closed by invalid user root 203.0.113.42 port 41025 [preauth]
+2026-10-24T21:31:12.921140-03:00 aprendiz-pc sshd[4172]: Invalid user admin from 203.0.113.42 port 44234
+2026-10-24T21:31:13.642435-03:00 aprendiz-pc sshd[4172]: Connection closed by invalid user admin 203.0.113.42 port 44234 [preauth]
+2026-10-24T21:31:15.191571-03:00 aprendiz-pc sshd[4176]: Invalid user ubuntu from 203.0.113.42 port 44417
+2026-10-24T21:31:15.765412-03:00 aprendiz-pc sshd[4176]: Connection closed by invalid user ubuntu 203.0.113.42 port 44417 [preauth]
+2026-10-24T21:31:16.328126-03:00 aprendiz-pc sshd[4180]: Invalid user user from 203.0.113.42 port 46510
+2026-10-24T21:31:17.160419-03:00 aprendiz-pc sshd[4180]: Connection closed by invalid user user 203.0.113.42 port 46510 [preauth]
+2026-10-24T21:31:18.592891-03:00 aprendiz-pc sshd[4182]: Invalid user admin from 203.0.113.42 port 48789
+2026-10-24T21:31:19.390832-03:00 aprendiz-pc sshd[4182]: Connection closed by invalid user admin 203.0.113.42 port 48789 [preauth]
+2026-10-24T21:31:20.596624-03:00 aprendiz-pc sshd[4188]: Invalid user admin from 203.0.113.42 port 33620
+2026-10-24T21:31:21.282015-03:00 aprendiz-pc sshd[4188]: Received disconnect from 203.0.113.42 port 33620:11: Bye Bye [preauth]
+2026-10-24T21:31:21.282226-03:00 aprendiz-pc sshd[4188]: Disconnected from invalid user admin 203.0.113.42 port 33620 [preauth]
+2026-10-24T21:31:21.424357-03:00 aprendiz-pc sshd[4196]: Invalid user admin from 203.0.113.42 port 49851
+2026-10-24T21:31:21.662728-03:00 aprendiz-pc sshd[4196]: Connection closed by invalid user admin 203.0.113.42 port 49851 [preauth]
+2026-10-24T21:31:22.599014-03:00 aprendiz-pc sshd[4202]: Invalid user debian from 192.0.2.191 port 48473
+2026-10-24T21:31:22.866385-03:00 aprendiz-pc sshd[4202]: Received disconnect from 192.0.2.191 port 48473:11: Bye Bye [preauth]
+2026-10-24T21:31:22.866596-03:00 aprendiz-pc sshd[4202]: Disconnected from invalid user debian 192.0.2.191 port 48473 [preauth]
+2026-10-24T21:31:34.280618-03:00 aprendiz-pc sshd[4205]: User root from 192.0.2.70 not allowed because not listed in AllowUsers
+2026-10-24T21:31:34.611168-03:00 aprendiz-pc sshd[4205]: Connection closed by invalid user root 192.0.2.70 port 39612 [preauth]
+2026-10-24T21:31:39.743619-03:00 aprendiz-pc sshd[4207]: banner exchange: Connection from 192.0.2.95 port 57860: invalid format
+2026-10-24T21:31:58.177962-03:00 aprendiz-pc sshd[4213]: Invalid user postgres from 192.0.2.87 port 45124
+2026-10-24T21:31:58.873679-03:00 aprendiz-pc sshd[4213]: Connection closed by invalid user postgres 192.0.2.87 port 45124 [preauth]
+2026-10-24T21:32:12.533021-03:00 aprendiz-pc sshd[4219]: User root from 192.0.2.224 not allowed because not listed in AllowUsers
+2026-10-24T21:32:12.744884-03:00 aprendiz-pc sshd[4219]: Connection closed by invalid user root 192.0.2.224 port 41609 [preauth]
+2026-10-24T21:32:19.500612-03:00 aprendiz-pc sshd[4225]: Invalid user minecraft from 198.51.100.167 port 54848
+2026-10-24T21:32:19.830645-03:00 aprendiz-pc sshd[4225]: Connection closed by invalid user minecraft 198.51.100.167 port 54848 [preauth]
+2026-10-24T21:32:23.591889-03:00 aprendiz-pc sshd[4227]: Invalid user support from 198.51.100.103 port 53098
+2026-10-24T21:32:24.287410-03:00 aprendiz-pc sshd[4227]: Connection closed by invalid user support 198.51.100.103 port 53098 [preauth]
+2026-10-24T21:32:40.520142-03:00 aprendiz-pc sshd[4229]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:32:41.040444-03:00 aprendiz-pc sshd[4229]: Connection closed by invalid user root 203.0.113.46 port 38703 [preauth]
+2026-10-24T21:33:01.999524-03:00 aprendiz-pc sshd[4235]: Invalid user user from 198.51.100.103 port 44192
+2026-10-24T21:33:02.419559-03:00 aprendiz-pc sshd[4235]: Connection closed by invalid user user 198.51.100.103 port 44192 [preauth]
+2026-10-24T21:33:21.916935-03:00 aprendiz-pc sshd[4241]: Invalid user oracle from 192.0.2.174 port 46814
+2026-10-24T21:33:22.375373-03:00 aprendiz-pc sshd[4241]: Connection closed by invalid user oracle 192.0.2.174 port 46814 [preauth]
+2026-10-24T21:33:29.442810-03:00 aprendiz-pc sshd[4248]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:33:30.176001-03:00 aprendiz-pc sshd[4248]: Connection closed by invalid user root 203.0.113.144 port 41181 [preauth]
+2026-10-24T21:33:47.262871-03:00 aprendiz-pc sshd[4251]: Invalid user ubnt from 198.51.100.118 port 34955
+2026-10-24T21:33:47.870324-03:00 aprendiz-pc sshd[4251]: Connection closed by invalid user ubnt 198.51.100.118 port 34955 [preauth]
+2026-10-24T21:33:56.909766-03:00 aprendiz-pc sshd[4258]: Invalid user user from 198.51.100.66 port 48472
+2026-10-24T21:33:57.405891-03:00 aprendiz-pc sshd[4258]: Connection closed by invalid user user 198.51.100.66 port 48472 [preauth]
+2026-10-24T21:34:17.856971-03:00 aprendiz-pc sshd[4260]: Invalid user git from 192.0.2.191 port 39775
+2026-10-24T21:34:18.238011-03:00 aprendiz-pc sshd[4260]: Connection closed by invalid user git 192.0.2.191 port 39775 [preauth]
+2026-10-24T21:34:31.810276-03:00 aprendiz-pc sshd[4264]: Invalid user pi from 203.0.113.46 port 47086
+2026-10-24T21:34:32.453330-03:00 aprendiz-pc sshd[4264]: Connection closed by invalid user pi 203.0.113.46 port 47086 [preauth]
+2026-10-24T21:34:32.796505-03:00 aprendiz-pc sshd[4270]: Invalid user ubuntu from 203.0.113.46 port 42701
+2026-10-24T21:34:33.446703-03:00 aprendiz-pc sshd[4270]: Connection closed by invalid user ubuntu 203.0.113.46 port 42701 [preauth]
+2026-10-24T21:34:33.968880-03:00 aprendiz-pc sshd[4278]: Invalid user ubuntu from 203.0.113.46 port 46425
+2026-10-24T21:34:34.248299-03:00 aprendiz-pc sshd[4278]: Received disconnect from 203.0.113.46 port 46425:11: Bye Bye [preauth]
+2026-10-24T21:34:34.248510-03:00 aprendiz-pc sshd[4278]: Disconnected from invalid user ubuntu 203.0.113.46 port 46425 [preauth]
+2026-10-24T21:34:34.657263-03:00 aprendiz-pc sshd[4287]: Connection closed by 203.0.113.46 port 55558 [preauth]
+2026-10-24T21:34:35.528240-03:00 aprendiz-pc sshd[4294]: Invalid user admin from 203.0.113.46 port 41629
+2026-10-24T21:34:35.692277-03:00 aprendiz-pc sshd[4294]: Connection closed by invalid user admin 203.0.113.46 port 41629 [preauth]
+2026-10-24T21:34:37.427950-03:00 aprendiz-pc sshd[4299]: Connection closed by 203.0.113.46 port 40268 [preauth]
+2026-10-24T21:34:38.067419-03:00 aprendiz-pc sshd[4306]: Invalid user postgres from 203.0.113.46 port 46231
+2026-10-24T21:34:38.731430-03:00 aprendiz-pc sshd[4306]: Connection closed by invalid user postgres 203.0.113.46 port 46231 [preauth]
+2026-10-24T21:34:40.226854-03:00 aprendiz-pc sshd[4313]: Invalid user admin from 203.0.113.46 port 45641
+2026-10-24T21:34:40.411584-03:00 aprendiz-pc sshd[4313]: Connection closed by invalid user admin 203.0.113.46 port 45641 [preauth]
+2026-10-24T21:34:41.311001-03:00 aprendiz-pc sshd[4320]: banner exchange: Connection from 203.0.113.46 port 45328: invalid format
+2026-10-24T21:34:43.520529-03:00 aprendiz-pc sshd[4324]: Connection closed by 203.0.113.46 port 60694 [preauth]
+2026-10-24T21:34:45.541779-03:00 aprendiz-pc sshd[4330]: Invalid user admin from 203.0.113.46 port 55937
+2026-10-24T21:34:45.713986-03:00 aprendiz-pc sshd[4330]: Connection closed by invalid user admin 203.0.113.46 port 55937 [preauth]
+2026-10-24T21:34:47.215354-03:00 aprendiz-pc sshd[4336]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:34:47.680226-03:00 aprendiz-pc sshd[4336]: Connection closed by invalid user root 203.0.113.46 port 46858 [preauth]
+2026-10-24T21:34:48.708761-03:00 aprendiz-pc sshd[4344]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:34:49.103703-03:00 aprendiz-pc sshd[4344]: Connection closed by invalid user root 203.0.113.46 port 45497 [preauth]
+2026-10-24T21:34:51.005258-03:00 aprendiz-pc sshd[4346]: Invalid user ubuntu from 198.51.100.103 port 55917
+2026-10-24T21:34:51.736756-03:00 aprendiz-pc sshd[4346]: Connection closed by invalid user ubuntu 198.51.100.103 port 55917 [preauth]
+2026-10-24T21:34:51.633997-03:00 aprendiz-pc sshd[4352]: banner exchange: Connection from 198.51.100.103 port 54982: invalid format
+2026-10-24T21:34:52.566094-03:00 aprendiz-pc sshd[4356]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:34:52.882675-03:00 aprendiz-pc sshd[4356]: Received disconnect from 198.51.100.103 port 55290:11: Bye Bye [preauth]
+2026-10-24T21:34:52.882886-03:00 aprendiz-pc sshd[4356]: Disconnected from invalid user root 198.51.100.103 port 55290 [preauth]
+2026-10-24T21:34:53.888070-03:00 aprendiz-pc sshd[4360]: Invalid user admin from 198.51.100.103 port 52617
+2026-10-24T21:34:54.081789-03:00 aprendiz-pc sshd[4360]: Connection closed by invalid user admin 198.51.100.103 port 52617 [preauth]
+2026-10-24T21:34:54.814195-03:00 aprendiz-pc sshd[4367]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:34:55.579252-03:00 aprendiz-pc sshd[4367]: Connection closed by invalid user root 198.51.100.103 port 40320 [preauth]
+2026-10-24T21:34:55.777622-03:00 aprendiz-pc sshd[4376]: Invalid user debian from 198.51.100.103 port 52743
+2026-10-24T21:34:56.171402-03:00 aprendiz-pc sshd[4376]: Connection closed by invalid user debian 198.51.100.103 port 52743 [preauth]
+2026-10-24T21:34:56.751732-03:00 aprendiz-pc sshd[4384]: Invalid user hadoop from 198.51.100.103 port 38895
+2026-10-24T21:34:57.324367-03:00 aprendiz-pc sshd[4384]: Received disconnect from 198.51.100.103 port 38895:11: Bye Bye [preauth]
+2026-10-24T21:34:57.324578-03:00 aprendiz-pc sshd[4384]: Disconnected from invalid user hadoop 198.51.100.103 port 38895 [preauth]
+2026-10-24T21:34:58.788704-03:00 aprendiz-pc sshd[4390]: Invalid user user from 198.51.100.103 port 59903
+2026-10-24T21:34:59.438802-03:00 aprendiz-pc sshd[4390]: Connection closed by invalid user user 198.51.100.103 port 59903 [preauth]
+2026-10-24T21:35:00.453045-03:00 aprendiz-pc sshd[4395]: Invalid user git from 198.51.100.103 port 57951
+2026-10-24T21:35:01.287991-03:00 aprendiz-pc sshd[4395]: Connection closed by invalid user git 198.51.100.103 port 57951 [preauth]
+2026-10-24T21:35:01.177826-03:00 aprendiz-pc sshd[4403]: Invalid user postgres from 192.0.2.191 port 57039
+2026-10-24T21:35:01.351287-03:00 aprendiz-pc sshd[4403]: Connection closed by invalid user postgres 192.0.2.191 port 57039 [preauth]
+2026-10-24T21:35:23.005393-03:00 aprendiz-pc sshd[4406]: Invalid user postgres from 203.0.113.80 port 53773
+2026-10-24T21:35:23.546848-03:00 aprendiz-pc sshd[4406]: Received disconnect from 203.0.113.80 port 53773:11: Bye Bye [preauth]
+2026-10-24T21:35:23.547059-03:00 aprendiz-pc sshd[4406]: Disconnected from invalid user postgres 203.0.113.80 port 53773 [preauth]
+2026-10-24T21:35:34.737662-03:00 aprendiz-pc sshd[4411]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:35.008783-03:00 aprendiz-pc sshd[4411]: Received disconnect from 192.0.2.87 port 42631:11: Bye Bye [preauth]
+2026-10-24T21:35:35.008994-03:00 aprendiz-pc sshd[4411]: Disconnected from invalid user root 192.0.2.87 port 42631 [preauth]
+2026-10-24T21:35:44.598021-03:00 aprendiz-pc sshd[4419]: Invalid user oracle from 192.0.2.87 port 47165
+2026-10-24T21:35:45.380942-03:00 aprendiz-pc sshd[4419]: Received disconnect from 192.0.2.87 port 47165:11: Bye Bye [preauth]
+2026-10-24T21:35:45.381153-03:00 aprendiz-pc sshd[4419]: Disconnected from invalid user oracle 192.0.2.87 port 47165 [preauth]
+2026-10-24T21:35:45.379408-03:00 aprendiz-pc sshd[4424]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:45.836443-03:00 aprendiz-pc sshd[4424]: Received disconnect from 192.0.2.87 port 56916:11: Bye Bye [preauth]
+2026-10-24T21:35:45.836654-03:00 aprendiz-pc sshd[4424]: Disconnected from invalid user root 192.0.2.87 port 56916 [preauth]
+2026-10-24T21:35:46.005139-03:00 aprendiz-pc sshd[4429]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:46.213206-03:00 aprendiz-pc sshd[4429]: Connection closed by invalid user root 192.0.2.87 port 60194 [preauth]
+2026-10-24T21:35:48.179007-03:00 aprendiz-pc sshd[4431]: Invalid user ubnt from 192.0.2.87 port 51762
+2026-10-24T21:35:49.032230-03:00 aprendiz-pc sshd[4431]: Connection closed by invalid user ubnt 192.0.2.87 port 51762 [preauth]
+2026-10-24T21:35:49.920434-03:00 aprendiz-pc sshd[4435]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:50.463615-03:00 aprendiz-pc sshd[4435]: Received disconnect from 192.0.2.87 port 43637:11: Bye Bye [preauth]
+2026-10-24T21:35:50.463826-03:00 aprendiz-pc sshd[4435]: Disconnected from invalid user root 192.0.2.87 port 43637 [preauth]
+2026-10-24T21:35:50.535969-03:00 aprendiz-pc sshd[4443]: Invalid user ubnt from 192.0.2.87 port 39404
+2026-10-24T21:35:50.844553-03:00 aprendiz-pc sshd[4443]: Connection closed by invalid user ubnt 192.0.2.87 port 39404 [preauth]
+2026-10-24T21:35:52.545147-03:00 aprendiz-pc sshd[4449]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:53.374646-03:00 aprendiz-pc sshd[4449]: Connection closed by invalid user root 192.0.2.87 port 44530 [preauth]
+2026-10-24T21:35:52.945477-03:00 aprendiz-pc sshd[4451]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:53.646766-03:00 aprendiz-pc sshd[4451]: Received disconnect from 192.0.2.87 port 35505:11: Bye Bye [preauth]
+2026-10-24T21:35:53.646977-03:00 aprendiz-pc sshd[4451]: Disconnected from invalid user root 192.0.2.87 port 35505 [preauth]
+2026-10-24T21:35:54.178002-03:00 aprendiz-pc sshd[4454]: Connection closed by 192.0.2.87 port 38396 [preauth]
+2026-10-24T21:35:55.676078-03:00 aprendiz-pc sshd[4460]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:56.130833-03:00 aprendiz-pc sshd[4460]: Received disconnect from 192.0.2.87 port 47518:11: Bye Bye [preauth]
+2026-10-24T21:35:56.131044-03:00 aprendiz-pc sshd[4460]: Disconnected from invalid user root 192.0.2.87 port 47518 [preauth]
+2026-10-24T21:35:57.537690-03:00 aprendiz-pc sshd[4462]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:57.927054-03:00 aprendiz-pc sshd[4462]: Connection closed by invalid user root 192.0.2.87 port 55303 [preauth]
+2026-10-24T21:35:57.941216-03:00 aprendiz-pc sshd[4469]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:35:58.247458-03:00 aprendiz-pc sshd[4469]: Connection closed by invalid user root 192.0.2.87 port 50648 [preauth]
+2026-10-24T21:36:00.126058-03:00 aprendiz-pc sshd[4474]: User root from 192.0.2.87 not allowed because not listed in AllowUsers
+2026-10-24T21:36:00.291668-03:00 aprendiz-pc sshd[4474]: Connection closed by invalid user root 192.0.2.87 port 51368 [preauth]
+2026-10-24T21:36:02.163443-03:00 aprendiz-pc sshd[4476]: Invalid user user from 192.0.2.87 port 43328
+2026-10-24T21:36:02.386437-03:00 aprendiz-pc sshd[4476]: Received disconnect from 192.0.2.87 port 43328:11: Bye Bye [preauth]
+2026-10-24T21:36:02.386648-03:00 aprendiz-pc sshd[4476]: Disconnected from invalid user user 192.0.2.87 port 43328 [preauth]
+2026-10-24T21:36:03.337787-03:00 aprendiz-pc sshd[4479]: Invalid user ftpuser from 198.51.100.150 port 34942
+2026-10-24T21:36:03.841760-03:00 aprendiz-pc sshd[4479]: Connection closed by invalid user ftpuser 198.51.100.150 port 34942 [preauth]
+2026-10-24T21:36:13.704403-03:00 aprendiz-pc sshd[4487]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:36:14.048762-03:00 aprendiz-pc sshd[4487]: Connection closed by invalid user root 203.0.113.219 port 39225 [preauth]
+2026-10-24T21:36:16.179840-03:00 aprendiz-pc sshd[4489]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:36:17.032387-03:00 aprendiz-pc sshd[4489]: Connection closed by invalid user root 203.0.113.219 port 52310 [preauth]
+2026-10-24T21:36:16.686095-03:00 aprendiz-pc sshd[4492]: Invalid user guest from 203.0.113.219 port 36341
+2026-10-24T21:36:17.151916-03:00 aprendiz-pc sshd[4492]: Connection closed by invalid user guest 203.0.113.219 port 36341 [preauth]
+2026-10-24T21:36:18.198540-03:00 aprendiz-pc sshd[4497]: Invalid user admin from 203.0.113.219 port 37007
+2026-10-24T21:36:18.713724-03:00 aprendiz-pc sshd[4497]: Connection closed by invalid user admin 203.0.113.219 port 37007 [preauth]
+2026-10-24T21:36:18.994874-03:00 aprendiz-pc sshd[4499]: Invalid user user from 203.0.113.219 port 58675
+2026-10-24T21:36:19.813660-03:00 aprendiz-pc sshd[4499]: Connection closed by invalid user user 203.0.113.219 port 58675 [preauth]
+2026-10-24T21:36:20.018969-03:00 aprendiz-pc sshd[4507]: Invalid user postgres from 203.0.113.219 port 48274
+2026-10-24T21:36:20.591849-03:00 aprendiz-pc sshd[4507]: Connection closed by invalid user postgres 203.0.113.219 port 48274 [preauth]
+2026-10-24T21:36:21.877283-03:00 aprendiz-pc sshd[4512]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:36:22.569414-03:00 aprendiz-pc sshd[4512]: Connection closed by invalid user root 203.0.113.219 port 45381 [preauth]
+2026-10-24T21:36:22.600487-03:00 aprendiz-pc sshd[4515]: Invalid user ubuntu from 203.0.113.219 port 41649
+2026-10-24T21:36:23.175377-03:00 aprendiz-pc sshd[4515]: Connection closed by invalid user ubuntu 203.0.113.219 port 41649 [preauth]
+2026-10-24T21:36:24.824830-03:00 aprendiz-pc sshd[4517]: Invalid user test from 203.0.113.219 port 60563
+2026-10-24T21:36:25.486703-03:00 aprendiz-pc sshd[4517]: Received disconnect from 203.0.113.219 port 60563:11: Bye Bye [preauth]
+2026-10-24T21:36:25.486914-03:00 aprendiz-pc sshd[4517]: Disconnected from invalid user test 203.0.113.219 port 60563 [preauth]
+2026-10-24T21:36:26.610998-03:00 aprendiz-pc sshd[4520]: Invalid user pi from 203.0.113.219 port 54364
+2026-10-24T21:36:27.152371-03:00 aprendiz-pc sshd[4520]: Connection closed by invalid user pi 203.0.113.219 port 54364 [preauth]
+2026-10-24T21:36:27.894910-03:00 aprendiz-pc sshd[4525]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:36:28.425556-03:00 aprendiz-pc sshd[4525]: Connection closed by invalid user root 203.0.113.219 port 48718 [preauth]
+2026-10-24T21:36:28.920005-03:00 aprendiz-pc sshd[4527]: Invalid user deploy from 203.0.113.219 port 39897
+2026-10-24T21:36:29.258978-03:00 aprendiz-pc sshd[4527]: Connection closed by invalid user deploy 203.0.113.219 port 39897 [preauth]
+2026-10-24T21:36:31.136663-03:00 aprendiz-pc sshd[4529]: Invalid user admin from 203.0.113.219 port 39417
+2026-10-24T21:36:31.748786-03:00 aprendiz-pc sshd[4529]: Connection closed by invalid user admin 203.0.113.219 port 39417 [preauth]
+2026-10-24T21:36:32.730293-03:00 aprendiz-pc sshd[4532]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:36:33.048477-03:00 aprendiz-pc sshd[4532]: Connection closed by invalid user root 203.0.113.46 port 45244 [preauth]
+2026-10-24T21:36:48.054908-03:00 aprendiz-pc sshd[4539]: User root from 203.0.113.13 not allowed because not listed in AllowUsers
+2026-10-24T21:36:48.317866-03:00 aprendiz-pc sshd[4539]: Received disconnect from 203.0.113.13 port 47125:11: Bye Bye [preauth]
+2026-10-24T21:36:48.318077-03:00 aprendiz-pc sshd[4539]: Disconnected from invalid user root 203.0.113.13 port 47125 [preauth]
+2026-10-24T21:36:50.074276-03:00 aprendiz-pc sshd[4546]: Connection closed by 203.0.113.13 port 55634 [preauth]
+2026-10-24T21:36:51.151015-03:00 aprendiz-pc sshd[4552]: User root from 203.0.113.13 not allowed because not listed in AllowUsers
+2026-10-24T21:36:51.342372-03:00 aprendiz-pc sshd[4552]: Connection closed by invalid user root 203.0.113.13 port 50475 [preauth]
+2026-10-24T21:36:52.328164-03:00 aprendiz-pc sshd[4558]: Invalid user user from 203.0.113.13 port 58160
+2026-10-24T21:36:52.941428-03:00 aprendiz-pc sshd[4558]: Received disconnect from 203.0.113.13 port 58160:11: Bye Bye [preauth]
+2026-10-24T21:36:52.941639-03:00 aprendiz-pc sshd[4558]: Disconnected from invalid user user 203.0.113.13 port 58160 [preauth]
+2026-10-24T21:36:53.847295-03:00 aprendiz-pc sshd[4562]: Invalid user ubnt from 192.0.2.50 port 60327
+2026-10-24T21:36:54.356914-03:00 aprendiz-pc sshd[4562]: Connection closed by invalid user ubnt 192.0.2.50 port 60327 [preauth]
+2026-10-24T21:37:02.832118-03:00 aprendiz-pc sshd[4568]: Invalid user postgres from 203.0.113.45 port 33799
+2026-10-24T21:37:03.150512-03:00 aprendiz-pc sshd[4568]: Connection closed by invalid user postgres 203.0.113.45 port 33799 [preauth]
+2026-10-24T21:37:23.806764-03:00 aprendiz-pc sshd[4575]: Invalid user user from 198.51.100.66 port 37598
+2026-10-24T21:37:24.151761-03:00 aprendiz-pc sshd[4575]: Connection closed by invalid user user 198.51.100.66 port 37598 [preauth]
+2026-10-24T21:37:34.054989-03:00 aprendiz-pc sshd[4578]: banner exchange: Connection from 203.0.113.234 port 43687: invalid format
+2026-10-24T21:37:37.928259-03:00 aprendiz-pc sshd[4587]: Invalid user pi from 203.0.113.219 port 41803
+2026-10-24T21:37:38.209326-03:00 aprendiz-pc sshd[4587]: Connection closed by invalid user pi 203.0.113.219 port 41803 [preauth]
+2026-10-24T21:37:44.497898-03:00 aprendiz-pc sshd[4589]: User root from 192.0.2.21 not allowed because not listed in AllowUsers
+2026-10-24T21:37:45.149458-03:00 aprendiz-pc sshd[4589]: Connection closed by invalid user root 192.0.2.21 port 33308 [preauth]
+2026-10-24T21:37:50.470161-03:00 aprendiz-pc sshd[4592]: Invalid user admin from 192.0.2.87 port 39608
+2026-10-24T21:37:50.937914-03:00 aprendiz-pc sshd[4592]: Connection closed by invalid user admin 192.0.2.87 port 39608 [preauth]
+2026-10-24T21:38:02.878557-03:00 aprendiz-pc sshd[4598]: Invalid user ubnt from 203.0.113.46 port 48480
+2026-10-24T21:38:03.701301-03:00 aprendiz-pc sshd[4598]: Connection closed by invalid user ubnt 203.0.113.46 port 48480 [preauth]
+2026-10-24T21:38:14.458849-03:00 aprendiz-pc sshd[4601]: Invalid user pi from 198.51.100.219 port 47302
+2026-10-24T21:38:15.008258-03:00 aprendiz-pc sshd[4601]: Received disconnect from 198.51.100.219 port 47302:11: Bye Bye [preauth]
+2026-10-24T21:38:15.008469-03:00 aprendiz-pc sshd[4601]: Disconnected from invalid user pi 198.51.100.219 port 47302 [preauth]
+2026-10-24T21:38:33.821142-03:00 aprendiz-pc sshd[4609]: Invalid user admin from 203.0.113.45 port 48869
+2026-10-24T21:38:34.610717-03:00 aprendiz-pc sshd[4609]: Connection closed by invalid user admin 203.0.113.45 port 48869 [preauth]
+2026-10-24T21:38:43.797999-03:00 aprendiz-pc sshd[4615]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:38:57.402795-03:00 aprendiz-pc sshd[4621]: Connection closed by 203.0.113.20 port 44126 [preauth]
+2026-10-24T21:39:14.108154-03:00 aprendiz-pc sshd[4623]: Invalid user oracle from 203.0.113.222 port 56092
+2026-10-24T21:39:14.892024-03:00 aprendiz-pc sshd[4623]: Connection closed by invalid user oracle 203.0.113.222 port 56092 [preauth]
+2026-10-24T21:39:28.723139-03:00 aprendiz-pc sshd[4630]: Invalid user debian from 203.0.113.20 port 37868
+2026-10-24T21:39:29.622566-03:00 aprendiz-pc sshd[4630]: Connection closed by invalid user debian 203.0.113.20 port 37868 [preauth]
+2026-10-24T21:39:46.585289-03:00 aprendiz-pc sshd[4635]: User root from 203.0.113.13 not allowed because not listed in AllowUsers
+2026-10-24T21:39:47.216292-03:00 aprendiz-pc sshd[4635]: Received disconnect from 203.0.113.13 port 41298:11: Bye Bye [preauth]
+2026-10-24T21:39:47.216503-03:00 aprendiz-pc sshd[4635]: Disconnected from invalid user root 203.0.113.13 port 41298 [preauth]
+2026-10-24T21:40:05.633461-03:00 aprendiz-pc sshd[4641]: Invalid user user from 198.51.100.103 port 51649
+2026-10-24T21:40:06.486242-03:00 aprendiz-pc sshd[4641]: Connection closed by invalid user user 198.51.100.103 port 51649 [preauth]
+2026-10-24T21:40:14.126134-03:00 aprendiz-pc sshd[4650]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:40:14.530461-03:00 aprendiz-pc sshd[4650]: Received disconnect from 203.0.113.46 port 47427:11: Bye Bye [preauth]
+2026-10-24T21:40:14.530672-03:00 aprendiz-pc sshd[4650]: Disconnected from invalid user root 203.0.113.46 port 47427 [preauth]
+2026-10-24T21:40:23.914159-03:00 aprendiz-pc sshd[4656]: Invalid user postgres from 203.0.113.199 port 40449
+2026-10-24T21:40:24.485067-03:00 aprendiz-pc sshd[4656]: Connection closed by invalid user postgres 203.0.113.199 port 40449 [preauth]
+2026-10-24T21:40:29.683301-03:00 aprendiz-pc sshd[4660]: Invalid user user from 192.0.2.87 port 37085
+2026-10-24T21:40:30.535696-03:00 aprendiz-pc sshd[4660]: Received disconnect from 192.0.2.87 port 37085:11: Bye Bye [preauth]
+2026-10-24T21:40:30.535907-03:00 aprendiz-pc sshd[4660]: Disconnected from invalid user user 192.0.2.87 port 37085 [preauth]
+2026-10-24T21:40:48.060143-03:00 aprendiz-pc sshd[4668]: Invalid user ubuntu from 203.0.113.45 port 39729
+2026-10-24T21:40:48.775869-03:00 aprendiz-pc sshd[4668]: Connection closed by invalid user ubuntu 203.0.113.45 port 39729 [preauth]
+2026-10-24T21:41:04.773002-03:00 aprendiz-pc sshd[4672]: Invalid user ubuntu from 192.0.2.87 port 42275
+2026-10-24T21:41:05.395684-03:00 aprendiz-pc sshd[4672]: Connection closed by invalid user ubuntu 192.0.2.87 port 42275 [preauth]
+2026-10-24T21:41:16.311750-03:00 aprendiz-pc sshd[4676]: Invalid user ubuntu from 203.0.113.144 port 38652
+2026-10-24T21:41:17.004372-03:00 aprendiz-pc sshd[4676]: Connection closed by invalid user ubuntu 203.0.113.144 port 38652 [preauth]
+2026-10-24T21:41:17.521452-03:00 aprendiz-pc sshd[4680]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:41:17.928301-03:00 aprendiz-pc sshd[4680]: Connection closed by invalid user root 203.0.113.144 port 40103 [preauth]
+2026-10-24T21:41:19.557670-03:00 aprendiz-pc sshd[4688]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:41:19.914892-03:00 aprendiz-pc sshd[4688]: Connection closed by invalid user root 203.0.113.144 port 46105 [preauth]
+2026-10-24T21:41:20.754245-03:00 aprendiz-pc sshd[4695]: Invalid user postgres from 203.0.113.144 port 39595
+2026-10-24T21:41:21.306520-03:00 aprendiz-pc sshd[4695]: Connection closed by invalid user postgres 203.0.113.144 port 39595 [preauth]
+2026-10-24T21:41:22.677431-03:00 aprendiz-pc sshd[4703]: Invalid user admin from 203.0.113.144 port 36296
+2026-10-24T21:41:23.465952-03:00 aprendiz-pc sshd[4703]: Connection closed by invalid user admin 203.0.113.144 port 36296 [preauth]
+2026-10-24T21:41:25.023816-03:00 aprendiz-pc sshd[4710]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:41:26.856395-03:00 aprendiz-pc sshd[4719]: Invalid user test from 203.0.113.144 port 42256
+2026-10-24T21:41:27.192362-03:00 aprendiz-pc sshd[4719]: Connection closed by invalid user test 203.0.113.144 port 42256 [preauth]
+2026-10-24T21:41:28.572456-03:00 aprendiz-pc sshd[4725]: Invalid user ftpuser from 203.0.113.144 port 59674
+2026-10-24T21:41:28.799730-03:00 aprendiz-pc sshd[4725]: Connection closed by invalid user ftpuser 203.0.113.144 port 59674 [preauth]
+2026-10-24T21:41:29.409020-03:00 aprendiz-pc sshd[4734]: Invalid user postgres from 203.0.113.144 port 44494
+2026-10-24T21:41:30.008620-03:00 aprendiz-pc sshd[4734]: Connection closed by invalid user postgres 203.0.113.144 port 44494 [preauth]
+2026-10-24T21:41:30.627283-03:00 aprendiz-pc sshd[4738]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:41:31.077583-03:00 aprendiz-pc sshd[4738]: Received disconnect from 203.0.113.144 port 37896:11: Bye Bye [preauth]
+2026-10-24T21:41:31.077794-03:00 aprendiz-pc sshd[4738]: Disconnected from invalid user root 203.0.113.144 port 37896 [preauth]
+2026-10-24T21:41:32.969485-03:00 aprendiz-pc sshd[4744]: Invalid user guest from 203.0.113.144 port 59509
+2026-10-24T21:41:33.246341-03:00 aprendiz-pc sshd[4744]: Connection closed by invalid user guest 203.0.113.144 port 59509 [preauth]
+2026-10-24T21:41:33.910196-03:00 aprendiz-pc sshd[4747]: Invalid user admin from 203.0.113.129 port 52148
+2026-10-24T21:41:34.350913-03:00 aprendiz-pc sshd[4747]: Connection closed by invalid user admin 203.0.113.129 port 52148 [preauth]
+2026-10-24T21:41:36.168299-03:00 aprendiz-pc sshd[4749]: Invalid user minecraft from 198.51.100.103 port 48302
+2026-10-24T21:41:36.501734-03:00 aprendiz-pc sshd[4749]: Connection closed by invalid user minecraft 198.51.100.103 port 48302 [preauth]
+2026-10-24T21:41:47.264777-03:00 aprendiz-pc sshd[4755]: Connection closed by 192.0.2.37 port 52291 [preauth]
+2026-10-24T21:41:50.164610-03:00 aprendiz-pc sshd[4760]: Connection closed by 203.0.113.219 port 53805 [preauth]
+2026-10-24T21:41:50.722704-03:00 aprendiz-pc sshd[4768]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:41:51.144579-03:00 aprendiz-pc sshd[4768]: Connection closed by invalid user root 203.0.113.219 port 40230 [preauth]
+2026-10-24T21:41:52.262007-03:00 aprendiz-pc sshd[4770]: Invalid user admin from 203.0.113.219 port 57813
+2026-10-24T21:41:52.918655-03:00 aprendiz-pc sshd[4770]: Connection closed by invalid user admin 203.0.113.219 port 57813 [preauth]
+2026-10-24T21:41:54.153654-03:00 aprendiz-pc sshd[4778]: Invalid user ubuntu from 203.0.113.219 port 51326
+2026-10-24T21:41:54.382984-03:00 aprendiz-pc sshd[4778]: Connection closed by invalid user ubuntu 203.0.113.219 port 51326 [preauth]
+2026-10-24T21:41:54.859725-03:00 aprendiz-pc sshd[4780]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:41:55.665595-03:00 aprendiz-pc sshd[4780]: Connection closed by invalid user root 203.0.113.219 port 34136 [preauth]
+2026-10-24T21:41:55.832615-03:00 aprendiz-pc sshd[4782]: Connection closed by 203.0.113.234 port 45717 [preauth]
+2026-10-24T21:42:14.640695-03:00 aprendiz-pc sshd[4785]: Invalid user pi from 203.0.113.30 port 52092
+2026-10-24T21:42:15.252508-03:00 aprendiz-pc sshd[4785]: Connection closed by invalid user pi 203.0.113.30 port 52092 [preauth]
+2026-10-24T21:42:30.500759-03:00 aprendiz-pc sshd[4787]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:42:30.735896-03:00 aprendiz-pc sshd[4787]: Received disconnect from 203.0.113.129 port 36067:11: Bye Bye [preauth]
+2026-10-24T21:42:30.736107-03:00 aprendiz-pc sshd[4787]: Disconnected from invalid user root 203.0.113.129 port 36067 [preauth]
+2026-10-24T21:42:47.804824-03:00 aprendiz-pc sshd[4795]: User root from 198.51.100.126 not allowed because not listed in AllowUsers
+2026-10-24T21:42:48.331872-03:00 aprendiz-pc sshd[4795]: Received disconnect from 198.51.100.126 port 34260:11: Bye Bye [preauth]
+2026-10-24T21:42:48.332083-03:00 aprendiz-pc sshd[4795]: Disconnected from invalid user root 198.51.100.126 port 34260 [preauth]
+2026-10-24T21:42:48.878527-03:00 aprendiz-pc sshd[4798]: banner exchange: Connection from 198.51.100.126 port 56004: invalid format
+2026-10-24T21:42:51.023851-03:00 aprendiz-pc sshd[4801]: User root from 198.51.100.126 not allowed because not listed in AllowUsers
+2026-10-24T21:42:51.301110-03:00 aprendiz-pc sshd[4801]: Received disconnect from 198.51.100.126 port 35778:11: Bye Bye [preauth]
+2026-10-24T21:42:51.301321-03:00 aprendiz-pc sshd[4801]: Disconnected from invalid user root 198.51.100.126 port 35778 [preauth]
+2026-10-24T21:42:53.457640-03:00 aprendiz-pc sshd[4809]: Invalid user admin from 198.51.100.126 port 42695
+2026-10-24T21:42:53.702096-03:00 aprendiz-pc sshd[4809]: Connection closed by invalid user admin 198.51.100.126 port 42695 [preauth]
+2026-10-24T21:42:54.412345-03:00 aprendiz-pc sshd[4811]: Invalid user debian from 198.51.100.126 port 54474
+2026-10-24T21:42:55.046185-03:00 aprendiz-pc sshd[4811]: Connection closed by invalid user debian 198.51.100.126 port 54474 [preauth]
+2026-10-24T21:42:55.493276-03:00 aprendiz-pc sshd[4813]: banner exchange: Connection from 198.51.100.126 port 60759: invalid format
+2026-10-24T21:42:57.570085-03:00 aprendiz-pc sshd[4822]: User root from 192.0.2.191 not allowed because not listed in AllowUsers
+2026-10-24T21:42:58.106066-03:00 aprendiz-pc sshd[4822]: Connection closed by invalid user root 192.0.2.191 port 60934 [preauth]
+2026-10-24T21:43:03.750553-03:00 aprendiz-pc sshd[4831]: Invalid user user from 203.0.113.63 port 52121
+2026-10-24T21:43:04.205162-03:00 aprendiz-pc sshd[4831]: Connection closed by invalid user user 203.0.113.63 port 52121 [preauth]
+2026-10-24T21:43:12.660658-03:00 aprendiz-pc sshd[4839]: User root from 203.0.113.9 not allowed because not listed in AllowUsers
+2026-10-24T21:43:12.893443-03:00 aprendiz-pc sshd[4839]: Received disconnect from 203.0.113.9 port 44246:11: Bye Bye [preauth]
+2026-10-24T21:43:12.893654-03:00 aprendiz-pc sshd[4839]: Disconnected from invalid user root 203.0.113.9 port 44246 [preauth]
+2026-10-24T21:43:17.969432-03:00 aprendiz-pc sshd[4844]: Invalid user minecraft from 198.51.100.103 port 45475
+2026-10-24T21:43:18.350311-03:00 aprendiz-pc sshd[4844]: Connection closed by invalid user minecraft 198.51.100.103 port 45475 [preauth]
+2026-10-24T21:43:31.170292-03:00 aprendiz-pc sshd[4847]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:43:31.816068-03:00 aprendiz-pc sshd[4847]: Connection closed by invalid user root 198.51.100.167 port 59874 [preauth]
+2026-10-24T21:43:43.668190-03:00 aprendiz-pc sshd[4850]: User root from 192.0.2.174 not allowed because not listed in AllowUsers
+2026-10-24T21:43:44.237366-03:00 aprendiz-pc sshd[4850]: Connection closed by invalid user root 192.0.2.174 port 34762 [preauth]
+2026-10-24T21:43:52.630770-03:00 aprendiz-pc sshd[4856]: Invalid user ubuntu from 192.0.2.50 port 33944
+2026-10-24T21:43:53.012932-03:00 aprendiz-pc sshd[4856]: Connection closed by invalid user ubuntu 192.0.2.50 port 33944 [preauth]
+2026-10-24T21:43:54.511931-03:00 aprendiz-pc sshd[4859]: Invalid user postgres from 192.0.2.50 port 55231
+2026-10-24T21:43:54.904922-03:00 aprendiz-pc sshd[4859]: Received disconnect from 192.0.2.50 port 55231:11: Bye Bye [preauth]
+2026-10-24T21:43:54.905133-03:00 aprendiz-pc sshd[4859]: Disconnected from invalid user postgres 192.0.2.50 port 55231 [preauth]
+2026-10-24T21:43:56.917195-03:00 aprendiz-pc sshd[4864]: Invalid user postgres from 192.0.2.50 port 41171
+2026-10-24T21:43:57.324692-03:00 aprendiz-pc sshd[4864]: Connection closed by invalid user postgres 192.0.2.50 port 41171 [preauth]
+2026-10-24T21:43:58.130208-03:00 aprendiz-pc sshd[4867]: Invalid user admin from 192.0.2.50 port 46929
+2026-10-24T21:43:58.748867-03:00 aprendiz-pc sshd[4867]: Connection closed by invalid user admin 192.0.2.50 port 46929 [preauth]
+2026-10-24T21:43:59.279180-03:00 aprendiz-pc sshd[4871]: Invalid user pi from 192.0.2.50 port 34077
+2026-10-24T21:43:59.618648-03:00 aprendiz-pc sshd[4871]: Received disconnect from 192.0.2.50 port 34077:11: Bye Bye [preauth]
+2026-10-24T21:43:59.618859-03:00 aprendiz-pc sshd[4871]: Disconnected from invalid user pi 192.0.2.50 port 34077 [preauth]
+2026-10-24T21:44:00.852430-03:00 aprendiz-pc sshd[4876]: Invalid user ubuntu from 198.51.100.103 port 52278
+2026-10-24T21:44:01.579160-03:00 aprendiz-pc sshd[4876]: Received disconnect from 198.51.100.103 port 52278:11: Bye Bye [preauth]
+2026-10-24T21:44:01.579371-03:00 aprendiz-pc sshd[4876]: Disconnected from invalid user ubuntu 198.51.100.103 port 52278 [preauth]
+2026-10-24T21:44:11.549761-03:00 aprendiz-pc sshd[4881]: Invalid user jenkins from 203.0.113.1 port 52393
+2026-10-24T21:44:11.734795-03:00 aprendiz-pc sshd[4881]: Received disconnect from 203.0.113.1 port 52393:11: Bye Bye [preauth]
+2026-10-24T21:44:11.735006-03:00 aprendiz-pc sshd[4881]: Disconnected from invalid user jenkins 203.0.113.1 port 52393 [preauth]
+2026-10-24T21:44:12.372358-03:00 aprendiz-pc sshd[4886]: Invalid user postgres from 203.0.113.1 port 37331
+2026-10-24T21:44:12.896526-03:00 aprendiz-pc sshd[4886]: Connection closed by invalid user postgres 203.0.113.1 port 37331 [preauth]
+2026-10-24T21:44:14.264750-03:00 aprendiz-pc sshd[4889]: Invalid user postgres from 203.0.113.1 port 50848
+2026-10-24T21:44:14.781265-03:00 aprendiz-pc sshd[4889]: Connection closed by invalid user postgres 203.0.113.1 port 50848 [preauth]
+2026-10-24T21:44:15.049194-03:00 aprendiz-pc sshd[4893]: Invalid user ftpuser from 203.0.113.1 port 33790
+2026-10-24T21:44:15.328535-03:00 aprendiz-pc sshd[4893]: Connection closed by invalid user ftpuser 203.0.113.1 port 33790 [preauth]
+2026-10-24T21:44:15.765005-03:00 aprendiz-pc sshd[4902]: Invalid user ubuntu from 203.0.113.1 port 57098
+2026-10-24T21:44:16.522648-03:00 aprendiz-pc sshd[4902]: Connection closed by invalid user ubuntu 203.0.113.1 port 57098 [preauth]
+2026-10-24T21:44:17.287816-03:00 aprendiz-pc sshd[4905]: Connection closed by 203.0.113.1 port 34671 [preauth]
+2026-10-24T21:44:18.963752-03:00 aprendiz-pc sshd[4914]: Invalid user user from 203.0.113.1 port 33323
+2026-10-24T21:44:19.794915-03:00 aprendiz-pc sshd[4914]: Connection closed by invalid user user 203.0.113.1 port 33323 [preauth]
+2026-10-24T21:44:20.030687-03:00 aprendiz-pc sshd[4923]: User root from 203.0.113.1 not allowed because not listed in AllowUsers
+2026-10-24T21:44:20.834268-03:00 aprendiz-pc sshd[4923]: Received disconnect from 203.0.113.1 port 59326:11: Bye Bye [preauth]
+2026-10-24T21:44:20.834479-03:00 aprendiz-pc sshd[4923]: Disconnected from invalid user root 203.0.113.1 port 59326 [preauth]
+2026-10-24T21:44:21.983725-03:00 aprendiz-pc sshd[4931]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:44:23.463781-03:00 aprendiz-pc sshd[4936]: Invalid user postgres from 203.0.113.1 port 44656
+2026-10-24T21:44:23.863115-03:00 aprendiz-pc sshd[4936]: Connection closed by invalid user postgres 203.0.113.1 port 44656 [preauth]
+2026-10-24T21:44:25.962833-03:00 aprendiz-pc sshd[4943]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:44:26.748344-03:00 aprendiz-pc sshd[4943]: Received disconnect from 192.0.2.50 port 43841:11: Bye Bye [preauth]
+2026-10-24T21:44:26.748555-03:00 aprendiz-pc sshd[4943]: Disconnected from invalid user root 192.0.2.50 port 43841 [preauth]
+2026-10-24T21:44:45.182294-03:00 aprendiz-pc sshd[4946]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:44:45.464729-03:00 aprendiz-pc sshd[4946]: Connection closed by invalid user root 203.0.113.234 port 40613 [preauth]
+2026-10-24T21:45:05.271018-03:00 aprendiz-pc sshd[4950]: Invalid user ubnt from 192.0.2.50 port 56627
+2026-10-24T21:45:05.622866-03:00 aprendiz-pc sshd[4950]: Connection closed by invalid user ubnt 192.0.2.50 port 56627 [preauth]
+2026-10-24T21:45:23.125600-03:00 aprendiz-pc sshd[4957]: Invalid user admin from 203.0.113.20 port 60403
+2026-10-24T21:45:23.887960-03:00 aprendiz-pc sshd[4957]: Received disconnect from 203.0.113.20 port 60403:11: Bye Bye [preauth]
+2026-10-24T21:45:23.888171-03:00 aprendiz-pc sshd[4957]: Disconnected from invalid user admin 203.0.113.20 port 60403 [preauth]
+2026-10-24T21:45:44.888058-03:00 aprendiz-pc sshd[4962]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:45:45.090455-03:00 aprendiz-pc sshd[4962]: Received disconnect from 198.51.100.103 port 47674:11: Bye Bye [preauth]
+2026-10-24T21:45:45.090666-03:00 aprendiz-pc sshd[4962]: Disconnected from invalid user root 198.51.100.103 port 47674 [preauth]
+2026-10-24T21:46:01.543787-03:00 aprendiz-pc sshd[4966]: Invalid user admin from 192.0.2.174 port 45247
+2026-10-24T21:46:01.911931-03:00 aprendiz-pc sshd[4966]: Connection closed by invalid user admin 192.0.2.174 port 45247 [preauth]
+2026-10-24T21:46:17.658896-03:00 aprendiz-pc sshd[4972]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:46:18.485657-03:00 aprendiz-pc sshd[4972]: Connection closed by invalid user root 203.0.113.20 port 42064 [preauth]
+2026-10-24T21:46:18.556928-03:00 aprendiz-pc sshd[4980]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:46:18.815261-03:00 aprendiz-pc sshd[4980]: Received disconnect from 203.0.113.20 port 57544:11: Bye Bye [preauth]
+2026-10-24T21:46:18.815472-03:00 aprendiz-pc sshd[4980]: Disconnected from invalid user root 203.0.113.20 port 57544 [preauth]
+2026-10-24T21:46:20.025304-03:00 aprendiz-pc sshd[4982]: Invalid user admin from 203.0.113.20 port 42348
+2026-10-24T21:46:20.496720-03:00 aprendiz-pc sshd[4982]: Received disconnect from 203.0.113.20 port 42348:11: Bye Bye [preauth]
+2026-10-24T21:46:20.496931-03:00 aprendiz-pc sshd[4982]: Disconnected from invalid user admin 203.0.113.20 port 42348 [preauth]
+2026-10-24T21:46:21.564562-03:00 aprendiz-pc sshd[4990]: Invalid user postgres from 203.0.113.20 port 60254
+2026-10-24T21:46:21.972762-03:00 aprendiz-pc sshd[4990]: Connection closed by invalid user postgres 203.0.113.20 port 60254 [preauth]
+2026-10-24T21:46:22.053429-03:00 aprendiz-pc sshd[4999]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:46:22.591221-03:00 aprendiz-pc sshd[4999]: Connection closed by invalid user root 203.0.113.20 port 44549 [preauth]
+2026-10-24T21:46:22.591172-03:00 aprendiz-pc sshd[5003]: Invalid user git from 192.0.2.15 port 37161
+2026-10-24T21:46:23.319864-03:00 aprendiz-pc sshd[5003]: Connection closed by invalid user git 192.0.2.15 port 37161 [preauth]
+2026-10-24T21:46:35.162106-03:00 aprendiz-pc sshd[5011]: Invalid user ubuntu from 203.0.113.234 port 36465
+2026-10-24T21:46:35.875162-03:00 aprendiz-pc sshd[5011]: Connection closed by invalid user ubuntu 203.0.113.234 port 36465 [preauth]
+2026-10-24T21:46:36.604422-03:00 aprendiz-pc sshd[5013]: Invalid user support from 203.0.113.234 port 36728
+2026-10-24T21:46:37.056512-03:00 aprendiz-pc sshd[5013]: Connection closed by invalid user support 203.0.113.234 port 36728 [preauth]
+2026-10-24T21:46:37.182101-03:00 aprendiz-pc sshd[5018]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:46:37.453738-03:00 aprendiz-pc sshd[5018]: Connection closed by invalid user root 203.0.113.234 port 40953 [preauth]
+2026-10-24T21:46:39.661032-03:00 aprendiz-pc sshd[5024]: Invalid user ftpuser from 203.0.113.234 port 39184
+2026-10-24T21:46:40.415920-03:00 aprendiz-pc sshd[5024]: Connection closed by invalid user ftpuser 203.0.113.234 port 39184 [preauth]
+2026-10-24T21:46:40.851921-03:00 aprendiz-pc sshd[5026]: Invalid user oracle from 203.0.113.234 port 33235
+2026-10-24T21:46:41.678377-03:00 aprendiz-pc sshd[5026]: Connection closed by invalid user oracle 203.0.113.234 port 33235 [preauth]
+2026-10-24T21:46:43.275405-03:00 aprendiz-pc sshd[5033]: Invalid user ubnt from 203.0.113.234 port 41183
+2026-10-24T21:46:44.172656-03:00 aprendiz-pc sshd[5033]: Connection closed by invalid user ubnt 203.0.113.234 port 41183 [preauth]
+2026-10-24T21:46:44.657658-03:00 aprendiz-pc sshd[5035]: Invalid user pi from 203.0.113.234 port 39872
+2026-10-24T21:46:44.813601-03:00 aprendiz-pc sshd[5035]: Connection closed by invalid user pi 203.0.113.234 port 39872 [preauth]
+2026-10-24T21:46:47.154533-03:00 aprendiz-pc sshd[5040]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:46:47.307819-03:00 aprendiz-pc sshd[5040]: Connection closed by invalid user root 203.0.113.234 port 60330 [preauth]
+2026-10-24T21:46:49.110615-03:00 aprendiz-pc sshd[5049]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:46:49.504997-03:00 aprendiz-pc sshd[5049]: Connection closed by invalid user root 203.0.113.234 port 36573 [preauth]
+2026-10-24T21:46:51.105152-03:00 aprendiz-pc sshd[5054]: Invalid user user from 203.0.113.234 port 54327
+2026-10-24T21:46:51.953887-03:00 aprendiz-pc sshd[5054]: Received disconnect from 203.0.113.234 port 54327:11: Bye Bye [preauth]
+2026-10-24T21:46:51.954098-03:00 aprendiz-pc sshd[5054]: Disconnected from invalid user user 203.0.113.234 port 54327 [preauth]
+2026-10-24T21:46:53.584165-03:00 aprendiz-pc sshd[5061]: Invalid user oracle from 203.0.113.234 port 58103
+2026-10-24T21:46:53.908953-03:00 aprendiz-pc sshd[5061]: Connection closed by invalid user oracle 203.0.113.234 port 58103 [preauth]
+2026-10-24T21:46:54.235420-03:00 aprendiz-pc sshd[5069]: Invalid user jenkins from 203.0.113.234 port 58562
+2026-10-24T21:46:55.014034-03:00 aprendiz-pc sshd[5069]: Connection closed by invalid user jenkins 203.0.113.234 port 58562 [preauth]
+2026-10-24T21:46:55.122790-03:00 aprendiz-pc sshd[5073]: User root from 203.0.113.234 not allowed because not listed in AllowUsers
+2026-10-24T21:46:55.962838-03:00 aprendiz-pc sshd[5073]: Connection closed by invalid user root 203.0.113.234 port 33535 [preauth]
+2026-10-24T21:46:56.443573-03:00 aprendiz-pc sshd[5081]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:46:56.743977-03:00 aprendiz-pc sshd[5081]: Connection closed by invalid user root 203.0.113.46 port 60447 [preauth]
+2026-10-24T21:47:11.635662-03:00 aprendiz-pc sshd[5087]: Invalid user user from 203.0.113.129 port 44520
+2026-10-24T21:47:12.161789-03:00 aprendiz-pc sshd[5087]: Connection closed by invalid user user 203.0.113.129 port 44520 [preauth]
+2026-10-24T21:47:30.493623-03:00 aprendiz-pc sshd[5094]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:47:31.247240-03:00 aprendiz-pc sshd[5094]: Connection closed by invalid user root 203.0.113.144 port 47463 [preauth]
+2026-10-24T21:47:47.842038-03:00 aprendiz-pc sshd[5099]: Invalid user user from 192.0.2.50 port 46972
+2026-10-24T21:47:48.593410-03:00 aprendiz-pc sshd[5099]: Connection closed by invalid user user 192.0.2.50 port 46972 [preauth]
+2026-10-24T21:47:49.419306-03:00 aprendiz-pc sshd[5101]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:47:49.662999-03:00 aprendiz-pc sshd[5101]: Connection closed by invalid user root 192.0.2.50 port 45013 [preauth]
+2026-10-24T21:47:49.884788-03:00 aprendiz-pc sshd[5105]: Invalid user admin from 192.0.2.50 port 35533
+2026-10-24T21:47:50.697952-03:00 aprendiz-pc sshd[5105]: Connection closed by invalid user admin 192.0.2.50 port 35533 [preauth]
+2026-10-24T21:47:51.545984-03:00 aprendiz-pc sshd[5112]: Invalid user admin from 192.0.2.50 port 37944
+2026-10-24T21:47:52.037920-03:00 aprendiz-pc sshd[5112]: Connection closed by invalid user admin 192.0.2.50 port 37944 [preauth]
+2026-10-24T21:47:53.779466-03:00 aprendiz-pc sshd[5118]: Invalid user ubuntu from 192.0.2.50 port 44981
+2026-10-24T21:47:53.992467-03:00 aprendiz-pc sshd[5118]: Connection closed by invalid user ubuntu 192.0.2.50 port 44981 [preauth]
+2026-10-24T21:47:54.682625-03:00 aprendiz-pc sshd[5124]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:47:55.551067-03:00 aprendiz-pc sshd[5124]: Connection closed by invalid user root 192.0.2.50 port 53246 [preauth]
+2026-10-24T21:47:56.121532-03:00 aprendiz-pc sshd[5128]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:47:56.433278-03:00 aprendiz-pc sshd[5128]: Connection closed by invalid user root 192.0.2.50 port 49920 [preauth]
+2026-10-24T21:47:57.674401-03:00 aprendiz-pc sshd[5133]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:47:58.418159-03:00 aprendiz-pc sshd[5133]: Connection closed by invalid user root 198.51.100.103 port 44577 [preauth]
+2026-10-24T21:48:06.701842-03:00 aprendiz-pc sshd[5136]: Invalid user ubnt from 198.51.100.118 port 33167
+2026-10-24T21:48:07.278814-03:00 aprendiz-pc sshd[5136]: Connection closed by invalid user ubnt 198.51.100.118 port 33167 [preauth]
+2026-10-24T21:48:24.710212-03:00 aprendiz-pc sshd[5138]: Invalid user jenkins from 198.51.100.167 port 40879
+2026-10-24T21:48:25.261778-03:00 aprendiz-pc sshd[5138]: Connection closed by invalid user jenkins 198.51.100.167 port 40879 [preauth]
+2026-10-24T21:48:25.490775-03:00 aprendiz-pc sshd[5144]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:48:25.717881-03:00 aprendiz-pc sshd[5144]: Received disconnect from 198.51.100.167 port 51015:11: Bye Bye [preauth]
+2026-10-24T21:48:25.718092-03:00 aprendiz-pc sshd[5144]: Disconnected from invalid user root 198.51.100.167 port 51015 [preauth]
+2026-10-24T21:48:26.054619-03:00 aprendiz-pc sshd[5147]: Connection closed by 198.51.100.167 port 59303 [preauth]
+2026-10-24T21:48:26.557848-03:00 aprendiz-pc sshd[5152]: Invalid user admin from 198.51.100.167 port 48134
+2026-10-24T21:48:26.782821-03:00 aprendiz-pc sshd[5152]: Connection closed by invalid user admin 198.51.100.167 port 48134 [preauth]
+2026-10-24T21:48:28.647041-03:00 aprendiz-pc sshd[5156]: Invalid user test from 198.51.100.167 port 45492
+2026-10-24T21:48:28.874230-03:00 aprendiz-pc sshd[5156]: Connection closed by invalid user test 198.51.100.167 port 45492 [preauth]
+2026-10-24T21:48:29.750113-03:00 aprendiz-pc sshd[5161]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:48:31.155205-03:00 aprendiz-pc sshd[5165]: Invalid user user from 198.51.100.167 port 45643
+2026-10-24T21:48:31.796465-03:00 aprendiz-pc sshd[5165]: Connection closed by invalid user user 198.51.100.167 port 45643 [preauth]
+2026-10-24T21:48:32.295772-03:00 aprendiz-pc sshd[5168]: Invalid user deploy from 198.51.100.167 port 53305
+2026-10-24T21:48:32.516601-03:00 aprendiz-pc sshd[5168]: Connection closed by invalid user deploy 198.51.100.167 port 53305 [preauth]
+2026-10-24T21:48:32.884551-03:00 aprendiz-pc sshd[5170]: Invalid user mysql from 198.51.100.103 port 49613
+2026-10-24T21:48:33.695837-03:00 aprendiz-pc sshd[5170]: Connection closed by invalid user mysql 198.51.100.103 port 49613 [preauth]
+2026-10-24T21:48:33.681775-03:00 aprendiz-pc sshd[5172]: Invalid user test from 198.51.100.103 port 43970
+2026-10-24T21:48:34.342388-03:00 aprendiz-pc sshd[5172]: Connection closed by invalid user test 198.51.100.103 port 43970 [preauth]
+2026-10-24T21:48:34.908992-03:00 aprendiz-pc sshd[5180]: Invalid user admin from 198.51.100.103 port 44685
+2026-10-24T21:48:35.156156-03:00 aprendiz-pc sshd[5180]: Connection closed by invalid user admin 198.51.100.103 port 44685 [preauth]
+2026-10-24T21:48:35.593021-03:00 aprendiz-pc sshd[5185]: Invalid user ubuntu from 198.51.100.103 port 49118
+2026-10-24T21:48:35.853351-03:00 aprendiz-pc sshd[5185]: Connection closed by invalid user ubuntu 198.51.100.103 port 49118 [preauth]
+2026-10-24T21:48:37.620727-03:00 aprendiz-pc sshd[5193]: Invalid user ftpuser from 198.51.100.103 port 56789
+2026-10-24T21:48:38.411095-03:00 aprendiz-pc sshd[5193]: Connection closed by invalid user ftpuser 198.51.100.103 port 56789 [preauth]
+2026-10-24T21:48:38.644824-03:00 aprendiz-pc sshd[5196]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:48:38.949623-03:00 aprendiz-pc sshd[5196]: Connection closed by invalid user root 198.51.100.103 port 43770 [preauth]
+2026-10-24T21:48:40.385648-03:00 aprendiz-pc sshd[5200]: User root from 198.51.100.103 not allowed because not listed in AllowUsers
+2026-10-24T21:48:40.623971-03:00 aprendiz-pc sshd[5200]: Received disconnect from 198.51.100.103 port 39995:11: Bye Bye [preauth]
+2026-10-24T21:48:40.624182-03:00 aprendiz-pc sshd[5200]: Disconnected from invalid user root 198.51.100.103 port 39995 [preauth]
+2026-10-24T21:48:41.022726-03:00 aprendiz-pc sshd[5202]: Invalid user admin from 198.51.100.103 port 56449
+2026-10-24T21:48:41.889130-03:00 aprendiz-pc sshd[5202]: Connection closed by invalid user admin 198.51.100.103 port 56449 [preauth]
+2026-10-24T21:48:43.369635-03:00 aprendiz-pc sshd[5205]: Invalid user git from 198.51.100.103 port 47670
+2026-10-24T21:48:43.700198-03:00 aprendiz-pc sshd[5205]: Connection closed by invalid user git 198.51.100.103 port 47670 [preauth]
+2026-10-24T21:48:44.566010-03:00 aprendiz-pc sshd[5210]: Invalid user deploy from 198.51.100.20 port 37453
+2026-10-24T21:48:44.961826-03:00 aprendiz-pc sshd[5210]: Received disconnect from 198.51.100.20 port 37453:11: Bye Bye [preauth]
+2026-10-24T21:48:44.962037-03:00 aprendiz-pc sshd[5210]: Disconnected from invalid user deploy 198.51.100.20 port 37453 [preauth]
+2026-10-24T21:48:58.525845-03:00 aprendiz-pc sshd[5218]: Invalid user user from 203.0.113.20 port 38200
+2026-10-24T21:48:58.766674-03:00 aprendiz-pc sshd[5218]: Connection closed by invalid user user 203.0.113.20 port 38200 [preauth]
+2026-10-24T21:49:20.065057-03:00 aprendiz-pc sshd[5225]: Invalid user test from 198.51.100.126 port 34613
+2026-10-24T21:49:20.870670-03:00 aprendiz-pc sshd[5225]: Received disconnect from 198.51.100.126 port 34613:11: Bye Bye [preauth]
+2026-10-24T21:49:20.870881-03:00 aprendiz-pc sshd[5225]: Disconnected from invalid user test 198.51.100.126 port 34613 [preauth]
+2026-10-24T21:49:22.562847-03:00 aprendiz-pc sshd[5232]: Invalid user ubnt from 198.51.100.126 port 36953
+2026-10-24T21:49:23.334104-03:00 aprendiz-pc sshd[5232]: Connection closed by invalid user ubnt 198.51.100.126 port 36953 [preauth]
+2026-10-24T21:49:23.963324-03:00 aprendiz-pc sshd[5239]: Invalid user test from 198.51.100.126 port 40646
+2026-10-24T21:49:24.611455-03:00 aprendiz-pc sshd[5239]: Received disconnect from 198.51.100.126 port 40646:11: Bye Bye [preauth]
+2026-10-24T21:49:24.611666-03:00 aprendiz-pc sshd[5239]: Disconnected from invalid user test 198.51.100.126 port 40646 [preauth]
+2026-10-24T21:49:24.758123-03:00 aprendiz-pc sshd[5242]: User root from 198.51.100.126 not allowed because not listed in AllowUsers
+2026-10-24T21:49:25.290918-03:00 aprendiz-pc sshd[5242]: Received disconnect from 198.51.100.126 port 34989:11: Bye Bye [preauth]
+2026-10-24T21:49:25.291129-03:00 aprendiz-pc sshd[5242]: Disconnected from invalid user root 198.51.100.126 port 34989 [preauth]
+2026-10-24T21:49:25.668033-03:00 aprendiz-pc sshd[5247]: Invalid user pi from 198.51.100.126 port 39103
+2026-10-24T21:49:26.436572-03:00 aprendiz-pc sshd[5247]: Connection closed by invalid user pi 198.51.100.126 port 39103 [preauth]
+2026-10-24T21:49:27.695803-03:00 aprendiz-pc sshd[5254]: Invalid user user from 198.51.100.126 port 60492
+2026-10-24T21:49:28.026725-03:00 aprendiz-pc sshd[5254]: Connection closed by invalid user user 198.51.100.126 port 60492 [preauth]
+2026-10-24T21:49:30.145012-03:00 aprendiz-pc sshd[5259]: Connection closed by 198.51.100.126 port 40696 [preauth]
+2026-10-24T21:49:32.139123-03:00 aprendiz-pc sshd[5263]: User root from 198.51.100.126 not allowed because not listed in AllowUsers
+2026-10-24T21:49:32.398742-03:00 aprendiz-pc sshd[5263]: Connection closed by invalid user root 198.51.100.126 port 38761 [preauth]
+2026-10-24T21:49:32.875881-03:00 aprendiz-pc sshd[5267]: Invalid user mysql from 198.51.100.126 port 32787
+2026-10-24T21:49:33.512726-03:00 aprendiz-pc sshd[5267]: Connection closed by invalid user mysql 198.51.100.126 port 32787 [preauth]
+2026-10-24T21:49:33.844967-03:00 aprendiz-pc sshd[5270]: User root from 198.51.100.126 not allowed because not listed in AllowUsers
+2026-10-24T21:49:34.154093-03:00 aprendiz-pc sshd[5270]: Received disconnect from 198.51.100.126 port 37365:11: Bye Bye [preauth]
+2026-10-24T21:49:34.154304-03:00 aprendiz-pc sshd[5270]: Disconnected from invalid user root 198.51.100.126 port 37365 [preauth]
+2026-10-24T21:49:34.986239-03:00 aprendiz-pc sshd[5272]: Invalid user admin from 198.51.100.126 port 54336
+2026-10-24T21:49:35.532176-03:00 aprendiz-pc sshd[5272]: Connection closed by invalid user admin 198.51.100.126 port 54336 [preauth]
+2026-10-24T21:49:37.133764-03:00 aprendiz-pc sshd[5275]: User root from 198.51.100.126 not allowed because not listed in AllowUsers
+2026-10-24T21:49:37.799537-03:00 aprendiz-pc sshd[5275]: Connection closed by invalid user root 198.51.100.126 port 33771 [preauth]
+2026-10-24T21:49:39.469893-03:00 aprendiz-pc sshd[5282]: Invalid user postgres from 198.51.100.126 port 39286
+2026-10-24T21:49:40.310331-03:00 aprendiz-pc sshd[5282]: Connection closed by invalid user postgres 198.51.100.126 port 39286 [preauth]
+2026-10-24T21:49:40.202564-03:00 aprendiz-pc sshd[5285]: Invalid user user from 198.51.100.126 port 39308
+2026-10-24T21:49:40.826631-03:00 aprendiz-pc sshd[5285]: Received disconnect from 198.51.100.126 port 39308:11: Bye Bye [preauth]
+2026-10-24T21:49:40.826842-03:00 aprendiz-pc sshd[5285]: Disconnected from invalid user user 198.51.100.126 port 39308 [preauth]
+2026-10-24T21:49:40.647822-03:00 aprendiz-pc sshd[5289]: Invalid user ubuntu from 203.0.113.222 port 52793
+2026-10-24T21:49:40.918704-03:00 aprendiz-pc sshd[5289]: Connection closed by invalid user ubuntu 203.0.113.222 port 52793 [preauth]
+2026-10-24T21:49:50.123868-03:00 aprendiz-pc sshd[5298]: Invalid user hadoop from 198.51.100.20 port 42017
+2026-10-24T21:49:50.712656-03:00 aprendiz-pc sshd[5298]: Connection closed by invalid user hadoop 198.51.100.20 port 42017 [preauth]
+2026-10-24T21:49:52.238194-03:00 aprendiz-pc sshd[5305]: Invalid user test from 198.51.100.20 port 45339
+2026-10-24T21:49:53.038680-03:00 aprendiz-pc sshd[5305]: Received disconnect from 198.51.100.20 port 45339:11: Bye Bye [preauth]
+2026-10-24T21:49:53.038891-03:00 aprendiz-pc sshd[5305]: Disconnected from invalid user test 198.51.100.20 port 45339 [preauth]
+2026-10-24T21:49:52.774454-03:00 aprendiz-pc sshd[5308]: Invalid user guest from 198.51.100.20 port 54744
+2026-10-24T21:49:52.944392-03:00 aprendiz-pc sshd[5308]: Connection closed by invalid user guest 198.51.100.20 port 54744 [preauth]
+2026-10-24T21:49:54.059064-03:00 aprendiz-pc sshd[5316]: Invalid user postgres from 198.51.100.20 port 36192
+2026-10-24T21:49:54.844207-03:00 aprendiz-pc sshd[5316]: Received disconnect from 198.51.100.20 port 36192:11: Bye Bye [preauth]
+2026-10-24T21:49:54.844418-03:00 aprendiz-pc sshd[5316]: Disconnected from invalid user postgres 198.51.100.20 port 36192 [preauth]
+2026-10-24T21:49:56.484637-03:00 aprendiz-pc sshd[5325]: Invalid user ubnt from 198.51.100.20 port 52855
+2026-10-24T21:49:57.192119-03:00 aprendiz-pc sshd[5325]: Connection closed by invalid user ubnt 198.51.100.20 port 52855 [preauth]
+2026-10-24T21:49:57.836600-03:00 aprendiz-pc sshd[5334]: Invalid user test from 198.51.100.20 port 48548
+2026-10-24T21:49:58.652739-03:00 aprendiz-pc sshd[5334]: Connection closed by invalid user test 198.51.100.20 port 48548 [preauth]
+2026-10-24T21:50:00.167004-03:00 aprendiz-pc sshd[5336]: Invalid user ftpuser from 198.51.100.20 port 38137
+2026-10-24T21:50:00.752488-03:00 aprendiz-pc sshd[5336]: Connection closed by invalid user ftpuser 198.51.100.20 port 38137 [preauth]
+2026-10-24T21:50:00.979733-03:00 aprendiz-pc sshd[5340]: Invalid user admin from 198.51.100.20 port 33346
+2026-10-24T21:50:01.191524-03:00 aprendiz-pc sshd[5340]: Connection closed by invalid user admin 198.51.100.20 port 33346 [preauth]
+2026-10-24T21:50:01.954231-03:00 aprendiz-pc sshd[5348]: User root from 198.51.100.20 not allowed because not listed in AllowUsers
+2026-10-24T21:50:02.708416-03:00 aprendiz-pc sshd[5348]: Connection closed by invalid user root 198.51.100.20 port 43151 [preauth]
+2026-10-24T21:50:02.715723-03:00 aprendiz-pc sshd[5355]: Invalid user admin from 198.51.100.20 port 45006
+2026-10-24T21:50:03.436929-03:00 aprendiz-pc sshd[5355]: Received disconnect from 198.51.100.20 port 45006:11: Bye Bye [preauth]
+2026-10-24T21:50:03.437140-03:00 aprendiz-pc sshd[5355]: Disconnected from invalid user admin 198.51.100.20 port 45006 [preauth]
+2026-10-24T21:50:05.178036-03:00 aprendiz-pc sshd[5358]: Connection closed by 198.51.100.20 port 39566 [preauth]
+2026-10-24T21:50:07.432510-03:00 aprendiz-pc sshd[5361]: Connection closed by 198.51.100.20 port 47965 [preauth]
+2026-10-24T21:50:08.347219-03:00 aprendiz-pc sshd[5367]: Invalid user ubuntu from 198.51.100.20 port 36121
+2026-10-24T21:50:08.645740-03:00 aprendiz-pc sshd[5367]: Received disconnect from 198.51.100.20 port 36121:11: Bye Bye [preauth]
+2026-10-24T21:50:08.645951-03:00 aprendiz-pc sshd[5367]: Disconnected from invalid user ubuntu 198.51.100.20 port 36121 [preauth]
+2026-10-24T21:50:09.800672-03:00 aprendiz-pc sshd[5375]: Invalid user postgres from 198.51.100.20 port 47578
+2026-10-24T21:50:10.166576-03:00 aprendiz-pc sshd[5375]: Connection closed by invalid user postgres 198.51.100.20 port 47578 [preauth]
+2026-10-24T21:50:10.632483-03:00 aprendiz-pc sshd[5383]: Invalid user postgres from 203.0.113.46 port 39666
+2026-10-24T21:50:10.966788-03:00 aprendiz-pc sshd[5383]: Connection closed by invalid user postgres 203.0.113.46 port 39666 [preauth]
+2026-10-24T21:50:19.444546-03:00 aprendiz-pc sshd[5386]: User root from 192.0.2.191 not allowed because not listed in AllowUsers
+2026-10-24T21:50:20.193122-03:00 aprendiz-pc sshd[5386]: Connection closed by invalid user root 192.0.2.191 port 53856 [preauth]
+2026-10-24T21:50:25.641673-03:00 aprendiz-pc sshd[5389]: Invalid user ubnt from 203.0.113.46 port 48305
+2026-10-24T21:50:26.289540-03:00 aprendiz-pc sshd[5389]: Connection closed by invalid user ubnt 203.0.113.46 port 48305 [preauth]
+2026-10-24T21:50:31.251464-03:00 aprendiz-pc sshd[5394]: Invalid user test from 203.0.113.63 port 54635
+2026-10-24T21:50:32.109377-03:00 aprendiz-pc sshd[5394]: Connection closed by invalid user test 203.0.113.63 port 54635 [preauth]
+2026-10-24T21:50:50.114519-03:00 aprendiz-pc sshd[5396]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:51:04.277403-03:00 aprendiz-pc sshd[5405]: Invalid user debian from 198.51.100.103 port 53638
+2026-10-24T21:51:04.946219-03:00 aprendiz-pc sshd[5405]: Received disconnect from 198.51.100.103 port 53638:11: Bye Bye [preauth]
+2026-10-24T21:51:04.946430-03:00 aprendiz-pc sshd[5405]: Disconnected from invalid user debian 198.51.100.103 port 53638 [preauth]
+2026-10-24T21:51:23.585209-03:00 aprendiz-pc sshd[5414]: Invalid user user from 192.0.2.37 port 56787
+2026-10-24T21:51:24.408557-03:00 aprendiz-pc sshd[5414]: Connection closed by invalid user user 192.0.2.37 port 56787 [preauth]
+2026-10-24T21:51:31.393686-03:00 aprendiz-pc sshd[5416]: Invalid user test from 203.0.113.9 port 53022
+2026-10-24T21:51:31.866068-03:00 aprendiz-pc sshd[5416]: Connection closed by invalid user test 203.0.113.9 port 53022 [preauth]
+2026-10-24T21:51:45.793785-03:00 aprendiz-pc sshd[5420]: Invalid user admin from 198.51.100.103 port 60198
+2026-10-24T21:51:46.153292-03:00 aprendiz-pc sshd[5420]: Connection closed by invalid user admin 198.51.100.103 port 60198 [preauth]
+2026-10-24T21:51:58.023170-03:00 aprendiz-pc sshd[5423]: Invalid user ftpuser from 192.0.2.104 port 56490
+2026-10-24T21:51:58.802449-03:00 aprendiz-pc sshd[5423]: Received disconnect from 192.0.2.104 port 56490:11: Bye Bye [preauth]
+2026-10-24T21:51:58.802660-03:00 aprendiz-pc sshd[5423]: Disconnected from invalid user ftpuser 192.0.2.104 port 56490 [preauth]
+2026-10-24T21:52:14.794389-03:00 aprendiz-pc sshd[5431]: Invalid user ubuntu from 203.0.113.46 port 45641
+2026-10-24T21:52:14.962389-03:00 aprendiz-pc sshd[5431]: Connection closed by invalid user ubuntu 203.0.113.46 port 45641 [preauth]
+2026-10-24T21:52:21.755490-03:00 aprendiz-pc sshd[5434]: Connection closed by 198.51.100.103 port 60081 [preauth]
+2026-10-24T21:52:28.812157-03:00 aprendiz-pc sshd[5441]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:52:45.054718-03:00 aprendiz-pc sshd[5447]: Invalid user support from 198.51.100.230 port 45298
+2026-10-24T21:52:45.903124-03:00 aprendiz-pc sshd[5447]: Connection closed by invalid user support 198.51.100.230 port 45298 [preauth]
+2026-10-24T21:53:01.385435-03:00 aprendiz-pc sshd[5455]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:53:03.103081-03:00 aprendiz-pc sshd[5459]: Invalid user pi from 203.0.113.144 port 56851
+2026-10-24T21:53:03.720158-03:00 aprendiz-pc sshd[5459]: Received disconnect from 203.0.113.144 port 56851:11: Bye Bye [preauth]
+2026-10-24T21:53:03.720369-03:00 aprendiz-pc sshd[5459]: Disconnected from invalid user pi 203.0.113.144 port 56851 [preauth]
+2026-10-24T21:53:04.163136-03:00 aprendiz-pc sshd[5463]: Invalid user test from 203.0.113.144 port 51488
+2026-10-24T21:53:04.532674-03:00 aprendiz-pc sshd[5463]: Connection closed by invalid user test 203.0.113.144 port 51488 [preauth]
+2026-10-24T21:53:06.118444-03:00 aprendiz-pc sshd[5471]: Connection closed by 203.0.113.144 port 41840 [preauth]
+2026-10-24T21:53:07.064542-03:00 aprendiz-pc sshd[5478]: Invalid user test from 203.0.113.144 port 42017
+2026-10-24T21:53:07.490053-03:00 aprendiz-pc sshd[5478]: Connection closed by invalid user test 203.0.113.144 port 42017 [preauth]
+2026-10-24T21:53:07.820268-03:00 aprendiz-pc sshd[5485]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:53:08.376669-03:00 aprendiz-pc sshd[5485]: Connection closed by invalid user root 203.0.113.144 port 54615 [preauth]
+2026-10-24T21:53:09.498791-03:00 aprendiz-pc sshd[5494]: Invalid user ftpuser from 203.0.113.144 port 35880
+2026-10-24T21:53:10.352509-03:00 aprendiz-pc sshd[5494]: Connection closed by invalid user ftpuser 203.0.113.144 port 35880 [preauth]
+2026-10-24T21:53:11.282149-03:00 aprendiz-pc sshd[5500]: Invalid user ubuntu from 203.0.113.144 port 55017
+2026-10-24T21:53:11.588979-03:00 aprendiz-pc sshd[5500]: Received disconnect from 203.0.113.144 port 55017:11: Bye Bye [preauth]
+2026-10-24T21:53:11.589190-03:00 aprendiz-pc sshd[5500]: Disconnected from invalid user ubuntu 203.0.113.144 port 55017 [preauth]
+2026-10-24T21:53:11.724604-03:00 aprendiz-pc sshd[5508]: Invalid user git from 203.0.113.144 port 48445
+2026-10-24T21:53:12.294440-03:00 aprendiz-pc sshd[5508]: Connection closed by invalid user git 203.0.113.144 port 48445 [preauth]
+2026-10-24T21:53:12.883099-03:00 aprendiz-pc sshd[5514]: User root from 203.0.113.129 not allowed because not listed in AllowUsers
+2026-10-24T21:53:13.493593-03:00 aprendiz-pc sshd[5514]: Connection closed by invalid user root 203.0.113.129 port 54813 [preauth]
+2026-10-24T21:53:15.697240-03:00 aprendiz-pc sshd[5520]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:53:17.244991-03:00 aprendiz-pc sshd[5527]: Invalid user guest from 203.0.113.144 port 46990
+2026-10-24T21:53:17.954948-03:00 aprendiz-pc sshd[5527]: Received disconnect from 203.0.113.144 port 46990:11: Bye Bye [preauth]
+2026-10-24T21:53:17.955159-03:00 aprendiz-pc sshd[5527]: Disconnected from invalid user guest 203.0.113.144 port 46990 [preauth]
+2026-10-24T21:53:17.726327-03:00 aprendiz-pc sshd[5534]: banner exchange: Connection from 203.0.113.144 port 45604: invalid format
+2026-10-24T21:53:20.166588-03:00 aprendiz-pc sshd[5540]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:53:20.886216-03:00 aprendiz-pc sshd[5540]: Connection closed by invalid user root 203.0.113.144 port 56133 [preauth]
+2026-10-24T21:53:20.594963-03:00 aprendiz-pc sshd[5549]: Invalid user oracle from 203.0.113.144 port 44025
+2026-10-24T21:53:21.204782-03:00 aprendiz-pc sshd[5549]: Connection closed by invalid user oracle 203.0.113.144 port 44025 [preauth]
+2026-10-24T21:53:21.786431-03:00 aprendiz-pc sshd[5556]: Invalid user ubuntu from 203.0.113.144 port 33752
+2026-10-24T21:53:21.965415-03:00 aprendiz-pc sshd[5556]: Connection closed by invalid user ubuntu 203.0.113.144 port 33752 [preauth]
+2026-10-24T21:53:23.329749-03:00 aprendiz-pc sshd[5560]: Invalid user ubnt from 203.0.113.144 port 54804
+2026-10-24T21:53:23.575137-03:00 aprendiz-pc sshd[5560]: Received disconnect from 203.0.113.144 port 54804:11: Bye Bye [preauth]
+2026-10-24T21:53:23.575348-03:00 aprendiz-pc sshd[5560]: Disconnected from invalid user ubnt 203.0.113.144 port 54804 [preauth]
+2026-10-24T21:53:25.069660-03:00 aprendiz-pc sshd[5567]: Invalid user user from 203.0.113.144 port 44961
+2026-10-24T21:53:25.373177-03:00 aprendiz-pc sshd[5567]: Connection closed by invalid user user 203.0.113.144 port 44961 [preauth]
+2026-10-24T21:53:26.961341-03:00 aprendiz-pc sshd[5575]: Invalid user guest from 203.0.113.144 port 43908
+2026-10-24T21:53:27.230959-03:00 aprendiz-pc sshd[5575]: Connection closed by invalid user guest 203.0.113.144 port 43908 [preauth]
+2026-10-24T21:53:28.072781-03:00 aprendiz-pc sshd[5580]: Invalid user oracle from 203.0.113.144 port 50928
+2026-10-24T21:53:28.371920-03:00 aprendiz-pc sshd[5580]: Connection closed by invalid user oracle 203.0.113.144 port 50928 [preauth]
+2026-10-24T21:53:30.561340-03:00 aprendiz-pc sshd[5585]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:53:31.174858-03:00 aprendiz-pc sshd[5585]: Connection closed by invalid user root 203.0.113.144 port 52581 [preauth]
+2026-10-24T21:53:31.268409-03:00 aprendiz-pc sshd[5589]: Invalid user user from 203.0.113.144 port 35361
+2026-10-24T21:53:32.000339-03:00 aprendiz-pc sshd[5589]: Connection closed by invalid user user 203.0.113.144 port 35361 [preauth]
+2026-10-24T21:53:33.583205-03:00 aprendiz-pc sshd[5593]: banner exchange: Connection from 203.0.113.144 port 60446: invalid format
+2026-10-24T21:53:34.497913-03:00 aprendiz-pc sshd[5596]: User root from 203.0.113.144 not allowed because not listed in AllowUsers
+2026-10-24T21:53:34.856964-03:00 aprendiz-pc sshd[5596]: Connection closed by invalid user root 203.0.113.144 port 59636 [preauth]
+2026-10-24T21:53:36.527284-03:00 aprendiz-pc sshd[5601]: Invalid user postgres from 192.0.2.50 port 33986
+2026-10-24T21:53:37.364575-03:00 aprendiz-pc sshd[5601]: Connection closed by invalid user postgres 192.0.2.50 port 33986 [preauth]
+2026-10-24T21:53:36.963436-03:00 aprendiz-pc sshd[5608]: Invalid user test from 192.0.2.50 port 48173
+2026-10-24T21:53:37.399576-03:00 aprendiz-pc sshd[5608]: Connection closed by invalid user test 192.0.2.50 port 48173 [preauth]
+2026-10-24T21:53:37.952751-03:00 aprendiz-pc sshd[5611]: Invalid user pi from 192.0.2.50 port 55868
+2026-10-24T21:53:38.771906-03:00 aprendiz-pc sshd[5611]: Connection closed by invalid user pi 192.0.2.50 port 55868 [preauth]
+2026-10-24T21:53:38.357543-03:00 aprendiz-pc sshd[5618]: Invalid user deploy from 192.0.2.50 port 56441
+2026-10-24T21:53:38.860049-03:00 aprendiz-pc sshd[5618]: Connection closed by invalid user deploy 192.0.2.50 port 56441 [preauth]
+2026-10-24T21:53:38.763587-03:00 aprendiz-pc sshd[5625]: User root from 192.0.2.50 not allowed because not listed in AllowUsers
+2026-10-24T21:53:39.612160-03:00 aprendiz-pc sshd[5625]: Connection closed by invalid user root 192.0.2.50 port 50891 [preauth]
+2026-10-24T21:53:39.818325-03:00 aprendiz-pc sshd[5631]: User root from 198.51.100.167 not allowed because not listed in AllowUsers
+2026-10-24T21:53:40.334874-03:00 aprendiz-pc sshd[5631]: Connection closed by invalid user root 198.51.100.167 port 37204 [preauth]
+2026-10-24T21:53:51.601216-03:00 aprendiz-pc sshd[5639]: Connection closed by 203.0.113.234 port 49236 [preauth]
+2026-10-24T21:54:07.947975-03:00 aprendiz-pc sshd[5645]: Connection closed by 203.0.113.129 port 41135 [preauth]
+2026-10-24T21:54:27.003200-03:00 aprendiz-pc sshd[5654]: banner exchange: Connection from 203.0.113.46 port 51984: invalid format
+2026-10-24T21:54:27.770977-03:00 aprendiz-pc sshd[5660]: Invalid user test from 203.0.113.46 port 37100
+2026-10-24T21:54:28.075007-03:00 aprendiz-pc sshd[5660]: Received disconnect from 203.0.113.46 port 37100:11: Bye Bye [preauth]
+2026-10-24T21:54:28.075218-03:00 aprendiz-pc sshd[5660]: Disconnected from invalid user test 203.0.113.46 port 37100 [preauth]
+2026-10-24T21:54:29.649011-03:00 aprendiz-pc sshd[5666]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:54:30.525585-03:00 aprendiz-pc sshd[5666]: Connection closed by invalid user root 203.0.113.46 port 53717 [preauth]
+2026-10-24T21:54:30.704691-03:00 aprendiz-pc sshd[5675]: Invalid user user from 203.0.113.46 port 36137
+2026-10-24T21:54:31.133199-03:00 aprendiz-pc sshd[5675]: Received disconnect from 203.0.113.46 port 36137:11: Bye Bye [preauth]
+2026-10-24T21:54:31.133410-03:00 aprendiz-pc sshd[5675]: Disconnected from invalid user user 203.0.113.46 port 36137 [preauth]
+2026-10-24T21:54:31.595824-03:00 aprendiz-pc sshd[5682]: User root from 203.0.113.46 not allowed because not listed in AllowUsers
+2026-10-24T21:54:32.305537-03:00 aprendiz-pc sshd[5682]: Received disconnect from 203.0.113.46 port 33618:11: Bye Bye [preauth]
+2026-10-24T21:54:32.305748-03:00 aprendiz-pc sshd[5682]: Disconnected from invalid user root 203.0.113.46 port 33618 [preauth]
+2026-10-24T21:54:33.006192-03:00 aprendiz-pc sshd[5687]: Invalid user admin from 203.0.113.46 port 41735
+2026-10-24T21:54:33.440815-03:00 aprendiz-pc sshd[5687]: Connection closed by invalid user admin 203.0.113.46 port 41735 [preauth]
+2026-10-24T21:54:34.378960-03:00 aprendiz-pc sshd[5692]: Invalid user user from 203.0.113.46 port 38636
+2026-10-24T21:54:35.264346-03:00 aprendiz-pc sshd[5692]: Connection closed by invalid user user 203.0.113.46 port 38636 [preauth]
+2026-10-24T21:54:36.543648-03:00 aprendiz-pc sshd[5700]: Invalid user minecraft from 203.0.113.46 port 49884
+2026-10-24T21:54:37.102575-03:00 aprendiz-pc sshd[5700]: Connection closed by invalid user minecraft 203.0.113.46 port 49884 [preauth]
+2026-10-24T21:54:38.211549-03:00 aprendiz-pc sshd[5707]: Invalid user user from 203.0.113.46 port 38174
+2026-10-24T21:54:38.644317-03:00 aprendiz-pc sshd[5707]: Connection closed by invalid user user 203.0.113.46 port 38174 [preauth]
+2026-10-24T21:54:39.210542-03:00 aprendiz-pc sshd[5714]: User root from 203.0.113.179 not allowed because not listed in AllowUsers
+2026-10-24T21:54:39.943308-03:00 aprendiz-pc sshd[5714]: Received disconnect from 203.0.113.179 port 55052:11: Bye Bye [preauth]
+2026-10-24T21:54:39.943519-03:00 aprendiz-pc sshd[5714]: Disconnected from invalid user root 203.0.113.179 port 55052 [preauth]
+2026-10-24T21:54:53.400788-03:00 aprendiz-pc sshd[5723]: Invalid user deploy from 192.0.2.50 port 34326
+2026-10-24T21:54:53.933825-03:00 aprendiz-pc sshd[5723]: Connection closed by invalid user deploy 192.0.2.50 port 34326 [preauth]
+2026-10-24T21:55:06.547838-03:00 aprendiz-pc sshd[5725]: User root from 198.51.100.186 not allowed because not listed in AllowUsers
+2026-10-24T21:55:07.221250-03:00 aprendiz-pc sshd[5725]: Connection closed by invalid user root 198.51.100.186 port 44456 [preauth]
+2026-10-24T21:55:27.901654-03:00 aprendiz-pc sshd[5727]: Invalid user user from 198.51.100.220 port 37610
+2026-10-24T21:55:28.370263-03:00 aprendiz-pc sshd[5727]: Connection closed by invalid user user 198.51.100.220 port 37610 [preauth]
+2026-10-24T21:55:29.024170-03:00 aprendiz-pc sshd[5731]: Invalid user user from 198.51.100.220 port 38824
+2026-10-24T21:55:29.430774-03:00 aprendiz-pc sshd[5731]: Connection closed by invalid user user 198.51.100.220 port 38824 [preauth]
+2026-10-24T21:55:29.540027-03:00 aprendiz-pc sshd[5740]: User root from 198.51.100.220 not allowed because not listed in AllowUsers
+2026-10-24T21:55:30.424809-03:00 aprendiz-pc sshd[5740]: Connection closed by invalid user root 198.51.100.220 port 58626 [preauth]
+2026-10-24T21:55:30.972028-03:00 aprendiz-pc sshd[5743]: User root from 198.51.100.220 not allowed because not listed in AllowUsers
+2026-10-24T21:55:31.445307-03:00 aprendiz-pc sshd[5743]: Received disconnect from 198.51.100.220 port 41367:11: Bye Bye [preauth]
+2026-10-24T21:55:31.445518-03:00 aprendiz-pc sshd[5743]: Disconnected from invalid user root 198.51.100.220 port 41367 [preauth]
+2026-10-24T21:55:33.318411-03:00 aprendiz-pc sshd[5748]: Invalid user ubnt from 198.51.100.220 port 46147
+2026-10-24T21:55:33.560366-03:00 aprendiz-pc sshd[5748]: Connection closed by invalid user ubnt 198.51.100.220 port 46147 [preauth]
+2026-10-24T21:55:35.220776-03:00 aprendiz-pc sshd[5751]: Invalid user user from 203.0.113.222 port 33620
+2026-10-24T21:55:35.438403-03:00 aprendiz-pc sshd[5751]: Connection closed by invalid user user 203.0.113.222 port 33620 [preauth]
+2026-10-24T21:55:49.386338-03:00 aprendiz-pc sshd[5759]: Invalid user oracle from 192.0.2.37 port 43669
+2026-10-24T21:55:49.748685-03:00 aprendiz-pc sshd[5759]: Connection closed by invalid user oracle 192.0.2.37 port 43669 [preauth]
+2026-10-24T21:55:51.970192-03:00 aprendiz-pc sshd[5768]: Invalid user admin from 192.0.2.87 port 52959
+2026-10-24T21:55:52.173989-03:00 aprendiz-pc sshd[5768]: Connection closed by invalid user admin 192.0.2.87 port 52959 [preauth]
+2026-10-24T21:56:02.300363-03:00 aprendiz-pc sshd[5774]: Invalid user admin from 192.0.2.87 port 33561
+2026-10-24T21:56:03.158281-03:00 aprendiz-pc sshd[5774]: Connection closed by invalid user admin 192.0.2.87 port 33561 [preauth]
+2026-10-24T21:56:09.948494-03:00 aprendiz-pc sshd[5780]: Invalid user ftpuser from 192.0.2.122 port 42486
+2026-10-24T21:56:10.669232-03:00 aprendiz-pc sshd[5780]: Connection closed by invalid user ftpuser 192.0.2.122 port 42486 [preauth]
+2026-10-24T21:56:12.425093-03:00 aprendiz-pc sshd[5783]: Invalid user pi from 192.0.2.122 port 48756
+2026-10-24T21:56:13.230126-03:00 aprendiz-pc sshd[5783]: Connection closed by invalid user pi 192.0.2.122 port 48756 [preauth]
+2026-10-24T21:56:14.645266-03:00 aprendiz-pc sshd[5791]: User root from 192.0.2.122 not allowed because not listed in AllowUsers
+2026-10-24T21:56:14.902402-03:00 aprendiz-pc sshd[5791]: Connection closed by invalid user root 192.0.2.122 port 49671 [preauth]
+2026-10-24T21:56:15.374573-03:00 aprendiz-pc sshd[5800]: User root from 192.0.2.122 not allowed because not listed in AllowUsers
+2026-10-24T21:56:15.669896-03:00 aprendiz-pc sshd[5800]: Connection closed by invalid user root 192.0.2.122 port 42327 [preauth]
+2026-10-24T21:56:15.929542-03:00 aprendiz-pc sshd[5804]: banner exchange: Connection from 192.0.2.122 port 53803: invalid format
+2026-10-24T21:56:17.584728-03:00 aprendiz-pc sshd[5806]: Invalid user pi from 198.51.100.219 port 39984
+2026-10-24T21:56:18.458611-03:00 aprendiz-pc sshd[5806]: Connection closed by invalid user pi 198.51.100.219 port 39984 [preauth]
+2026-10-24T21:56:25.753997-03:00 aprendiz-pc sshd[5808]: Connection closed by 192.0.2.122 port 48735 [preauth]
+2026-10-24T21:56:36.145974-03:00 aprendiz-pc sshd[5812]: User root from 203.0.113.222 not allowed because not listed in AllowUsers
+2026-10-24T21:56:36.828213-03:00 aprendiz-pc sshd[5812]: Connection closed by invalid user root 203.0.113.222 port 60001 [preauth]
+2026-10-24T21:56:46.630071-03:00 aprendiz-pc sshd[5815]: Invalid user oracle from 192.0.2.70 port 41743
+2026-10-24T21:56:47.310116-03:00 aprendiz-pc sshd[5815]: Connection closed by invalid user oracle 192.0.2.70 port 41743 [preauth]
+2026-10-24T21:57:01.431394-03:00 aprendiz-pc sshd[5820]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:57:01.963831-03:00 aprendiz-pc sshd[5820]: Connection closed by invalid user root 203.0.113.219 port 41217 [preauth]
+2026-10-24T21:57:03.805538-03:00 aprendiz-pc sshd[5824]: Invalid user admin from 203.0.113.219 port 46622
+2026-10-24T21:57:04.529727-03:00 aprendiz-pc sshd[5824]: Connection closed by invalid user admin 203.0.113.219 port 46622 [preauth]
+2026-10-24T21:57:04.587002-03:00 aprendiz-pc sshd[5830]: banner exchange: Connection from 203.0.113.219 port 43585: invalid format
+2026-10-24T21:57:06.145226-03:00 aprendiz-pc sshd[5838]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:57:06.724099-03:00 aprendiz-pc sshd[5838]: Connection closed by invalid user root 203.0.113.219 port 51224 [preauth]
+2026-10-24T21:57:08.431439-03:00 aprendiz-pc sshd[5841]: Connection closed by 203.0.113.219 port 60558 [preauth]
+2026-10-24T21:57:09.860615-03:00 aprendiz-pc sshd[5850]: Invalid user ubnt from 203.0.113.219 port 59341
+2026-10-24T21:57:10.391231-03:00 aprendiz-pc sshd[5850]: Connection closed by invalid user ubnt 203.0.113.219 port 59341 [preauth]
+2026-10-24T21:57:12.340923-03:00 aprendiz-pc sshd[5852]: Connection closed by 203.0.113.219 port 56644 [preauth]
+2026-10-24T21:57:14.692121-03:00 aprendiz-pc sshd[5858]: Invalid user pi from 203.0.113.219 port 37070
+2026-10-24T21:57:15.246965-03:00 aprendiz-pc sshd[5858]: Connection closed by invalid user pi 203.0.113.219 port 37070 [preauth]
+2026-10-24T21:57:15.611631-03:00 aprendiz-pc sshd[5863]: Invalid user git from 203.0.113.219 port 39673
+2026-10-24T21:57:15.947173-03:00 aprendiz-pc sshd[5863]: Connection closed by invalid user git 203.0.113.219 port 39673 [preauth]
+2026-10-24T21:57:17.351078-03:00 aprendiz-pc sshd[5865]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:57:18.069354-03:00 aprendiz-pc sshd[5865]: Received disconnect from 203.0.113.219 port 39018:11: Bye Bye [preauth]
+2026-10-24T21:57:18.069565-03:00 aprendiz-pc sshd[5865]: Disconnected from invalid user root 203.0.113.219 port 39018 [preauth]
+2026-10-24T21:57:19.177077-03:00 aprendiz-pc sshd[5869]: User root from 203.0.113.219 not allowed because not listed in AllowUsers
+2026-10-24T21:57:19.556938-03:00 aprendiz-pc sshd[5869]: Connection closed by invalid user root 203.0.113.219 port 44209 [preauth]
+2026-10-24T21:57:21.015949-03:00 aprendiz-pc sshd[5874]: User root from 203.0.113.20 not allowed because not listed in AllowUsers
+2026-10-24T21:57:21.247515-03:00 aprendiz-pc sshd[5874]: Connection closed by invalid user root 203.0.113.20 port 47372 [preauth]
+2026-10-24T21:57:25.012824-03:00 aprendiz-pc sshd[5878]: Invalid user git from 203.0.113.234 port 55439
+2026-10-24T21:57:25.542417-03:00 aprendiz-pc sshd[5878]: Connection closed by invalid user git 203.0.113.234 port 55439 [preauth]
+2026-10-24T21:57:27.384108-03:00 aprendiz-pc sshd[5883]: Invalid user pi from 203.0.113.234 port 44057
+2026-10-24T21:57:27.799665-03:00 aprendiz-pc sshd[5883]: Received disconnect from 203.0.113.234 port 44057:11: Bye Bye [preauth]
+2026-10-24T21:57:27.799876-03:00 aprendiz-pc sshd[5883]: Disconnected from invalid user pi 203.0.113.234 port 44057 [preauth]
+2026-10-24T21:57:27.866188-03:00 aprendiz-pc sshd[5888]: Invalid user deploy from 203.0.113.234 port 45145
+2026-10-24T21:57:28.502303-03:00 aprendiz-pc sshd[5888]: Received disconnect from 203.0.113.234 port 45145:11: Bye Bye [preauth]
+2026-10-24T21:57:28.502514-03:00 aprendiz-pc sshd[5888]: Disconnected from invalid user deploy 203.0.113.234 port 45145 [preauth]
+2026-10-24T21:57:30.203295-03:00 aprendiz-pc sshd[5894]: Invalid user guest from 203.0.113.234 port 60743
+2026-10-24T21:57:30.457730-03:00 aprendiz-pc sshd[5894]: Connection closed by invalid user guest 203.0.113.234 port 60743 [preauth]
+2026-10-24T21:57:32.148818-03:00 aprendiz-pc sshd[5897]: Invalid user admin from 203.0.113.234 port 46239
+2026-10-24T21:57:32.999735-03:00 aprendiz-pc sshd[5897]: Received disconnect from 203.0.113.234 port 46239:11: Bye Bye [preauth]
+2026-10-24T21:57:32.999946-03:00 aprendiz-pc sshd[5897]: Disconnected from invalid user admin 203.0.113.234 port 46239 [preauth]
+2026-10-24T21:57:34.177892-03:00 aprendiz-pc sshd[5903]: Invalid user debian from 203.0.113.234 port 37134
+2026-10-24T21:57:34.378710-03:00 aprendiz-pc sshd[5903]: Connection closed by invalid user debian 203.0.113.234 port 37134 [preauth]
+2026-10-24T21:57:34.813009-03:00 aprendiz-pc sshd[5909]: Invalid user admin from 203.0.113.234 port 37159
+2026-10-24T21:57:35.450620-03:00 aprendiz-pc sshd[5909]: Connection closed by invalid user admin 203.0.113.234 port 37159 [preauth]
+2026-10-24T21:57:36.609379-03:00 aprendiz-pc sshd[5918]: Invalid user test from 203.0.113.234 port 60620
+2026-10-24T21:57:36.863065-03:00 aprendiz-pc sshd[5918]: Connection closed by invalid user test 203.0.113.234 port 60620 [preauth]
+2026-10-24T21:57:37.830175-03:00 aprendiz-pc sshd[5927]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T21:57:58.184805-03:00 aprendiz-pc sshd[5931]: error: kex_exchange_identification: read: Connection reset by peer
+2026-10-24T22:00:04.771203-03:00 aprendiz-pc sudo:    aluno : TTY=pts/1 ; PWD=/home/aluno ; USER=root ; COMMAND=/usr/bin/systemctl disable --now ssh.socket ssh.service
