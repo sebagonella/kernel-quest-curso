@@ -1,0 +1,21 @@
+# Este repositório não aceita contribuições: fecha PRs de quem não é o dono.
+# pull_request_target roda com o código do repositório, nunca o do PR (sem checkout).
+name: Fechar PRs de fora
+
+on:
+  pull_request_target:
+    types: [opened, reopened]
+
+permissions:
+  pull-requests: write
+
+jobs:
+  fechar:
+    if: github.event.pull_request.user.login != github.repository_owner
+    runs-on: ubuntu-latest
+    steps:
+      - env:
+          GH_TOKEN: ${{ github.token }}
+          PR: ${{ github.event.pull_request.html_url }}
+        run: |
+          gh pr close "$PR" --comment "Obrigado pelo interesse! Este repositório não aceita Pull Requests. Achou um erro no material? Abra uma Issue com o modelo \"Erro no material\"."

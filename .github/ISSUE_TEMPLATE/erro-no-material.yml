@@ -1,0 +1,35 @@
+name: Erro no material
+description: Um passo que não funciona como descrito, um link quebrado, um erro de texto.
+title: "[Mxx] "
+labels: ["erro no material"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use este formulário só para erros **no material**. Dúvidas de estudo e pedidos de ajuda com o seu código não são atendidos aqui.
+  - type: input
+    id: modulo
+    attributes:
+      label: Módulo e passo
+      placeholder: "ex.: M02B, Passo 3a"
+    validations:
+      required: true
+  - type: textarea
+    id: esperado
+    attributes:
+      label: O que o material diz que deveria acontecer
+    validations:
+      required: true
+  - type: textarea
+    id: aconteceu
+    attributes:
+      label: O que aconteceu (cole a mensagem de erro inteira, se houver)
+    validations:
+      required: true
+  - type: input
+    id: ambiente
+    attributes:
+      label: Sistema e versão do Python
+      placeholder: "ex.: Windows 11, Python 3.12.7"
+    validations:
+      required: true

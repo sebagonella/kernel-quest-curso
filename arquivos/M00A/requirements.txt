@@ -1,0 +1,3 @@
+# Dependências do jogo (Python 3.12).
+# pygame-ce: fork mantido do pygame; o import continua "import pygame".
+pygame-ce>=2.5.8,<2.6
