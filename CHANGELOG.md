@@ -2,6 +2,11 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.5.1
+
+- README: nova seção "Começar no meio do curso", com o repositório-modelo (entrada no M03C).
+- M03C: orientação para quem chega pelo repositório-modelo.
+
 ## v0.5.0
 
 - M04A — Testes: o modo depuração (F3), o baú da floresta e os testes automáticos com pytest.

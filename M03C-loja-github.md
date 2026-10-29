@@ -18,6 +18,7 @@ Em praticamente toda empresa de software, a `main` é protegida: cada mudança n
 - Arquivos prontos deste módulo: pasta `M03C/` dentro de `curso-arquivos/`, com `assets/itens/` (poção, armadura e o amuleto do desafio), `assets/sons/` (compra e poção), o `CREDITOS.md` atualizado e o `.env.example` com uma linha nova.
 - Comando para conferir: com a venv ativa, `python main.py` abre o menu, e o jogo inteiro funciona.
 - Você vai usar o GitHub CLI (`gh`), instalado e autenticado no M00B. Confira com `gh auth status`.
+- **Chegou direto aqui pelo repositório-modelo?** O projeto criado pelo "Use this template" já é o ponto de partida deste módulo. Confira antes a lista "Antes de começar" do README do modelo (Python 3.12, Git, GitHub CLI autenticado, Tiled e a chave do Gemini).
 
 > **A partir de hoje, a entrega é por Pull Request.** Você não faz mais push na `main`. O trabalho do módulo inteiro vai para a branch `modulo-03c`, e o Engenheiro Sênior revisa antes de entrar. **Sem mentor?** O review pode ser de um colega do curso ou uma autorrevisão: o caminho está em "Depois do desafio: o review e o merge".
 

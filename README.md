@@ -46,6 +46,12 @@ O curso trata você como um Engenheiro Júnior em treinamento, e o **Engenheiro 
 - **Desafio de Engenharia:** a parte que é sua. Os critérios de aceite dizem quando está pronto; os nomes que eles pedem (de constantes e arquivos) são obrigatórios, porque o módulo seguinte usa esses nomes. O resto (falas, personagens, mapas) é criação livre.
 - **IA no editor:** as sugestões automáticas de IA ficam desligadas no projeto (`.vscode/settings.json`, do M00A). Pedir explicação a uma IA pode; pedir a solução do desafio, não.
 
+## Começar no meio do curso
+
+Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir do [repositório-modelo](https://github.com/sebagonella/kernel-quest-modelo), que traz o jogo pronto no ponto de partida do M03C (o fim do M03B). Clique em **"Use this template"**, siga o README do modelo (o que instalar antes, a venv, o `.env` e a personalização) e abra o M03C.
+
+**Começando do zero, não use o modelo:** o M00A e o M00B ensinam a montar o projeto e o repositório com as próprias mãos, e isso é parte do curso. O modelo também traz as respostas dos desafios do M00A ao M03B.
+
 ## Módulos disponíveis
 
 | Módulo | O que o jogo ganha |
@@ -60,5 +66,3 @@ O curso trata você como um Engenheiro Júnior em treinamento, e o **Engenheiro 
 | [M03B — Camadas](M03B-camadas.md) | O mesmo jogo, organizado em camadas, com as regras provadas sem janela |
 | [M03C — Loja do Brok e GitHub](M03C-loja-github.md) | A loja do Brok, a poção e o primeiro Pull Request |
 | [M04A — Testes](M04A-testes.md) | Um baú na floresta, o modo depuração (F3) e as regras provadas por testes automáticos |
-
-Os próximos módulos chegam conforme você avança.
