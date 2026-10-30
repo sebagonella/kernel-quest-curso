@@ -2,6 +2,12 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.12.0
+
+**O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M07A ~/curso-arquivos/`) e abra o M07A.
+
+- M07A — Sem congelar: a IA passa a pensar numa thread de trabalho com filas (`pedir` e `coletar`), e o jogo segue a 60 FPS; o herói anda enquanto o NPC pensa, com um balão de reticências; o F3 mede o FPS e o pior quadro; o exercício de revisar o código que uma IA sugere (no chat do Gemini).
+
 ## v0.11.0
 
 **O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M06B ~/curso-arquivos/`) e abra o M06B. O módulo instala uma dependência nova (`pip install -r requirements.txt`, no Passo 1).

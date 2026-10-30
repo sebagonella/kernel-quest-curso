@@ -94,3 +94,4 @@ Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir
 | [M05C — Portas abertas](M05C-portas-abertas.md) | Um servidor SSH endurecido, uma noite de ataques lida no log e o Quadro da Vigia na muralha |
 | [M06A — Conversa de verdade](M06A-conversa.md) | Você digita o que diz, e o NPC lembra a conversa; os tokens gastos no F3 |
 | [M06B — IA que age](M06B-ia-que-age.md) | A IA devolve dados (fala, emoção e ação); o Mago entrega a Chave, o Guarda guarda o portão, e o jogo decide o que a IA pode fazer |
+| [M07A — Sem congelar](M07A-sem-congelar.md) | A IA pensa numa thread, e o herói anda enquanto o NPC pensa; FPS e pior quadro no F3 |
