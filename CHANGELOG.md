@@ -2,6 +2,12 @@
 
 O que mudou em cada versão do material. Correções de uma parte que você já fez aparecem aqui: confira antes de seguir para a próxima.
 
+## v0.13.0
+
+**O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M07B ~/curso-arquivos/`) e abra o M07B. O Discord é opcional: o módulo funciona sem ele.
+
+- M07B — Eventos: o jogo publica o que acontece num EventBus (publicar/assinar), e as conquistas aparecem na tela com um troféu; um log de auditoria em JSON; o aviso opcional no Discord por webhook, numa thread, com o tratamento do limite de requisições (429); testes de HTTP sem rede.
+
 ## v0.12.0
 
 **O que fazer:** traga a pasta nova (`git -C ~/kernel-quest-curso pull` e `cp -r ~/kernel-quest-curso/arquivos/M07A ~/curso-arquivos/`) e abra o M07A.

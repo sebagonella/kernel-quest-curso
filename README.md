@@ -95,3 +95,4 @@ Já programa e quer pular os Fundamentos? Dá para começar no **M03C** a partir
 | [M06A — Conversa de verdade](M06A-conversa.md) | Você digita o que diz, e o NPC lembra a conversa; os tokens gastos no F3 |
 | [M06B — IA que age](M06B-ia-que-age.md) | A IA devolve dados (fala, emoção e ação); o Mago entrega a Chave, o Guarda guarda o portão, e o jogo decide o que a IA pode fazer |
 | [M07A — Sem congelar](M07A-sem-congelar.md) | A IA pensa numa thread, e o herói anda enquanto o NPC pensa; FPS e pior quadro no F3 |
+| [M07B — Eventos](M07B-eventos.md) | Publicar/assinar: conquistas na tela, log de auditoria e aviso no Discord |
